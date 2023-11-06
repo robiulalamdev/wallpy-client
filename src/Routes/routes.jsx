@@ -12,6 +12,7 @@ import Profile from "../pages/Profile/Profile";
 import About from "../pages/About/About";
 import CopyrightInformation from "../pages/CopyrightInformation/CopyrightInformation";
 import Socials from "../pages/Socials/Socials";
+import CommunityRules from "../pages/CommunityRules/CommunityRules";
 
 export const router = createBrowserRouter([
   {
@@ -67,5 +68,9 @@ export const router = createBrowserRouter([
   {
     path: "/socials",
     element: <Socials />,
+  },
+  {
+    path: "/community-rules",
+    element: <CommunityRules />,
   },
 ]);
