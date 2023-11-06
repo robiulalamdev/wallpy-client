@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&family=Lato:wght@100;300;400;700&family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+    --bak: 'Bakbak One', cursive;
+    --lato: 'Lato', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202529;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+input {
+    border: none;
+    background: transparent;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+.container {
+    max-width: 1596px;
+}
+
+.custom_Container {
+    max-width: 1800px;
+}
+
+.auth_Container {
+    max-width: 1090px;
+    position: relative;
+    z-index: 9999999;
+}
+
+.search_Container {
+    max-width: 1756px;
+    margin: 0 auto;
+}
+
+
+
+.mt_85 {
+    margin-top: 85px;
+}
+
+.all_mb {
+    margin-bottom: 50px;
+}
+
+.fontBak {
+    font-family: var(--bak);
+    font-weight: 400;
+    color: #FFF;
+}
+
+.lgFont,
+.lgFont button {
+    font-size: 15px !important;
+}
+
+h2 {
+    color: #FFF;
+    font-family: var(--bak);
+    font-weight: 400;
+    text-align: center;
+    font-size: 35px;
+}
+
+h3 {
+    color: #939393;
+    font-family: var(--bak);
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+}
+
+hr {
+    color: #5A5A5A;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: rgb(51, 51, 51);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #202529;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #939393;
+}
+
+.bgShadowTop,
+.sideBar {
+    position: relative;
+    z-index: 99999;
+}
+
+.mainPosition {
+    position: relative;
+    z-index: 999999;
+}

@@ -1,0 +1,8 @@
+.forgetpass_bg{
+    background-image: url('../../assets/forget.png');
+}
+
+.confirmation_bg{
+    background-image: url('../../assets/confirmation.png') !important;
+
+}

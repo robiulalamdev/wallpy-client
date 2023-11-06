@@ -1,0 +1,158 @@
+
+
+/* WallPaper Page Start */
+
+.wallpaper {
+    position: relative;
+    background-image: url("../../assets/wallpaper.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 802px;
+    width: 1442px;
+}
+
+
+/* .addLibrary img,
+.like img {
+    height: 25px;
+    width: 25px;
+} */
+
+.sideBar {
+    width: 347px;
+    height: 100%;
+    padding: 15px 23px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.20);
+}
+
+.sideImgPro {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.sideBar p {
+    font-size: 15px;
+}
+
+.sideBar h3 {
+    font-size: 20px;
+}
+
+.sideBar hr,
+.libraryOption hr {
+    color: #939393 !important;
+}
+
+.tag span,
+.info p,
+.listBtn {
+    font-size: 12px;
+}
+
+.info p span {
+    color: #CCC;
+}
+
+.downLoadBtn {
+    padding: 5px 21px;
+    border-radius: 5px !important;
+    background: #2924FF !important;
+    color: #C4C4C4 !important;
+    transition: 0.4s ease-in-out;
+}
+
+.downLoadBtn:hover {
+    opacity: .9;
+}
+
+.listBtn button {
+    transition: 0.4s ease-in-out;
+}
+
+.listBtn button:hover {
+    color: #FDF516 !important;
+}
+
+.ownerShip {
+    background: #141414;
+    padding: 9px 18px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.ownerShip a {
+    color: #D9D9D9;
+    font-family: var(--roboto);
+    font-size: 10px;
+    font-weight: 500;
+    transition: 0.4s ease-in-out;
+}
+
+.ownerShip a:hover {
+    text-decoration: underline;
+}
+
+
+.searchWallpaper input,
+.libraryOption,
+.libraryOption button {
+    font-size: 12px;
+}
+
+.btnPosition {
+    padding: 21px 33px;
+    position: relative;
+}
+
+.libraryOption {
+    position: absolute;
+    top: 95%;
+    right: 5%;
+    border-radius: 5px;
+    background: rgba(39, 39, 39, 0.90);
+    padding: 17px 28px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.addLibrary .libraryOption {
+    transition: 0.4s ease-in-out;
+}
+
+.addLibrary:hover .libraryOption {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+.searchWallpaper {
+    z-index: 999999;
+    background-image: url("../../assets/Search.png");
+    background-repeat: no-repeat;
+    background-position: center left 2%;
+    background-size: initial;
+    border-radius: 5px;
+    background-color: #0D0D0D;
+}
+
+.searchWallpaper input {
+    padding: 5px 5px 5px 30px;
+}
+
+.searchWallpaper input::placeholder {
+    color: #5A5A5A !important;
+    font-size: 10px !important;
+}
+
+.libraryOption button {
+    transition: 0.4s ease-in-out;
+}
+
+.libraryOption button:hover {
+    color: #FDF516;
+}
+
+/* WallPaper Page End */

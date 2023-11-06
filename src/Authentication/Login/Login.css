@@ -1,0 +1,12 @@
+
+.login_bg {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    display: block;
+    color: #F4F4F4;
+    padding: 70px 20px;
+    height: 746px;
+    background-image:url('../../assets/loginImg.png') ;
+}
