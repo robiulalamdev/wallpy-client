@@ -14,6 +14,7 @@ import CopyrightInformation from "../pages/CopyrightInformation/CopyrightInforma
 import Socials from "../pages/Socials/Socials";
 import CommunityRules from "../pages/CommunityRules/CommunityRules";
 import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
+import TermsConditions from "../pages/TermsConditions/TermsConditions";
 
 export const router = createBrowserRouter([
   {
@@ -77,5 +78,9 @@ export const router = createBrowserRouter([
   {
     path: "/privacy-policy",
     element: <PrivacyPolicy />,
+  },
+  {
+    path: "/terms-and-conditions",
+    element: <TermsConditions />,
   },
 ]);
