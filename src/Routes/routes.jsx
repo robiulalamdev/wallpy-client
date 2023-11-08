@@ -15,6 +15,7 @@ import Socials from "../pages/Socials/Socials";
 import CommunityRules from "../pages/CommunityRules/CommunityRules";
 import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
 import TermsConditions from "../pages/TermsConditions/TermsConditions";
+import UploadRules from "../pages/UploadRules/UploadRules";
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ export const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path: "/upload-rules",
+        element: <UploadRules />,
       },
     ],
   },

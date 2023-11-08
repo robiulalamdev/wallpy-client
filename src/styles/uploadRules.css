@@ -1,0 +1,155 @@
+.upload-rules-container .title {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.upload-rules-container .upload-rules-p {
+  color: #939393;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+/* upload-section */
+.upload-rules-container .upload-section {
+  max-width: 933px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.upload-rules-container .upload-section .title {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.upload-rules-container .upload-section p {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.upload-section-content {
+  max-width: 397px;
+  min-height: 585px;
+}
+
+.upload-section-content .cm-rules-title {
+  color: #ff2e00;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.upload-section-content .upload-checkbox {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 100px;
+}
+
+.upload-section-content .upload-btn-disabled {
+  color: #c4c4c4;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 129px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #5a5a5a;
+  cursor: pointer;
+}
+
+.upload-section-content .upload-btn-active {
+  color: #c4c4c4;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 129px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #2924ff;
+  cursor: pointer;
+}
+
+.upload-section-content .upload-btn-active-purple {
+  color: #c4c4c4;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 129px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #dd2e44;
+  cursor: pointer;
+}
+
+.drag-drop-file {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 10px;
+}
+
+.select-files {
+  color: #939393;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 30px;
+}
+
+.upload-section-content .img-title {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.upload-section-content .img-upload-progress {
+  width: 290px;
+  height: 10px;
+  border-radius: 100px;
+  background: linear-gradient(268deg, #fdf516 17.83%, #97fd16 51.91%);
+  box-shadow: 0px 3px 12px 0px rgba(253, 245, 22, 0.15);
+}
+
+.cursor-pointer {
+  cursor: pointer !important;
+}
