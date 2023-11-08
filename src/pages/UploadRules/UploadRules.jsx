@@ -14,6 +14,8 @@ const UploadRules = () => {
     updatedImages.splice(index, 1);
     setImages(updatedImages);
   };
+
+  console.log(step);
   return (
     <div className="container upload-rules-container">
       <h1 className="title">Upload Files</h1>
@@ -27,12 +29,14 @@ const UploadRules = () => {
       <section className="row upload-section mt-5 mx-auto ">
         <div className="col-md-6 p-3 p-md-4">
           {step === 1 && (
-            <img className="img-fluid w-100" src={banner} alt="" />
+            <img className="img-fluid w-100 h-100" src={banner} alt="" />
           )}
-          {step === 2 ||
-            (step === 3 && (
-              <UploadRulesUploadInput setImages={setImages} images={images} />
-            ))}
+          {step === 2 && (
+            <UploadRulesUploadInput setImages={setImages} images={images} />
+          )}
+          {step === 3 && (
+            <UploadRulesUploadInput setImages={setImages} images={images} />
+          )}
         </div>
         <div className="col-md-6 upload-section-content mx-auto p-3 p-md-4">
           {step === 1 && (
@@ -79,80 +83,148 @@ const UploadRules = () => {
             </>
           )}
 
-          {step === 2 ||
-            (step === 3 && (
-              <div className="d-flex flex-column justify-content-between h-100">
-                <h1 className="title">Files</h1>
+          {step === 2 && (
+            <div className="d-flex flex-column justify-content-between h-100">
+              <h1 className="title">Files</h1>
 
-                <div>
-                  {step === 2 && (
-                    <>
-                      {images?.map((img, index) => (
-                        <div
-                          key={index}
-                          className="d-flex align-items-center gap-2 mt-3"
-                        >
-                          <span>{Iimg}</span>
-                          <span className="img-title">{img?.name}</span>
-                          <button onClick={() => handleRemove(index)}>
-                            {iClose}
-                          </button>
-                        </div>
-                      ))}
-                    </>
-                  )}
-                  {step === 3 && (
-                    <>
-                      {images?.map((img, index) => (
-                        <div
-                          key={index}
-                          className="d-flex align-items-center gap-2 mt-3"
-                        >
-                          <span>{Iimg}</span>
-                          <div className="img-upload-progress"></div>
-                        </div>
-                      ))}
-                    </>
-                  )}
-                </div>
-
-                <div>
-                  {step === 2 && (
-                    <p className="upload-checkbox text-center">
-                      There are {images?.length} files pending for upload
-                    </p>
-                  )}
-                  {step === 3 && (
-                    <p className="upload-checkbox text-center">
-                      Upload complete
-                    </p>
-                  )}
-                  <hr style={{ border: "1px solid #5A5A5A" }} />
-                  <div className="d-flex justify-content-center gap-4 mt-5">
-                    {images?.length > 0 ? (
-                      <>
-                        <button
-                          onClick={() => setStep(3)}
-                          className="upload-btn-active "
-                        >
-                          <span>Upload</span>
-                          {uploadUp}
+              <div>
+                {step === 2 && (
+                  <>
+                    {images?.map((img, index) => (
+                      <div
+                        key={index}
+                        className="d-flex align-items-center gap-2 mt-3"
+                      >
+                        <span>{Iimg}</span>
+                        <span className="img-title">{img?.name}</span>
+                        <button onClick={() => handleRemove(index)}>
+                          {iClose}
                         </button>
-                        {step === 3 && (
-                          <button className="upload-btn-active-purple ">
-                            Continue
-                          </button>
-                        )}
-                      </>
-                    ) : (
-                      <button disabled className="upload-btn-disabled ">
-                        <span>Upload</span> {uploadUp}
+                      </div>
+                    ))}
+                  </>
+                )}
+                {step === 3 && (
+                  <>
+                    {images?.map((img, index) => (
+                      <div
+                        key={index}
+                        className="d-flex align-items-center gap-2 mt-3"
+                      >
+                        <span>{Iimg}</span>
+                        <div className="img-upload-progress"></div>
+                      </div>
+                    ))}
+                  </>
+                )}
+              </div>
+
+              <div>
+                {step === 2 && (
+                  <p className="upload-checkbox text-center">
+                    There are {images?.length} files pending for upload
+                  </p>
+                )}
+                {step === 3 && (
+                  <p className="upload-checkbox text-center">Upload complete</p>
+                )}
+                <hr style={{ border: "1px solid #5A5A5A" }} />
+                <div className="d-flex justify-content-center gap-4 mt-5">
+                  {images?.length > 0 ? (
+                    <>
+                      <button
+                        onClick={() => setStep(3)}
+                        className="upload-btn-active "
+                      >
+                        <span>Upload</span>
+                        {uploadUp}
                       </button>
-                    )}
-                  </div>
+                      {step === 3 && (
+                        <button className="upload-btn-active-purple ">
+                          Continue
+                        </button>
+                      )}
+                    </>
+                  ) : (
+                    <button disabled className="upload-btn-disabled ">
+                      <span>Upload</span> {uploadUp}
+                    </button>
+                  )}
                 </div>
               </div>
-            ))}
+            </div>
+          )}
+          {step === 3 && (
+            <div className="d-flex flex-column justify-content-between h-100">
+              <h1 className="title">Files</h1>
+
+              <div>
+                {step === 2 && (
+                  <>
+                    {images?.map((img, index) => (
+                      <div
+                        key={index}
+                        className="d-flex align-items-center gap-2 mt-3"
+                      >
+                        <span>{Iimg}</span>
+                        <span className="img-title">{img?.name}</span>
+                        <button onClick={() => handleRemove(index)}>
+                          {iClose}
+                        </button>
+                      </div>
+                    ))}
+                  </>
+                )}
+                {step === 3 && (
+                  <>
+                    {images?.map((img, index) => (
+                      <div
+                        key={index}
+                        className="d-flex align-items-center gap-2 mt-3"
+                      >
+                        <span>{Iimg}</span>
+                        <div className="img-upload-progress"></div>
+                      </div>
+                    ))}
+                  </>
+                )}
+              </div>
+
+              <div>
+                {step === 2 && (
+                  <p className="upload-checkbox text-center">
+                    There are {images?.length} files pending for upload
+                  </p>
+                )}
+                {step === 3 && (
+                  <p className="upload-checkbox text-center">Upload complete</p>
+                )}
+                <hr style={{ border: "1px solid #5A5A5A" }} />
+                <div className="d-flex justify-content-center gap-4 mt-5">
+                  {images?.length > 0 ? (
+                    <>
+                      <button
+                        onClick={() => setStep(3)}
+                        className="upload-btn-active "
+                      >
+                        <span>Upload</span>
+                        {uploadUp}
+                      </button>
+                      {step === 3 && (
+                        <button className="upload-btn-active-purple ">
+                          Continue
+                        </button>
+                      )}
+                    </>
+                  ) : (
+                    <button disabled className="upload-btn-disabled ">
+                      <span>Upload</span> {uploadUp}
+                    </button>
+                  )}
+                </div>
+              </div>
+            </div>
+          )}
         </div>
       </section>
     </div>
