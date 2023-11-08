@@ -13,6 +13,7 @@ import About from "../pages/About/About";
 import CopyrightInformation from "../pages/CopyrightInformation/CopyrightInformation";
 import Socials from "../pages/Socials/Socials";
 import CommunityRules from "../pages/CommunityRules/CommunityRules";
+import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
 
 export const router = createBrowserRouter([
   {
@@ -72,5 +73,9 @@ export const router = createBrowserRouter([
   {
     path: "/community-rules",
     element: <CommunityRules />,
+  },
+  {
+    path: "/privacy-policy",
+    element: <PrivacyPolicy />,
   },
 ]);
