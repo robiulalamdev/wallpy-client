@@ -16,6 +16,7 @@ import CommunityRules from "../pages/CommunityRules/CommunityRules";
 import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
 import TermsConditions from "../pages/TermsConditions/TermsConditions";
 import UploadRules from "../pages/UploadRules/UploadRules";
+import AccountVerification from "../pages/AccountVerification/AccountVerification";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: "/upload-rules",
         element: <UploadRules />,
+      },
+      {
+        path: "/account-verification",
+        element: <AccountVerification />,
       },
     ],
   },
