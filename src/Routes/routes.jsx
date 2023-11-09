@@ -17,6 +17,7 @@ import PrivacyPolicy from "../pages/PrivacyPolicy/PrivacyPolicy";
 import TermsConditions from "../pages/TermsConditions/TermsConditions";
 import UploadRules from "../pages/UploadRules/UploadRules";
 import AccountVerification from "../pages/AccountVerification/AccountVerification";
+import Contact from "../pages/Contact/Contact";
 
 export const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ export const router = createBrowserRouter([
       {
         path: "/account-verification",
         element: <AccountVerification />,
+      },
+      {
+        path: "/contact",
+        element: <Contact />,
       },
     ],
   },

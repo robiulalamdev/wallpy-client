@@ -1,0 +1,107 @@
+.contact-container .contact-main {
+  max-width: 1482px;
+  min-height: 644px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.212);
+}
+
+.contact-main .contact-content-section {
+  min-height: 600px;
+  border-radius: 10px;
+  background: #d9d9d9;
+}
+
+.contact-main .contact-content-section h1 {
+  color: #373737;
+  font-family: Lato;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.contact-main .contact-content-section p {
+  color: rgba(55, 55, 55, 0.8);
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-main .contact-content-section .contact-input {
+  width: 259px;
+  min-height: 39px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(203, 203, 203, 0.8);
+  color: #474747;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact-send-btn {
+  width: 95px;
+  height: 34px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #505050;
+  color: #fff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.contact-second-step {
+  width: 100%;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-second-step h6 {
+  color: #373737;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contact-second-step p {
+  width: 359px;
+  height: 37px;
+  flex-shrink: 0;
+  margin: 0 auto;
+  color: #373737;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.contact-return-btn {
+  width: 132px;
+  height: 35px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #000;
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

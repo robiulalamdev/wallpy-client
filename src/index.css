@@ -137,3 +137,13 @@ hr {
 .opacity-0 {
   opacity: 0;
 }
+
+.title {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
