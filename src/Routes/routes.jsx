@@ -18,6 +18,7 @@ import TermsConditions from "../pages/TermsConditions/TermsConditions";
 import UploadRules from "../pages/UploadRules/UploadRules";
 import AccountVerification from "../pages/AccountVerification/AccountVerification";
 import Contact from "../pages/Contact/Contact";
+import OfficialBrands from "../pages/OfficialBrands/OfficialBrands";
 
 export const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ export const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/official-brands",
+        element: <OfficialBrands />,
       },
     ],
   },
