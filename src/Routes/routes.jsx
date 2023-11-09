@@ -19,6 +19,7 @@ import UploadRules from "../pages/UploadRules/UploadRules";
 import AccountVerification from "../pages/AccountVerification/AccountVerification";
 import Contact from "../pages/Contact/Contact";
 import OfficialBrands from "../pages/OfficialBrands/OfficialBrands";
+import Messages from "../pages/Messages/Messages";
 
 export const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ export const router = createBrowserRouter([
       {
         path: "/official-brands",
         element: <OfficialBrands />,
+      },
+      {
+        path: "/messages",
+        element: <Messages />,
       },
     ],
   },
