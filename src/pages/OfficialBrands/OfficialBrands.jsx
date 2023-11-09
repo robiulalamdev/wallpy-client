@@ -15,6 +15,7 @@ import img12 from "../../assets/images/official-brands/img12.png";
 import img13 from "../../assets/images/official-brands/img13.png";
 import img14 from "../../assets/images/official-brands/img14.png";
 import img15 from "../../assets/images/official-brands/img15.png";
+import { iSearch } from "../../utils/icons/global_icons";
 
 const brands = [
   { title: "Image 1", img: img1 },
@@ -43,6 +44,12 @@ const OfficialBrands = () => {
   console.log(characters);
   return (
     <div className="container official-brands-container">
+      <div className="d-flex justify-content-center w-100 mb-5">
+        <div className="position-relative w-100" style={{ maxWidth: "771px" }}>
+          <input className="official-brand-input" type="text" />
+          <span className="official-brand-search-icon">{iSearch}</span>
+        </div>
+      </div>
       <div className="d-flex justify-content-center align-items-center flex-wrap gap-4 official-brand-header">
         <button>Featured</button>
         <div className="d-flex justify-content-between align-items-center gap-4 filter-brands px-4">
