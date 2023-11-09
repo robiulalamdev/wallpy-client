@@ -123,3 +123,49 @@
   font-weight: 400;
   line-height: normal;
 }
+
+.single-msg-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.single-msg-container img {
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+}
+
+.single-msg-container .single-msg {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 80%;
+  min-height: 48px;
+  border-radius: 10px;
+  background: #373737;
+  color: #939393;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 1px 10px;
+}
+
+.single-msg-dark {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 80%;
+  min-height: 48px;
+  color: #939393;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 1px 10px;
+}
