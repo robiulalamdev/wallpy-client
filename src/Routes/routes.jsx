@@ -21,6 +21,7 @@ import Contact from "../pages/Contact/Contact";
 import OfficialBrands from "../pages/OfficialBrands/OfficialBrands";
 import Messages from "../pages/Messages/Messages";
 import MediaCenter from "../pages/MediaCenter/MediaCenter";
+import AccountSettings from "../pages/AccountSettings/AccountSettings";
 
 export const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ export const router = createBrowserRouter([
       {
         path: "/media-center",
         element: <MediaCenter />,
+      },
+      {
+        path: "/account-settings",
+        element: <AccountSettings />,
       },
     ],
   },
