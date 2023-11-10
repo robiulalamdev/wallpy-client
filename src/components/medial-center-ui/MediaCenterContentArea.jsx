@@ -1,9 +1,10 @@
 import React from "react";
 import img1 from "../../assets/images/media-center/img1.png";
+import { iEye } from "../../utils/icons/global_icons";
 
 const MediaCenterContentArea = ({ open }) => {
   return (
-    <div className="w-100">
+    <div className="w-100 d-flex flex-column justify-content-between gap-4">
       {open === 0 && (
         <section className="row">
           <div className="col-6 col-md-4 col-lg-3 mc-card ps-0 mb-3">
@@ -26,24 +27,37 @@ const MediaCenterContentArea = ({ open }) => {
       )}
       {open === 1 && (
         <section className="row">
-          <div className="col-6 col-md-4 col-lg-3  mb-3">
-            <div className=" mc-card row">
-              <div className="col-6 p-0">
-                <img className="w-100 h-100" src={img1} alt="" />
+          <div className="col-6 col-md-4 col-lg-3 d-flex flex-column align-items-center gap-2 mb-3 ps-0">
+            <div className="position-relative">
+              <div className="mc-card row">
+                <div className="col-6 p-0">
+                  <img className="w-100 h-100" src={img1} alt="" />
+                </div>
+                <div className="col-6 p-0">
+                  <img className="w-100 h-100" src={img1} alt="" />
+                </div>
+                <div className="col-6 p-0">
+                  <img className="w-100 h-100" src={img1} alt="" />
+                </div>
+                <div className="col-6 p-0">
+                  <img className="w-100 h-100" src={img1} alt="" />
+                </div>
               </div>
-              <div className="col-6 p-0">
-                <img className="w-100 h-100" src={img1} alt="" />
-              </div>
-              <div className="col-6 p-0">
-                <img className="w-100 h-100" src={img1} alt="" />
-              </div>
-              <div className="col-6 p-0">
-                <img className="w-100 h-100" src={img1} alt="" />
-              </div>
+              <button
+                className="position-absolute"
+                style={{ bottom: "5px", right: "0", zIndex: 50 }}
+              >
+                {iEye}
+              </button>
             </div>
+            <button className="collection-card-btn mx-auto">
+              Call of Duty
+            </button>
           </div>
         </section>
       )}
+
+      <button className="view-more-btn mx-auto text-center">View more</button>
     </div>
   );
 };

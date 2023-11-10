@@ -65,7 +65,8 @@
 }
 
 .mc-sidebar-remove-container button {
-  width: 81px;
+  min-width: 81px;
+  max-width: fit-content;
   height: 36px;
   background-color: rgba(0, 0, 0, 0.2);
   color: #fff;
@@ -102,6 +103,21 @@
   margin: 0 auto;
   text-align: center;
 }
+.cm-sidebar-delete-btn {
+  width: 129px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #484848;
+  color: #c4c4c4;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 auto;
+  text-align: center;
+}
 
 .mc-btn-bg-visible {
   background-color: #0ab745 !important;
@@ -115,4 +131,30 @@
   width: 252px;
   height: 138px;
   border-radius: 10px;
+}
+.collection-card-btn {
+  width: 188px;
+  height: 26px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.view-more-btn {
+  width: 97px;
+  height: 32px;
+  border-radius: 15px;
+  background: #0000004b;
+  color: #ccc;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
