@@ -20,6 +20,7 @@ import AccountVerification from "../pages/AccountVerification/AccountVerificatio
 import Contact from "../pages/Contact/Contact";
 import OfficialBrands from "../pages/OfficialBrands/OfficialBrands";
 import Messages from "../pages/Messages/Messages";
+import MediaCenter from "../pages/MediaCenter/MediaCenter";
 
 export const router = createBrowserRouter([
   {
@@ -49,6 +50,10 @@ export const router = createBrowserRouter([
       {
         path: "/messages",
         element: <Messages />,
+      },
+      {
+        path: "/media-center",
+        element: <MediaCenter />,
       },
     ],
   },

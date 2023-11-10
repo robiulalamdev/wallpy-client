@@ -1,0 +1,118 @@
+.mc-container .mc-container-p {
+  max-width: 750px;
+  color: #939393;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.mc-tab-container {
+  width: 189px;
+  height: 45px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.mc-container button {
+  color: #fff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mc-tab-container .mc-active-btn {
+  width: 74px;
+  height: 33px;
+  border-radius: 100px;
+  background: #dd2e44;
+}
+
+.mc-tab-container .mc-dactive-btn {
+  width: 74px;
+  height: 33px;
+  border-radius: 100px;
+}
+
+.mc-sidebar {
+  min-width: 295px;
+  min-height: 620px;
+  border-radius: 10px;
+  background: hsla(0, 0%, 0%, 0.274);
+}
+
+.mc-sidebar-top-title {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mc-sidebar-remove-container h1 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.mc-sidebar-remove-container button {
+  width: 81px;
+  height: 36px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 10px;
+}
+
+.hide-profile-container h1 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.cm-sidebar-save-btn {
+  width: 129px;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #2924ff;
+  color: #c4c4c4;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mc-btn-bg-visible {
+  background-color: #0ab745 !important;
+}
+.mc-btn-bg-hide {
+  background-color: #ff003d !important;
+}
+
+/* mc area */
+.mc-card {
+  width: 252px;
+  height: 138px;
+  border-radius: 10px;
+}
