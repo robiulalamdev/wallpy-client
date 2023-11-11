@@ -3,6 +3,7 @@ import ASCTwoTab from "./ASCTwoTab";
 
 const ACSPrivacyTab = () => {
   const [profileVTab, setProfileVTab] = useState(0);
+  const [messagingTab, setMessagingTab] = useState(0);
   return (
     <div className="w-100 h-100">
       <ASCTwoTab
@@ -11,12 +12,32 @@ const ACSPrivacyTab = () => {
         setTab={setProfileVTab}
         tab={profileVTab}
       />
+      {profileVTab === 1 && (
+        <p
+          className="profile-p text-center mt-3 mx-auto"
+          style={{ maxWidth: "700px" }}
+        >
+          All uploads will remain public. However, your favorites, collections,
+          and other profile information will be hidden from the public.
+        </p>
+      )}
       <ASCTwoTab
         label="Messaging"
         tabs={["Visible", "Hidden"]}
-        setTab={setProfileVTab}
-        tab={profileVTab}
+        setTab={setMessagingTab}
+        tab={messagingTab}
       />
+      {messagingTab === 1 && (
+        <p
+          className="profile-p text-center mt-3 mx-auto"
+          style={{ maxWidth: "700px" }}
+        >
+          You will be unable to receive messages from regular users, and the
+          ability to send messages will also be disabled. However,
+          administrators and moderators will retain the capability to contact
+          you through our messaging system.
+        </p>
+      )}
 
       <div className="d-flex flex-column align-items-center justify-content-center gap-5 mt-5">
         <button className="profile-save-btn">Save</button>

@@ -14,6 +14,11 @@ import icon8 from "../../assets/icons/profile-settings/icon8.png";
 const ACSProfileTab = () => {
   return (
     <div className="w-100 h-100">
+      <h1 className="brand-branner">Brand Branner</h1>
+      <p className="profile-p mt-3">
+        This banner could be prominently displayed on the main page. We
+        recommend featuring your logo for improved brand identification.
+      </p>
       <div className="row align-items-center">
         <span className="col-sm-3"></span>
         <p className="profile-p col-sm-6">
@@ -67,13 +72,20 @@ const ACSProfileTab = () => {
           <img src={icon8} alt="" />
         </div>
       </div>
+
       <div className="d-flex flex-column align-items-center justify-content-center gap-5 mt-5">
+        <h1 className="brand-name">Brand Name</h1>
         <input
           className="profile-type-link"
           type="text"
           placeholder="Type link here..."
         />
-
+        <p className="profile-p mt-4">
+          The brand name will always appear beneath the brand banner. If no
+          brand name is selected, it will default to the original username. For
+          instance: <br /> Username: Wallpaper Society
+          <br /> Brand Name: WPS
+        </p>
         <button className="profile-save-btn">Save</button>
       </div>
     </div>

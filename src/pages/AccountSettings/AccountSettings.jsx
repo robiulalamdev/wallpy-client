@@ -3,6 +3,7 @@ import "../../styles/accountSettings.css";
 import ACSProfileTab from "../../components/account-settings-ui/ACSProfileTab";
 import ACSCredentialsTab from "../../components/account-settings-ui/ACSCredentialsTab";
 import ACSPrivacyTab from "../../components/account-settings-ui/ACSPrivacyTab";
+import ACSWallpapersTab from "../../components/account-settings-ui/ACSWallpapersTab";
 
 const tabs = [
   { id: 1, name: "Profile" },
@@ -35,6 +36,7 @@ const AccountSettings = () => {
         {selectedTab === 1 && <ACSProfileTab />}
         {selectedTab === 3 && <ACSCredentialsTab />}
         {selectedTab === 4 && <ACSPrivacyTab />}
+        {selectedTab === 5 && <ACSWallpapersTab />}
       </section>
     </div>
   );

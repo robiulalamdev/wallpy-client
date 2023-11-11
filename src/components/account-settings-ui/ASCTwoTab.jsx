@@ -7,11 +7,11 @@ const ASCTwoTab = ({ label, tabs, setTab, tab }) => {
       <div className="acs-privacy-tab-container d-flex justify-content-around align-items-center mx-auto mt-3">
         {tabs?.map((t, i) => (
           <button
-            onClick={() => setTab(t)}
+            onClick={() => setTab(i)}
             className={`${
-              tab === t
+              tab === i
                 ? `acs-privacy-active-btn ${
-                    tab === "Visible" ? "acs-btn-bg-visible" : "acs-btn-bg-hide"
+                    tab === 0 ? "acs-btn-bg-visible" : "acs-btn-bg-hide"
                   }`
                 : "acs-privacy-dactive-btn"
             }`}

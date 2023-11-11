@@ -56,6 +56,24 @@
 }
 
 /* profile tab styles */
+.brand-branner {
+  color: #fff;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.brand-name {
+  color: #fff;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
 .profile-avatar-section {
   display: flex;
   flex-direction: column;
@@ -292,6 +310,77 @@
   color: #fff;
   font-family: Lato;
   font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.blacklist-tag-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.blacklist-tag-section h1 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.blacklist-tag-section div {
+  max-width: 145px;
+  width: 100%;
+  height: 28px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.blacklist-tag-section input {
+  color: #939393;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.wallpaper-tab-textarea {
+  max-width: 413px;
+  width: 100%;
+  min-height: 106px;
+  max-height: 230px;
+  overflow-y: auto;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #939393;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  resize: none;
+  border: none;
+}
+
+.wallpaper-tab-textarea h1 {
+  color: #939393;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.tag-error-msg {
+  color: #fe112f;
+  font-family: Lato;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
