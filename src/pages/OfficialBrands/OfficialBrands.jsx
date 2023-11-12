@@ -41,16 +41,20 @@ const OfficialBrands = () => {
   const characters = Array.from({ length: 26 }, (_, index) =>
     String.fromCharCode("A".charCodeAt(0) + index)
   );
-  console.log(characters);
+  // console.log(characters);
   return (
     <div className="container official-brands-container">
-      <div className="d-flex justify-content-center w-100 mb-5">
+      <div className="d-flex justify-content-center w-100 mb-3">
         <div className="position-relative w-100" style={{ maxWidth: "771px" }}>
-          <input className="official-brand-input" type="text" />
+          <input
+            className="official-brand-input"
+            type="text"
+            placeholder="Search your favorite brand, artist or eSports team"
+          />
           <span className="official-brand-search-icon">{iSearch}</span>
         </div>
       </div>
-      <div className="d-flex justify-content-center align-items-center flex-wrap gap-4 official-brand-header">
+      <div className="d-flex justify-content-start justify-content-md-center align-items-center flex-wrap gap-4 official-brand-header">
         <button>Featured</button>
         <div className="d-flex justify-content-between align-items-center gap-4 filter-brands px-4">
           {characters?.map((c, i) => (
@@ -73,7 +77,7 @@ const OfficialBrands = () => {
         {otherBrands?.map((b, i) => (
           <div
             key={i}
-            className="col-6 col-md-3 d-flex flex-column justify-content-center align-items-center gap-3 mt-4"
+            className="col-4 col-md-3 d-flex flex-column justify-content-center align-items-center gap-3 mt-4"
           >
             <img className="w-100 img-fluid h-100" src={b.img} alt="" />
             <h1>{b.title}</h1>
