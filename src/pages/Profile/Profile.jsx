@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Profile.css";
 import kitten from "../../assets/kitten.png";
 import profile from "../../assets/profile.png";
@@ -40,55 +40,11 @@ const data = [
   { img: kitten },
 ];
 const Profile = () => {
+  const [tab, setTab] = useState(0);
   return (
-    <>
+    <div className="container">
       <div>
-        <nav className="navbar navbar-expand-lg">
-          <div className="container search_Container">
-            <Link className="navbar-brand" to="/">
-              WPS
-            </Link>
-            <button
-              className="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span>
-                <i className="fa fa-bars"></i>
-              </span>
-            </button>
-            <div
-              className="collapse navbar-collapse"
-              id="navbarSupportedContent"
-            >
-              <ul className="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
-                <li className="nav-item">
-                  <form className="d-flex">
-                    <div className="searchNav" style={{ maxWidth: "348px" }}>
-                      <input
-                        className="w-100"
-                        type="search"
-                        placeholder="Find your next wallpaper..."
-                      />
-                    </div>
-                  </form>
-                </li>
-              </ul>
-              <Link className="backBtn" to="/">
-                <img className="me-2" src={left_light} alt="Left Arrow" />
-                Back
-              </Link>
-            </div>
-          </div>
-        </nav>
-      </div>
-
-      <div>
-        <div className="container search_Container">
+        <div className="search_Container">
           <div className="coverImg">
             <img
               className="cover_photo w-100 img-fluid"
@@ -307,15 +263,27 @@ const Profile = () => {
       </div>
 
       <div className="container search_Container">
-        <form action="" className="mb-5">
-          <div className="searchNav mx-auto">
+        <div className="row mb-5">
+          <div className="profile-tab-container col-md-4 d-flex justify-content-around gap-3 align-items-center mt-3">
+            {["Uploads", "Favorites", "Collections"]?.map((t, i) => (
+              <button
+                onClick={() => setTab(i)}
+                className={`${tab === i ? `active-btn` : ""}`}
+                key={i}
+              >
+                {t}
+              </button>
+            ))}
+          </div>
+          <form action="" className="searchNav col-md-4 ms-auto">
             <input
               className="w-100"
               type="search"
               placeholder="Search this profile"
             />
-          </div>
-        </form>
+          </form>
+          <div className="col-md-4"></div>
+        </div>
         <div className="row align-items-center gy-5 mb-5">
           {data.map((image) => (
             <div className="col-12 col-md-2">
@@ -337,9 +305,7 @@ const Profile = () => {
           </span>
         </div>
       </div>
-
-      <Footer />
-    </>
+    </div>
   );
 };
 

@@ -65,6 +65,10 @@ export const router = createBrowserRouter([
         path: "/upload",
         element: <Upload />,
       },
+      {
+        path: "/profile",
+        element: <Profile />,
+      },
     ],
   },
   {
@@ -95,10 +99,7 @@ export const router = createBrowserRouter([
     path: "/wallpaper",
     element: <WallPaper />,
   },
-  {
-    path: "/profile",
-    element: <Profile />,
-  },
+
   {
     path: "/about",
     element: <About />,

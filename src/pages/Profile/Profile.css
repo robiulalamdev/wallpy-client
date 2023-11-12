@@ -1,197 +1,220 @@
-
 /* Profile Page Start */
 
 .cover_photo {
-    height: 300px;
-    border-radius: 10px;
+  height: 300px;
+  border-radius: 10px;
 }
 
 .profile_photo,
 .profile_photo img {
-    width: 125px;
-    height: 125px;
-    border-radius: 125px;
+  width: 125px;
+  height: 125px;
+  border-radius: 125px;
 }
 
 .coverImg {
-    position: relative;
-    margin-bottom: 23px;
+  position: relative;
+  margin-bottom: 23px;
 }
 
 .coverImg button {
-    position: absolute;
-    top: 20px;
-    right: 20px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .profile_photo {
-    position: absolute;
-    left: -59px;
-    bottom: -85px;
+  position: absolute;
+  left: -59px;
+  bottom: -85px;
 }
 
 .profileDetail {
-    padding-left: 114px;
-    margin-bottom: 85px;
+  padding-left: 114px;
+  margin-bottom: 85px;
 }
 
 .profileDetail span {
-    color: #939393;
-    font-size: 15px;
+  color: #939393;
+  font-size: 15px;
 }
 
 .update_follower {
-    padding: 14px 24px;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.20);
+  padding: 14px 24px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .update_follower p,
 .update_follower p span {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .profileDetail button {
-    padding: 9px 25px;
-    border-radius: 10px;
-    background: #CCC;
-    color: #4E4E4E;
-    font-size: 12px;
-    transition: 0.4s ease-in-out;
+  padding: 9px 25px;
+  border-radius: 10px;
+  background: #ccc;
+  color: #4e4e4e;
+  font-size: 12px;
+  transition: 0.4s ease-in-out;
 }
 
 .profileDetail button:hover {
-    background: #e0e0e0;
+  background: #e0e0e0;
 }
 
 .profileDetail .msgBtn {
-    padding: 6px 11px;
+  padding: 6px 11px;
 }
 
 .share img {
-    transition: 0.4s ease-in-out;
-    opacity: .85;
+  transition: 0.4s ease-in-out;
+  opacity: 0.85;
 }
 
 .share img:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .shareProfile {
-    padding: 5px 20px 20px 20px;
-    border-radius: 10px;
-    background: #090A0C;
+  padding: 5px 20px 20px 20px;
+  border-radius: 10px;
+  background: #090a0c;
 }
 
 .shareProfile p {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .shareProfile button {
-    padding: unset;
-    background: unset;
-    white-space: nowrap;
-    color: #FFF;
-    font-family: var(--lato);
-    font-size: 10px;
-    font-weight: 400;
-    opacity: .75;
-    transition: 0.4s ease-in-out;
+  padding: unset;
+  background: unset;
+  white-space: nowrap;
+  color: #fff;
+  font-family: var(--lato);
+  font-size: 10px;
+  font-weight: 400;
+  opacity: 0.75;
+  transition: 0.4s ease-in-out;
 }
 
 .shareProfile button:hover {
-    opacity: 1;
-    background: unset;
+  opacity: 1;
+  background: unset;
 }
 
 .followBtn {
-    position: relative;
-
+  position: relative;
 }
 
 .followBtn .shareProfile {
-    position: absolute;
-    top: 50px;
-    left: -156px;
-    visibility: hidden;
-    opacity: 0;
-    z-index: 99;
+  position: absolute;
+  top: 50px;
+  left: -156px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99;
 }
 
 .followBtn:hover .shareProfile {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal-content {
-    background-color: #2D2D2D;
+  background-color: #2d2d2d;
 }
 
 .modalClose {
-    background: unset !important;
+  background: unset !important;
 }
 
 .msgModal {
-    padding: 0 30px 30px;
+  padding: 0 30px 30px;
 }
 
 .msgModal h4 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .msgModal p {
-    color: #939393;
-    font-size: 12px;
+  color: #939393;
+  font-size: 12px;
 }
 
 .msgModal form label {
-    font-size: 15px;
-    display: block;
+  font-size: 15px;
+  display: block;
 }
 
 .msgModal form textarea {
-    border-radius: 10px;
-    background: #202020;
-    padding: 8px 13px;
-    font-size: 12px;
-    font-family: var(--bak);
-    font-size: 12px;
-    font-weight: 400;
-    color: #FFF;
-    width: 100%;
-    border-color: transparent;
-    margin-bottom: 16px;
+  border-radius: 10px;
+  background: #202020;
+  padding: 8px 13px;
+  font-size: 12px;
+  font-family: var(--bak);
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  width: 100%;
+  border-color: transparent;
+  margin-bottom: 16px;
 }
 
 .msgModal form textarea::placeholder {
-    color: #5B5B5B;
-    font-size: 12px;
-    font-family: var(--bak);
-    font-weight: 400;
+  color: #5b5b5b;
+  font-size: 12px;
+  font-family: var(--bak);
+  font-weight: 400;
 }
 
-.msgModal form .sendBtn{
-    padding: 10px 40px;
-    border-radius: 10px;
-    background: #FFF;
-    color: #202020;
-    font-size: 12px;
-    width: 158px;
-    white-space: nowrap;
+.msgModal form .sendBtn {
+  padding: 10px 40px;
+  border-radius: 10px;
+  background: #fff;
+  color: #202020;
+  font-size: 12px;
+  width: 158px;
+  white-space: nowrap;
 }
 
 .msgModal form .cancleBtn {
-    background: #202020;
-    padding: 10px 40px;
-    border-radius: 10px;
-    color: #FFF;
-    width: 158px;
+  background: #202020;
+  padding: 10px 40px;
+  border-radius: 10px;
+  color: #fff;
+  width: 158px;
 }
 
 .ownWall {
-    width: 252px !important;
-    height: 138px !important;
+  width: 252px !important;
+  height: 138px !important;
 }
 
+.profile-tab-container {
+  width: fit-content;
+  height: 45px !important;
+  max-height: 45px !important;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.profile-tab-container button {
+  width: 86px;
+  height: 32px;
+  flex-shrink: 0;
+  color: #fff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 100px;
+}
+
+.profile-tab-container .active-btn {
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.5);
+}
 
 /* Profile Page End */
