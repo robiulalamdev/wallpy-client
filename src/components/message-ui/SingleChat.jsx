@@ -1,8 +1,11 @@
 import React from "react";
 
-const SingleChat = ({ chat }) => {
+const SingleChat = ({ chat, open, setOpen }) => {
   return (
-    <div className="single-chat-container d-flex gap-2">
+    <div
+      onClick={() => setOpen(!open)}
+      className="single-chat-container d-flex gap-2"
+    >
       <img src={chat?.img} alt="" />
       <div className="w-100">
         <div className="d-flex justify-content-between align-items-center w-100">

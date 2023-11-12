@@ -191,3 +191,47 @@ export const iUploadUp = (
     </defs>
   </svg>
 );
+
+export const iSend = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 20 20"
+    fill="none"
+  >
+    <g clip-path="url(#clip0_493_1014)">
+      <path
+        d="M1.67502 17.5L19.1667 10L1.67502 2.5L1.66669 8.33333L14.1667 10L1.66669 11.6667L1.67502 17.5Z"
+        fill="#2924FF"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_493_1014">
+        <rect width="20" height="20" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const leftArrow = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="30"
+    height="30"
+    viewBox="0 0 30 30"
+    fill="none"
+  >
+    <g clip-path="url(#clip0_493_1017)">
+      <path
+        d="M19.2625 20.2375L13.5375 14.5L19.2625 8.7625L17.5 7L10 14.5L17.5 22L19.2625 20.2375Z"
+        fill="white"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_493_1017">
+        <rect width="30" height="30" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);

@@ -169,3 +169,27 @@
   line-height: normal;
   padding: 1px 10px;
 }
+
+.msg-left-arrow {
+  width: 30px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Media query for devices with a maximum width of 767px (e.g., smartphones) */
+@media only screen and (max-width: 767px) {
+  /* sw-full */
+}
+
+/* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablets */
+}
+
+/* Media query for devices with a minimum width of 1024px (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+  /* Styles for desktops */
+}

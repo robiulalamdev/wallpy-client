@@ -19,11 +19,11 @@ const chats = [
   },
 ];
 
-const SidebarChats = () => {
+const SidebarChats = ({ open, setOpen }) => {
   return (
     <div className="message-chats-container p-3">
       {chats?.map((chat, index) => (
-        <SingleChat key={index} chat={chat} />
+        <SingleChat key={index} chat={chat} open={open} setOpen={setOpen} />
       ))}
     </div>
   );
