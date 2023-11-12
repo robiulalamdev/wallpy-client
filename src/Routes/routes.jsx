@@ -22,6 +22,7 @@ import OfficialBrands from "../pages/OfficialBrands/OfficialBrands";
 import Messages from "../pages/Messages/Messages";
 import MediaCenter from "../pages/MediaCenter/MediaCenter";
 import AccountSettings from "../pages/AccountSettings/AccountSettings";
+import Upload from "../pages/Upload/Upload";
 
 export const router = createBrowserRouter([
   {
@@ -59,6 +60,10 @@ export const router = createBrowserRouter([
       {
         path: "/account-settings",
         element: <AccountSettings />,
+      },
+      {
+        path: "/upload",
+        element: <Upload />,
       },
     ],
   },

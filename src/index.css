@@ -147,3 +147,54 @@ hr {
   line-height: normal;
   text-align: center;
 }
+
+/* global */
+.td-tab-container h1 {
+  color: #fff;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+
+.td-tab-container {
+  width: 189px;
+  height: 45px !important;
+  max-height: 45px !important;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.td-tab-container button {
+  width: 74px;
+  height: 33px;
+  border-radius: 100px;
+  color: #fff !important;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.td-tab-tab-container .td-tab-active-btn {
+  width: 74px;
+  height: 33px;
+  border-radius: 100px;
+  background: #dd2e44;
+}
+
+.td-tab-container .td-tab-dactive-btn {
+  width: 74px;
+  height: 33px;
+  border-radius: 100px;
+}
+
+.td-tab-btn-bg-visible {
+  background-color: #0ab745 !important;
+}
+.td-tab-btn-bg-hide {
+  background-color: #ff003d !important;
+}

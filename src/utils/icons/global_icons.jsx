@@ -147,3 +147,47 @@ export const iAdd_circle = (
     </defs>
   </svg>
 );
+
+export const iAdd = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="17"
+    height="17"
+    viewBox="0 0 17 17"
+    fill="none"
+  >
+    <g clip-path="url(#clip0_1874_2891)">
+      <path
+        d="M13.4583 9.20817H9.20833V13.4582H7.79166V9.20817H3.54166V7.7915H7.79166V3.5415H9.20833V7.7915H13.4583V9.20817Z"
+        fill="#323232"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_1874_2891">
+        <rect width="17" height="17" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const iUploadUp = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="15"
+    height="15"
+    viewBox="0 0 15 15"
+    fill="none"
+  >
+    <g clip-path="url(#clip0_964_3623)">
+      <path
+        d="M5.625 10H9.375V6.25H11.875L7.5 1.875L3.125 6.25H5.625V10ZM3.125 11.25H11.875V12.5H3.125V11.25Z"
+        fill="#C4C4C4"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_964_3623">
+        <rect width="15" height="15" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
