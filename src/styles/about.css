@@ -5,16 +5,24 @@
 .about-container .about-title {
   color: #fff;
   font-family: Bakbak One;
-  font-size: 25px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-align: center;
 }
 
-
 .about-container .about-content h1 {
-  color: #FFF;
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-content {
+  color: #fff;
   font-family: Bakbak One;
   font-size: 65px;
   font-style: normal;
@@ -23,17 +31,17 @@
 }
 
 .about-container .about-content h6 {
-  color: #FF006B;
-font-family: Lato;
-font-size: 20px;
-font-style: normal;
-font-weight: 800;
-line-height: normal;
-margin: 50px 0;
+  color: #ff006b;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin: 50px 0;
 }
 
 .about-container .about-content p {
-  color: #FFF;
+  color: #fff;
   font-family: Lato;
   font-size: 18px;
   font-style: normal;
@@ -42,31 +50,40 @@ margin: 50px 0;
   margin-top: 25px;
 }
 
+.wps-title {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 65px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
 
 /* Responsive Design for Small Screens (Mobile Devices) */
 @media only screen and (max-width: 767px) {
-
   .about-container .about-content h1 {
     font-size: 40px;
   }
-  
+
   .about-container .about-content h6 {
-  font-size: 16px;
-  margin: 20px 0;
+    font-size: 16px;
+    margin: 20px 0;
   }
-  
+
   .about-container .about-content p {
     font-size: 14px;
     font-weight: 400;
+  }
+  .about-container .about-img {
+    height: 299px;
   }
 }
 
 /* Responsive Design for Medium Screens (Tablets) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
- 
 }
 
 /* Responsive Design for Large Screens (Desktops) */
 @media only screen and (min-width: 1024px) {
- 
 }

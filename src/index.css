@@ -204,6 +204,10 @@ hr {
   .sw-full {
     width: 100% !important;
   }
+
+  .title {
+    font-size: 16px;
+  }
 }
 
 /* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */

@@ -69,6 +69,10 @@ export const router = createBrowserRouter([
         path: "/profile",
         element: <Profile />,
       },
+      {
+        path: "/about",
+        element: <About />,
+      },
     ],
   },
   {
@@ -100,10 +104,6 @@ export const router = createBrowserRouter([
     element: <WallPaper />,
   },
 
-  {
-    path: "/about",
-    element: <About />,
-  },
   {
     path: "/copyright-information",
     element: <CopyrightInformation />,
