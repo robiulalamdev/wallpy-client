@@ -9,16 +9,20 @@ const CommunityRules = () => {
     <>
       <Header />
       <div className="container mx-auto cmr-container">
-        <h1 className="cmr-title">Community Rules</h1>
+        <h1 className="title">Community Rules</h1>
         <hr style={{ border: "1px solid #5A5A5A" }} />
 
         <div className="position-relative">
-          <img src={banner} style={{ maxHeight: "294px" }} alt="" />
+          <img
+            src={banner}
+            style={{ maxHeight: "294px", minHeight: "131px" }}
+            alt=""
+          />
           <div className="cmr-img-overlay"></div>
         </div>
         <div className="cmr-content-container mt-4">
           <h1 className="cmr-title">General Rules</h1>
-          <ol>
+          <ol className="ps-0">
             <p className="mt-3">
               <span className="fw-bold">
                 1.- Always respect copyright and intellectual property rights:
@@ -43,7 +47,7 @@ const CommunityRules = () => {
               prohibited. See further details below:
             </p>
 
-            <ul className="ms-4 mt-3">
+            <ul className="ms-md-4 mt-3">
               <li>
                 <span>Explicit Content:</span> The platform does not permit
                 explicit sexual content in any form. Example: Nudes.
@@ -67,7 +71,7 @@ const CommunityRules = () => {
             <p className="mt-3">
               <span className="fw-bold">7.- Promotional Materials:</span>{" "}
               Content with significant watermarks, red carpet or press event
-              photos, and low-resolution samples should not be uploaded. 
+              photos, and low-resolution samples should not be uploaded.
             </p>
             <p className="mt-3">
               <span className="fw-bold">8.- High-Quality Screenshots:</span>{" "}
@@ -78,7 +82,7 @@ const CommunityRules = () => {
             <p className="mt-3">
               <span className="fw-bold">9.- Disturbing Content:</span> The
               platform strictly prohibits content featuring gore or any other
-              disturbing and offensive materials. 
+              disturbing and offensive materials.
             </p>
             <p className="mt-3">
               <span className="fw-bold">10.- Tagging and Flagging:</span>
@@ -110,7 +114,7 @@ const CommunityRules = () => {
               <span style={{ color: "#0AB745", fontWeight: "bold" }}>SFW</span>{" "}
               content comprises images that are neither explicit nor sexual in
               nature. These images are appropriate for a wide audience and often
-              include graphics, artwork, and content suitable for all ages. 
+              include graphics, artwork, and content suitable for all ages.
             </li>
             <li className="mt-2">
               <span style={{ color: "#FD0020", fontWeight: "bold" }}>NSFW</span>{" "}
