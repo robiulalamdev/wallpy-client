@@ -1,14 +1,11 @@
 import React from "react";
-import Header from "../../Shared/Header/Header";
-import Footer from "../../Shared/Footer/Footer";
 import "../../styles/privacyPolicy.css";
 
 const PrivacyPolicy = () => {
   return (
     <>
-      <Header />
       <div className="container mx-auto pp-container">
-        <h1 className="pp-title">Community Rules</h1>
+        <h1 className="title">Privacy Policy</h1>
         <hr style={{ border: "1px solid #5A5A5A" }} />
 
         <div className="pp-content-container mt-4">
@@ -88,8 +85,6 @@ const PrivacyPolicy = () => {
           </p>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

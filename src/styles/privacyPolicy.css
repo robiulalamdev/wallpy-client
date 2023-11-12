@@ -68,3 +68,26 @@
   font-weight: 800;
   line-height: normal;
 }
+
+/* Media query for devices with a maximum width of 767px (e.g., smartphones) */
+@media only screen and (max-width: 767px) {
+  .pp-content-container span {
+    font-size: 12px;
+  }
+  .pp-content-container li {
+    font-size: 12px;
+  }
+  .pp-content-container p {
+    font-size: 12px !important;
+  }
+}
+
+/* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablets */
+}
+
+/* Media query for devices with a minimum width of 1024px (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+  /* Styles for desktops */
+}

@@ -85,6 +85,10 @@ export const router = createBrowserRouter([
         path: "/community-rules",
         element: <CommunityRules />,
       },
+      {
+        path: "/privacy-policy",
+        element: <PrivacyPolicy />,
+      },
     ],
   },
   {
@@ -116,10 +120,6 @@ export const router = createBrowserRouter([
     element: <WallPaper />,
   },
 
-  {
-    path: "/privacy-policy",
-    element: <PrivacyPolicy />,
-  },
   {
     path: "/terms-and-conditions",
     element: <TermsConditions />,
