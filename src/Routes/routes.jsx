@@ -81,6 +81,10 @@ export const router = createBrowserRouter([
         path: "/socials",
         element: <Socials />,
       },
+      {
+        path: "/community-rules",
+        element: <CommunityRules />,
+      },
     ],
   },
   {
@@ -112,10 +116,6 @@ export const router = createBrowserRouter([
     element: <WallPaper />,
   },
 
-  {
-    path: "/community-rules",
-    element: <CommunityRules />,
-  },
   {
     path: "/privacy-policy",
     element: <PrivacyPolicy />,
