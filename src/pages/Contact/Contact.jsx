@@ -10,7 +10,7 @@ const Contact = () => {
       <h1 className="title">Contact Us</h1>
       <hr style={{ border: "1px solid #5A5A5A" }} />
       <section className="row contact-main mx-auto p-3 p-md-4 h-100">
-        <div className="col-md-6 pe-md-4">
+        <div className="col-md-6 px-0 pe-md-4">
           <img className="w-100 h-100" src={img1} alt="" />
         </div>
         <div className="col-md-6 ps-md-4 mt-4 m-md-0 contact-content-section h-100 text-center py-4">
@@ -40,7 +40,7 @@ const Contact = () => {
                   placeholder="E-mail"
                 />
                 <textarea
-                  className="contact-input mt-4 py-2"
+                  className="contact-input mt-4 py-2 border-0"
                   style={{ minHeight: "100px" }}
                   name="message"
                   placeholder="Your message"
@@ -65,7 +65,7 @@ const Contact = () => {
                 response.
               </p>
               <Link to="/">
-                <button className="contact-return-btn">Return Home</button>
+                <button className="contact-return-btn mt-4">Return Home</button>
               </Link>
             </div>
           )}
