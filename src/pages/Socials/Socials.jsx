@@ -14,9 +14,8 @@ const items = [icon1, icon2, icon3, icon4, icon5];
 const Socials = () => {
   return (
     <>
-      <Header />
       <div className="container mx-auto socials-container">
-        <h1 className="socials-title">Socials</h1>
+        <h1 className="title">Socials</h1>
         <hr style={{ border: "1px solid #5A5A5A" }} />
 
         <div className="position-relative">
@@ -26,14 +25,12 @@ const Socials = () => {
 
         <section className="row">
           {items?.map((item, index) => (
-            <div key={index} className="col-6 col-md-4 mt-4">
+            <div key={index} className="col-4 p-2 p-md-4 mt-0 mt-md-4">
               <img src={item} className="" alt="" />
             </div>
           ))}
         </section>
       </div>
-
-      <Footer />
     </>
   );
 };

@@ -77,6 +77,10 @@ export const router = createBrowserRouter([
         path: "/copyright-information",
         element: <CopyrightInformation />,
       },
+      {
+        path: "/socials",
+        element: <Socials />,
+      },
     ],
   },
   {
@@ -108,10 +112,6 @@ export const router = createBrowserRouter([
     element: <WallPaper />,
   },
 
-  {
-    path: "/socials",
-    element: <Socials />,
-  },
   {
     path: "/community-rules",
     element: <CommunityRules />,
