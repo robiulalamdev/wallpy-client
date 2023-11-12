@@ -6,9 +6,8 @@ import "../../styles/termsCondition.css";
 const TermsConditions = () => {
   return (
     <>
-      <Header />
       <div className="container mx-auto terms-condition-container">
-        <h1 className="pp-title">Terms and Conditions</h1>
+        <h1 className="title">Terms and Conditions</h1>
         <hr style={{ border: "1px solid #5A5A5A" }} />
 
         <div className="top-section">
@@ -93,8 +92,6 @@ const TermsConditions = () => {
           </p>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };

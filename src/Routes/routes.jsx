@@ -89,6 +89,10 @@ export const router = createBrowserRouter([
         path: "/privacy-policy",
         element: <PrivacyPolicy />,
       },
+      {
+        path: "/terms-and-conditions",
+        element: <TermsConditions />,
+      },
     ],
   },
   {
@@ -118,10 +122,5 @@ export const router = createBrowserRouter([
   {
     path: "/wallpaper",
     element: <WallPaper />,
-  },
-
-  {
-    path: "/terms-and-conditions",
-    element: <TermsConditions />,
   },
 ]);
