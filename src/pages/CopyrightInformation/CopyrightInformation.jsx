@@ -1,15 +1,12 @@
 import React from "react";
-import Header from "../../Shared/Header/Header";
-import Footer from "../../Shared/Footer/Footer";
 import "../../styles/copyrightInfo.css";
 import banner from "../../assets/images/copyright-info/banner.png";
 
 const CopyrightInformation = () => {
   return (
     <>
-      <Header />
       <div className="container mx-auto ci-container">
-        <h1 className="ci-title">Copyright Information</h1>
+        <h1 className="title">Copyright Information</h1>
         <hr style={{ border: "1px solid #5A5A5A" }} />
 
         <div className="position-relative">
@@ -17,7 +14,7 @@ const CopyrightInformation = () => {
           <div className="ci-img-overlay"></div>
         </div>
         <div className="ci-content-container">
-          <p className="mt-5">
+          <p className="mt-3 mt-md-5">
             <span className="fw-bold">Ownership of Artwork:</span> We, at WPS,
             do not claim ownership of any artwork shared or posted within this
             website. Our platform is designed to enable users to upload content
@@ -27,14 +24,14 @@ const CopyrightInformation = () => {
             procedures outlined below.
           </p>
 
-          <p className="mt-5">
+          <p className="mt-3 mt-md-5">
             <span className="fw-bold">Claiming Ownership:</span> If you are the
             rightful owner of any artwork displayed on The Wallpaper Society and
             wish to assert your ownership, we kindly request that you contact us
             with the following details:
           </p>
 
-          <ul className="mt-5">
+          <ul className="mt-3 mt-md-5">
             <li>A detailed description of the artwork in question.</li>
             <li>Your full name and contact information.</li>
             <li>
@@ -43,39 +40,39 @@ const CopyrightInformation = () => {
             </li>
           </ul>
 
-          <p className="mt-5">
+          <p className="mt-3 mt-md-5">
             Upon receipt of this information, we will promptly review your claim
             and, if substantiated, take the necessary actions to acknowledge
             your ownership rights.
           </p>
 
-          <p className="mt-5">
+          <p className="mt-3 mt-md-5">
             <span>Reporting a Listing:</span> We take copyright infringement
             seriously and are committed to upholding the rights of artists and
             creators. If you believe that your copyrighted work has been posted
             on The Wallpaper Society without your consent, please follow these
             steps to report the listing
           </p>
-          <ul className="mt-5">
+          <ul className="mt-3 mt-md-5">
             <li>Provide the URL of the infringing content.</li>
             <li>Explain how your copyright is being violated.</li>
             <li>Include your contact information for correspondence.</li>
           </ul>
 
-          <p className="mt-5">
+          <p className="mt-3 mt-md-5">
             Upon receiving your report, we will initiate a prompt investigation
             and take appropriate actions, including content removal, in
             accordance with the applicable laws and regulations.
           </p>
 
-          <p className="mt-5">
+          <p className="mt-3 mt-md-5">
             <span>General Copyright Information:</span> It is important for all
             users of The Wallpaper Society to respect copyright laws and the
             intellectual property rights of others. Please be aware of the
             following:
           </p>
 
-          <ul className="mt-5">
+          <ul className="mt-3 mt-md-5">
             <li>
               Do not upload, share, or use any content for which you do not have
               the necessary permissions or rights.
@@ -90,7 +87,7 @@ const CopyrightInformation = () => {
             </li>
           </ul>
 
-          <p className="mt-5">
+          <p className="mt-3 mt-md-5">
             <span>Contact Information:</span> For any copyright-related concerns
             or inquiries, please reach out to us at
             copyrights@wallpapersociety.com Thank you for your cooperation and
@@ -100,8 +97,6 @@ const CopyrightInformation = () => {
           </p>
         </div>
       </div>
-
-      <Footer />
     </>
   );
 };
