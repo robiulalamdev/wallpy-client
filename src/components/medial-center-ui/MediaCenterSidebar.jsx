@@ -12,13 +12,13 @@ const MediaCenterSidebar = ({ open }) => {
               <h1>Remove from list</h1>
               <button className="mt-3">Remove</button>
             </div>
-            <div className="hide-profile-container mt-5">
+            <div className="hide-profile-container mt-5 mb-2">
               <h1>Hide from profile</h1>
               <div className="mc-tab-container d-flex justify-content-around align-items-center mx-auto mt-3">
                 {["Visible", "Hidden"]?.map((t, i) => (
                   <button
                     onClick={() => setProfileTab(t)}
-                    className={`${
+                    className={` text-white ${
                       profileTab === t
                         ? `mc-active-btn ${
                             profileTab === "Visible"

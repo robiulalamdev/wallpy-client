@@ -235,3 +235,19 @@ export const leftArrow = (
     </defs>
   </svg>
 );
+
+export const iDrawerBack = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="40"
+    height="40"
+    viewBox="0 0 40 40"
+    fill="none"
+  >
+    <rect width="40" height="40" rx="10" fill="black" fill-opacity="0.6" />
+    <path
+      d="M20 29.4473L21.7625 27.7335L14.7875 20.9393H30V18.5085H14.7875L21.7625 11.7143L20 10.0005L10 19.7239L20 29.4473Z"
+      fill="#BCBCBC"
+    />
+  </svg>
+);
