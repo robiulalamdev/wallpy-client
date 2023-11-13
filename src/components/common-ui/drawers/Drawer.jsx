@@ -9,7 +9,7 @@ const Drawer = ({ open, setOpen, children, ...props }) => {
       onHide={() => setOpen(false)}
       className="h-100"
       {...props}
-      style={{ backgroundColor: "#121212" }}
+      style={{ backgroundColor: "#121212", zIndex: 99999999 }}
     >
       <Offcanvas.Body className="h-100" style={{ backgroundColor: "#121212" }}>
         <div className="d-flex justify-content-end">
