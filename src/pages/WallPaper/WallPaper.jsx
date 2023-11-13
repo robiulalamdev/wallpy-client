@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Wallpaper.css";
 import profile from "../../assets/profile.png";
 import logo from "../../assets/logo.png";
@@ -19,200 +19,30 @@ import downArrow from "../../assets/downArrow.png";
 import arrow_down_light from "../../assets/arrow_down_light.png";
 import library_add from "../../assets/library_add.png";
 import { Link } from "react-router-dom";
-// import downArrow from '../../assets/downArrow.png';
+import WallpaperSidebar from "../../components/wallpapers-ui/WallpaperSidebar";
+import img from "../../assets/icons/mixer.png";
+import Drawer from "../../components/common-ui/drawers/Drawer";
 const WallPaper = () => {
+  const [open, setOpen] = useState(false);
   return (
-    <>
+    <div className="container">
       <div className="bgShadowTop">
-        <header>
-          <nav className="navbar navbar-expand-lg">
-            <div className="container custom_Container">
-              <Link className="navbar-brand" to="/">
-                <img src={logo} alt="Logo" />
-              </Link>
-              <button
-                className="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-              >
-                <span className="navbar-toggler-icon">
-                  <i className="fa fa-bars"></i>
-                </span>
-              </button>
-              <div
-                className="collapse navbar-collapse"
-                id="navbarSupportedContent"
-              >
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0 align-items-center">
-                  <li className="nav-item">
-                    <form className="d-flex">
-                      <div className="searchNav" style={{ maxWidth: "348px" }}>
-                        <input
-                          className="w-100"
-                          type="search"
-                          placeholder="Find your next wallpaper..."
-                        />
-                      </div>
-                    </form>
-                  </li>
-                </ul>
-                <div className="text-center">
-                  <Link className="backBtn" to="/">
-                    <img className="me-2" src={left_light} alt="Left Arrow" />
-                    Back
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </header>
-
         <section>
-          <div className="container custom_Container">
+          <div className="custom_Container">
             <div className="d-flex justify-content-center align-items-start gap-2 all_mb">
-              <div className="sideBar fontBak h-100">
-                <p className="text-center mb-3">Posted by</p>
-                <div className="d-flex justify-content-center align-items-center gap-5 mb-4">
-                  <div
-                    className="text-center"
-                    style={{ height: "75px", width: "75px" }}
-                  >
-                    <img
-                      className="sideImgPro"
-                      src={profile}
-                      alt="Profile Image"
-                    />
-                  </div>
-                  <div className="d-flex flex-column justify-content-center align-items-center gap-2">
-                    <h3>
-                      krs
-                      <img src={Verified} alt="Verified" />
-                    </h3>
-                    <div className="d-flex justify-content-center gap-3 align-items-center mb-4">
-                      <Link to="/">
-                        <img src={twitter} alt="Twitter" />
-                      </Link>
-                      <Link to="/">
-                        <img src={behance} alt="Behance" />
-                      </Link>
-                      <Link to="/">
-                        <img src={dribble} alt="Dribble" />
-                      </Link>
-                      <Link to="/">
-                        <img src={instagram} alt="Instragram" />
-                      </Link>
-                    </div>
-                    <Link
-                      className="viewProfile"
-                      to="#"
-                      style={{ fontSize: "10px" }}
-                    >
-                      View Profile
-                    </Link>
-                  </div>
-                </div>
-                <hr />
-
-                <div className="d-flex flex-column align-items-center gap-1 mb-3">
-                  <p style={{ color: "#ccc" }}>Dimensions</p>
-                  <p>3840 x 2160</p>
-                  <div>
-                    <p style={{ color: "#ccc", fontSize: "12px" }}>
-                      Size Configuration
-                      <img src={filter_alt} alt="img" />
-                    </p>
-                  </div>
-                </div>
-
-                <div className="mb-3">
-                  <p className="text-center mb-2" style={{ color: "#ccc" }}>
-                    Tag
-                  </p>
-                  <p
-                    className="text-center"
-                    style={{ color: "#FDF516", fontSize: "12px" }}
-                  >
-                    SFW
-                  </p>
-                  <div className="tag">
-                    <span>#cod</span>
-                    <span>#callofduty</span>
-                    <span>#ghost</span>
-                    <span> #gaming</span>
-                    <span> #wallpaper</span>
-                    <span>#illustration</span>
-                    <span>#shooter</span>
-                    <span>#mw2</span>
-                  </div>
-                </div>
-
-                <div className="mb-3">
-                  <p className="text-center mb-2" style={{ color: "#ccc" }}>
-                    Statistics & Information
-                  </p>
-                  <div className="info d-flex justify-content-between gap-4">
-                    <div>
-                      <p>
-                        Views: <span>8947</span>
-                      </p>
-                      <p>
-                        Category:: <span>Gaming</span>
-                      </p>
-                    </div>
-                    <div>
-                      <p>
-                        Favorites:: <span>1489</span>
-                      </p>
-                      <p>
-                        Size:: <span>12.2MB</span>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="mb-4">
-                  <p className="text-center mb-3" style={{ color: "#ccc" }}>
-                    Credits
-                  </p>
-                  <div className="info">
-                    <p>Source:</p>
-                    <p>Original Author:</p>
-                  </div>
-                </div>
-
-                <div className="text-center mb-4">
-                  <button className="downLoadBtn">
-                    Download
-                    <img src={arrow_down_light} alt="" />
-                  </button>
-                </div>
-
-                <div className="ownerShip d-flex flex-column gap-4">
-                  <p
-                    className="text-center"
-                    style={{ color: "#5A5A5A", fontSize: "12px" }}
-                  >
-                    Ownership of all images belongs to their respective original
-                    owners & illustrators.
-                  </p>
-                  <div className="listBtn d-flex justify-content-center align-items-center gap-3">
-                    <button className="text-white">Claim Listing</button>
-                    <button className="text-white">Remove Listing</button>
-                  </div>
-
-                  <div className="d-flex justify-content-center align-items-center gap-3">
-                    <Link to="/">Privacy Policy</Link>
-                    <Link to="/">Terms and Conditions</Link>
-                  </div>
-                </div>
+              <div className="d-none d-md-block">
+                <WallpaperSidebar />
               </div>
               <div className="wallpaper fontBak">
                 {/* <img className="img-fluid" src={wallpaper} alt="WallPaper" /> */}
                 <div className="btnPosition d-flex justify-content-end gap-3">
+                  <img
+                    onClick={() => setOpen(!open)}
+                    className="d-md-none"
+                    style={{ width: "57px" }}
+                    src={img}
+                    alt=""
+                  />
                   <div className="addLibrary">
                     <button>
                       <span>
@@ -318,98 +148,19 @@ const WallPaper = () => {
             </span>
           </div>
         </section>
-
-        <footer>
-          <div className="container">
-            <div className="row gy-2">
-              <div className="col-12 col-md-6">
-                <p>THE WALLPAPER SOCIETY</p>
-              </div>
-              <div className="col-12 col-md-2">
-                <ul>
-                  <li>Navigation</li>
-                  <li>
-                    <Link to="/">Home</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Account</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Favorites</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Messages</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Site Map</Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-12 col-md-2">
-                <ul>
-                  <li>Top Categories</li>
-                  <li>
-                    <Link to="/">Gaming</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Anime</Link>
-                  </li>
-                  <li>
-                    <Link to="/">4K</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Japan</Link>
-                  </li>
-                </ul>
-              </div>
-              <div className="col-12 col-md-2">
-                <ul>
-                  <li>The Society</li>
-                  <li>
-                    <Link to="/">About</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Contact</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Copyright Information</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Socials</Link>
-                  </li>
-                  <li>
-                    <Link to="/">Sponsors / Advertisers</Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <hr />
-            <div className="footerBottom d-flex flex-column flex-md-row justify-content-center align-items-center gap-4">
-              <span>© The Wallpapers Society</span>
-              <span>
-                <Link to="/">Community Rules</Link>
-              </span>
-              <span>
-                <Link to="/">Privacy Policy</Link>
-              </span>
-              <span>
-                <Link to="/">Terms and Conditions</Link>
-              </span>
-              <div className="themeChangeBtn d-flex justify-content-center align-items-center gap-1">
-                <div
-                  className="d-flex justify-content-center align-items-center"
-                  style={{ gap: "2px" }}
-                >
-                  <img src={Moon} alt="img" />
-                  Dark
-                </div>
-                <img src={downArrow} alt="img" />
-              </div>
-            </div>
-          </div>
-        </footer>
       </div>
-    </>
+
+      <Drawer
+        open={open}
+        setOpen={setOpen}
+        {...{
+          scroll: false,
+          backdrop: false,
+        }}
+      >
+        <WallpaperSidebar />
+      </Drawer>
+    </div>
   );
 };
 

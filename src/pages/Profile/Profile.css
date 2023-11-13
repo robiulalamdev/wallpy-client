@@ -23,10 +23,10 @@
   right: 20px;
 }
 
-.profile_photo {
+.profile-container {
   position: absolute;
-  left: -59px;
-  bottom: -85px;
+  left: 0px;
+  bottom: -80px;
 }
 
 .profileDetail {
@@ -187,8 +187,10 @@
 }
 
 .ownWall {
-  width: 252px !important;
-  height: 138px !important;
+  max-width: 252px !important;
+  max-height: 138px !important;
+  height: 100% !important;
+  border-radius: 10px;
 }
 
 .profile-tab-container {
@@ -217,4 +219,57 @@
   background: rgba(0, 0, 0, 0.5);
 }
 
+.profile-description {
+  color: #fff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150.5%; /* 18.06px */
+}
+
 /* Profile Page End */
+
+/* Media query for devices with a maximum width of 767px (e.g., smartphones) */
+@media only screen and (max-width: 767px) {
+  .cover_photo {
+    height: 102px;
+    border-radius: 10px;
+  }
+  .profile_photo,
+  .profile_photo img {
+    width: 49px;
+    height: 49px;
+    border-radius: 125px;
+  }
+  .profile-container {
+    display: absolute;
+    bottom: -30px;
+    height: 300px;
+  }
+  .profile-container h3 {
+    font-size: 20px !important;
+    margin-top: 100px;
+  }
+  .profile-container span {
+    font-size: 12px !important;
+  }
+  .msgBtn {
+    width: fit-content !important;
+    height: fit-content !important;
+  }
+  .ownWall {
+    height: 152px !important;
+    object-fit: cover;
+  }
+}
+
+/* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablets */
+}
+
+/* Media query for devices with a minimum width of 1024px (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+  /* Styles for desktops */
+}

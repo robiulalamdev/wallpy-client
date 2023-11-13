@@ -93,6 +93,10 @@ export const router = createBrowserRouter([
         path: "/terms-and-conditions",
         element: <TermsConditions />,
       },
+      {
+        path: "/wallpaper",
+        element: <WallPaper />,
+      },
     ],
   },
   {
@@ -118,9 +122,5 @@ export const router = createBrowserRouter([
   {
     path: "/searchPage",
     element: <SearchPage />,
-  },
-  {
-    path: "/wallpaper",
-    element: <WallPaper />,
   },
 ]);
