@@ -52,7 +52,9 @@ input {
 }
 
 .container {
-  max-width: 1596px;
+  max-width: 1596px !important;
+  padding: 0 16px !important;
+  margin: 0 auto !important;
 }
 
 .custom_Container {

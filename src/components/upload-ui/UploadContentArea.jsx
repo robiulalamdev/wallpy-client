@@ -36,7 +36,7 @@ const UploadContentArea = ({ images, setImages }) => {
       ) : (
         <div className="w-100 d-flex flex-column justify-content-between gap-4">
           <section className="row">
-            <div className="col-6 col-md-4 col-lg-3 mc-card ps-0 mb-3">
+            <div className="col-4 col-lg-3 mc-card px-2 ps-md-2 mb-3">
               <img
                 className="w-100 h-100"
                 src={img1}
@@ -44,7 +44,7 @@ const UploadContentArea = ({ images, setImages }) => {
                 style={{ objectFit: "cover", borderRadius: "10px" }}
               />
             </div>
-            <div className="col-6 col-md-4 col-lg-3 mc-card ps-0 mb-3">
+            <div className="col-4 col-lg-3 mc-card px-2 ps-md-2 mb-3">
               <img
                 className="w-100 h-100"
                 src={img1}
