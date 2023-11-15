@@ -109,9 +109,12 @@
   right: 5%;
   border-radius: 5px;
   background: rgba(39, 39, 39, 0.9);
-  padding: 17px 28px;
+  padding: 16px;
   visibility: hidden;
   opacity: 0;
+  width: 224px;
+  height: 257px;
+  overflow-y: auto;
 }
 
 .addLibrary .libraryOption {
@@ -234,6 +237,34 @@ input[type="number"] {
   max-width: 545px;
   height: 277px;
   border-radius: 15px;
+}
+
+.search-collections input {
+  width: 145px;
+  height: 31px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.search-collections button {
+  width: 27px;
+  height: 27px;
+}
+
+.collection-list {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 8px;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #414141;
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* Media query for devices with a maximum width of 767px (e.g., smartphones) */

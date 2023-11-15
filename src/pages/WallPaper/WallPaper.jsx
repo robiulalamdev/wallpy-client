@@ -22,8 +22,15 @@ import { Link } from "react-router-dom";
 import WallpaperSidebar from "../../components/wallpapers-ui/WallpaperSidebar";
 import img from "../../assets/icons/mixer.png";
 import Drawer from "../../components/common-ui/drawers/Drawer";
-import { iDownload, iShare } from "../../utils/icons/global_icons";
+import { add_box, iDownload, iShare } from "../../utils/icons/global_icons";
 import download from "../../assets/icons/download.svg";
+const items = [
+  { id: 1, name: "Call of Duty" },
+  { id: 2, name: "World of Warcraft" },
+  { id: 3, name: "League of Legends" },
+  { id: 4, name: "Anime" },
+  { id: 5, name: "Landscapes" },
+];
 const WallPaper = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -58,43 +65,25 @@ const WallPaper = () => {
                       </span>
                     </button>
                     <div className="libraryOption">
-                      <div className="searchWallpaper mb-4">
+                      <div className="search-collections justify-content-between d-flex align-items-center gap-2">
                         <input
-                          className="fontBak w-100"
+                          className="flex-grow w-100 px-1"
                           type="search"
                           placeholder="Search Collections"
                         />
+                        <button>{add_box}</button>
                       </div>
-                      <div className="d-flex flex-column justify-content-start align-items-start gap-1">
-                        <button className="fontBak">
-                          <img
-                            className="img-fluid"
-                            src={photo_library}
-                            alt="img"
-                          />
-                          Call of Duty
-                        </button>
-                        <hr className="w-100" />
-                        <button className="fontBak">
-                          <img src={photo_library} alt="img" />
-                          World of Warcraft
-                        </button>
-                        <hr className="w-100" />
-                        <button className="fontBak">
-                          <img src={photo_library} alt="img" />
-                          League of Legends
-                        </button>
-                        <hr className="w-100" />
-                        <button className="fontBak">
-                          <img src={photo_library} alt="img" />
-                          Anime
-                        </button>
-                        <hr className="w-100" />
-                        <button className="fontBak">
-                          <img src={photo_library} alt="img" />
-                          Landscapes
-                        </button>
-                        <hr className="w-100" />
+                      <div className="d-flex flex-column justify-content-start align-items-start">
+                        {items?.map((item, index) => (
+                          <button className="collection-list border-bottom w-100">
+                            <img
+                              className="img-fluid"
+                              src={photo_library}
+                              alt="img"
+                            />
+                            {item?.name}
+                          </button>
+                        ))}
                       </div>
                     </div>
                   </div>

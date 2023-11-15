@@ -312,3 +312,25 @@ export const redClose = (
     </defs>
   </svg>
 );
+
+export const add_box = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="27"
+    height="27"
+    viewBox="0 0 27 27"
+    fill="none"
+  >
+    <g clip-path="url(#clip0_325_2020)">
+      <path
+        d="M20 6H4.25C3.00125 6 2 7.0125 2 8.25V24C2 25.2375 3.00125 26.25 4.25 26.25H20C21.2375 26.25 22.25 25.2375 22.25 24V8.25C22.25 7.0125 21.2375 6 20 6ZM17.75 17.25H13.25V21.75H11V17.25H6.5V15H11V10.5H13.25V15H17.75V17.25Z"
+        fill="white"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_325_2020">
+        <rect width="27" height="27" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
