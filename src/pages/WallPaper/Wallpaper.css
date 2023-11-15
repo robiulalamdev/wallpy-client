@@ -1,17 +1,14 @@
-
-
 /* WallPaper Page Start */
 
 .wallpaper {
-    position: relative;
-    background-image: url("../../assets/wallpaper.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 802px;
-    width: 1442px;
+  position: relative;
+  background-image: url("../../assets/wallpaper.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 802px;
+  width: 1442px;
 }
-
 
 /* .addLibrary img,
 .like img {
@@ -20,139 +17,251 @@
 } */
 
 .sideBar {
-    width: 347px;
-    height: 100%;
-    padding: 15px 23px;
-    border-radius: 10px;
-    background: rgba(0, 0, 0, 0.20);
+  width: 347px;
+  height: 100%;
+  padding: 15px 23px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .sideImgPro {
-    height: 75px;
-    width: 75px;
-    border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
 }
 
 .sideBar p {
-    font-size: 15px;
+  font-size: 15px;
 }
 
 .sideBar h3 {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .sideBar hr,
 .libraryOption hr {
-    color: #939393 !important;
+  color: #939393 !important;
 }
 
 .tag span,
 .info p,
 .listBtn {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .info p span {
-    color: #CCC;
+  color: #ccc;
 }
 
 .downLoadBtn {
-    padding: 5px 21px;
-    border-radius: 5px !important;
-    background: #2924FF !important;
-    color: #C4C4C4 !important;
-    transition: 0.4s ease-in-out;
+  padding: 5px 21px;
+  border-radius: 5px !important;
+  background: #2924ff !important;
+  color: #c4c4c4 !important;
+  transition: 0.4s ease-in-out;
 }
 
 .downLoadBtn:hover {
-    opacity: .9;
+  opacity: 0.9;
 }
 
 .listBtn button {
-    transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .listBtn button:hover {
-    color: #FDF516 !important;
+  color: #fdf516 !important;
 }
 
 .ownerShip {
-    background: #141414;
-    padding: 9px 18px;
-    border-radius: 5px;
-    font-size: 12px;
+  background: #141414;
+  padding: 9px 18px;
+  border-radius: 5px;
+  font-size: 12px;
 }
 
 .ownerShip a {
-    color: #D9D9D9;
-    font-family: var(--roboto);
-    font-size: 10px;
-    font-weight: 500;
-    transition: 0.4s ease-in-out;
+  color: #d9d9d9;
+  font-family: var(--roboto);
+  font-size: 10px;
+  font-weight: 500;
+  transition: 0.4s ease-in-out;
 }
 
 .ownerShip a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-
 
 .searchWallpaper input,
 .libraryOption,
 .libraryOption button {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .btnPosition {
-    padding: 21px 33px;
-    position: relative;
+  padding: 21px 33px;
+  position: relative;
 }
 
 .libraryOption {
-    position: absolute;
-    top: 95%;
-    right: 5%;
-    border-radius: 5px;
-    background: rgba(39, 39, 39, 0.90);
-    padding: 17px 28px;
-    visibility: hidden;
-    opacity: 0;
+  position: absolute;
+  top: 95%;
+  right: 5%;
+  border-radius: 5px;
+  background: rgba(39, 39, 39, 0.9);
+  padding: 17px 28px;
+  visibility: hidden;
+  opacity: 0;
 }
 
 .addLibrary .libraryOption {
-    transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .addLibrary:hover .libraryOption {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
 
-
 .searchWallpaper {
-    z-index: 999999;
-    background-image: url("../../assets/Search.png");
-    background-repeat: no-repeat;
-    background-position: center left 2%;
-    background-size: initial;
-    border-radius: 5px;
-    background-color: #0D0D0D;
+  z-index: 999999;
+  background-image: url("../../assets/Search.png");
+  background-repeat: no-repeat;
+  background-position: center left 2%;
+  background-size: initial;
+  border-radius: 5px;
+  background-color: #0d0d0d;
 }
 
 .searchWallpaper input {
-    padding: 5px 5px 5px 30px;
+  padding: 5px 5px 5px 30px;
 }
 
 .searchWallpaper input::placeholder {
-    color: #5A5A5A !important;
-    font-size: 10px !important;
+  color: #5a5a5a !important;
+  font-size: 10px !important;
 }
 
 .libraryOption button {
-    transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .libraryOption button:hover {
-    color: #FDF516;
+  color: #fdf516;
 }
 
+.home-bb {
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.size-title {
+  max-width: 83px;
+  width: 100%;
+  height: 29px;
+  color: #fdf516;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.size-btn {
+  width: 83px;
+  /* width: 100%; */
+  height: 29px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.wh-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.wh-inputs input {
+  width: 79px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #939393;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-align: center;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.generate-btn {
+  width: 79px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  font-family: Lato;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.w-image {
+  max-width: 545px;
+  height: 277px;
+  border-radius: 15px;
+}
+
+/* Media query for devices with a maximum width of 767px (e.g., smartphones) */
+@media only screen and (max-width: 767px) {
+  .home-bb {
+    background-color: #141414;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  .w-image {
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+/* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablets */
+}
+
+/* Media query for devices with a minimum width of 1024px (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+  /* Styles for desktops */
+}
 /* WallPaper Page End */

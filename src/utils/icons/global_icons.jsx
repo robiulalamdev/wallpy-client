@@ -251,3 +251,64 @@ export const iDrawerBack = (
     />
   </svg>
 );
+
+export const iShare = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 20 20"
+    fill="none"
+  >
+    <g clip-path="url(#clip0_247_1578)">
+      <path
+        d="M15 13.3998C14.3667 13.3998 13.8 13.6498 13.3667 14.0415L7.425 10.5832C7.46667 10.3915 7.5 10.1998 7.5 9.99984C7.5 9.79984 7.46667 9.60817 7.425 9.4165L13.3 5.9915C13.75 6.40817 14.3417 6.6665 15 6.6665C16.3833 6.6665 17.5 5.54984 17.5 4.1665C17.5 2.78317 16.3833 1.6665 15 1.6665C13.6167 1.6665 12.5 2.78317 12.5 4.1665C12.5 4.3665 12.5333 4.55817 12.575 4.74984L6.7 8.17484C6.25 7.75817 5.65833 7.49984 5 7.49984C3.61667 7.49984 2.5 8.6165 2.5 9.99984C2.5 11.3832 3.61667 12.4998 5 12.4998C5.65833 12.4998 6.25 12.2415 6.7 11.8248L12.6333 15.2915C12.5917 15.4665 12.5667 15.6498 12.5667 15.8332C12.5667 17.1748 13.6583 18.2665 15 18.2665C16.3417 18.2665 17.4333 17.1748 17.4333 15.8332C17.4333 14.4915 16.3417 13.3998 15 13.3998Z"
+        fill="white"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_247_1578">
+        <rect width="20" height="20" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export const iDownload = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    stroke-width="1.5"
+    stroke="currentColor"
+    class="w-6 h-6"
+  >
+    <path
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25"
+    />
+  </svg>
+);
+
+export const redClose = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+  >
+    <g clip-path="url(#clip0_955_3083)">
+      <path
+        d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+        fill="#FF0000"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_955_3083">
+        <rect width="24" height="24" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);

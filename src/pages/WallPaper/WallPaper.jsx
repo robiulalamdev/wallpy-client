@@ -22,6 +22,8 @@ import { Link } from "react-router-dom";
 import WallpaperSidebar from "../../components/wallpapers-ui/WallpaperSidebar";
 import img from "../../assets/icons/mixer.png";
 import Drawer from "../../components/common-ui/drawers/Drawer";
+import { iDownload, iShare } from "../../utils/icons/global_icons";
+import download from "../../assets/icons/download.svg";
 const WallPaper = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -33,9 +35,15 @@ const WallPaper = () => {
               <div className="d-none d-md-block">
                 <WallpaperSidebar />
               </div>
-              <div className="wallpaper fontBak">
+              <div className="wallpaper fontBak d-flex justify-content-end align-items-start pt-2 pe-2 position-relative">
                 {/* <img className="img-fluid" src={wallpaper} alt="WallPaper" /> */}
-                <div className="btnPosition d-flex justify-content-end gap-3">
+                <div
+                  className="btnPosition d-flex justify-content-end align-items-center gap-3 p-1"
+                  style={{
+                    backgroundColor: "rgba(0, 0, 0, 0.60)",
+                    width: "fit-content",
+                  }}
+                >
                   <img
                     onClick={() => setOpen(!open)}
                     className="d-md-none"
@@ -96,58 +104,64 @@ const WallPaper = () => {
                     </span>
                   </button>
                 </div>
+                <div
+                  className="w-100 position-absolute d-flex justify-content-between px-4 align-items-center"
+                  style={{ bottom: "10px" }}
+                >
+                  <div className="home-bb">
+                    {" "}
+                    <img style={{ width: "100%" }} src={download} alt="" />
+                  </div>
+                  <div className="home-bb">{iShare}</div>
+                </div>
               </div>
             </div>
           </div>
         </section>
       </div>
 
-      <div className="bgShadowbottom">
-        <section>
-          <div className="container custom_Container">
-            <h3 className="all_mb">You may also like</h3>
-            <div className="row gy-4 mb-4">
-              <div className="col-12 col-md-4">
-                <div className="tredImg">
-                  <Link to="/">
-                    <img
-                      className="img-fluid w-100"
-                      src={wallpaper}
-                      alt="img"
-                    />
-                  </Link>
-                </div>
-              </div>
-              <div className="col-12 col-md-4">
-                <div className="tredImg">
-                  <Link to="/">
-                    <img
-                      className="img-fluid w-100"
-                      src={wallpaper1}
-                      alt="img"
-                    />
-                  </Link>
-                </div>
-              </div>
-              <div className="col-12 col-md-4">
-                <div className="tredImg">
-                  <Link to="/">
-                    <img
-                      className="img-fluid w-100"
-                      src={wallpaper2}
-                      alt="img"
-                    />
-                  </Link>
-                </div>
-              </div>
+      <div className="container custom_Container">
+        <h3 className="all_mb">You may also like</h3>
+        <div className="row gy-4 mb-4">
+          <div className="col-4 px-1 px-md-2">
+            <div className="w-100">
+              <Link to="/">
+                <img
+                  className="w-image img-fluid w-100"
+                  src={wallpaper}
+                  alt="img"
+                />
+              </Link>
             </div>
-            <span className="d-block text-center">
-              <button className="viewProfile" style={{ fontSize: "12px" }}>
-                View More
-              </button>
-            </span>
           </div>
-        </section>
+          <div className="col-4 px-1 px-md-2">
+            <div className="w-100">
+              <Link to="/">
+                <img
+                  className="w-image img-fluid w-100"
+                  src={wallpaper1}
+                  alt="img"
+                />
+              </Link>
+            </div>
+          </div>
+          <div className="col-4 px-1 px-md-2">
+            <div className="w-100">
+              <Link to="/">
+                <img
+                  className="w-image img-fluid w-100"
+                  src={wallpaper2}
+                  alt="img"
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
+        <span className="d-block text-center">
+          <button className="viewProfile px-3" style={{ fontSize: "12px" }}>
+            View More
+          </button>
+        </span>
       </div>
 
       <Drawer
