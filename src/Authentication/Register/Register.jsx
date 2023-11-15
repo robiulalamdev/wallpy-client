@@ -36,7 +36,7 @@ const Register = () => {
 
   return (
     <>
-      <div className="bgShadowTop pt_85 mx-auto">
+      <div className="bgShadowTop pt-4 mx-auto">
         <div className="container mx-auto auth_Container">
           <h1 className="d-md-none register-p-title">THE WALLPAPER SOCIETY</h1>
           <div className="row brightBg px-1 py-3 px-md-3 py-md-4 mx-auto">

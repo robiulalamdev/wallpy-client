@@ -7,15 +7,15 @@ const Sponsors = () => {
   return (
     <>
       <div className="container">
-        <h2 className="mb-4">Sponsors</h2>
+        <h2 className="mb-4 mt-5 home-section-title">Sponsors</h2>
         <div className="row gy-4">
           <div className="col-12 col-md-6">
-            <div className="staff" style={{height:"421px"}}>
+            <div className="staff h-100" style={{ maxHeight: "421px" }}>
               <img
-                className="img-fluid"
+                className="img-fluid object-fit-cover first-img"
                 src={img}
                 alt="Img"
-                style={{height:"421px"}}
+                style={{ height: "100%" }}
               />
             </div>
           </div>
@@ -23,27 +23,27 @@ const Sponsors = () => {
             <div className="d-flex flex-column gap-4">
               <div className="staff">
                 <img
-                  className="img-fluid"
+                  className="img-fluid object-fit-cover second-img"
                   src={img2}
                   alt="Img"
-                   style={{height:"195px"}}
+                  style={{ height: "195px" }}
                 />
               </div>
               <div className="d-flex justify-content-between gap-4 align-items-center">
-                <div className="staff">
+                <div className="staff w-100">
                   <img
-                    className="img-fluid"
+                    className="img-fluid object-fit-cover second-img w-100 "
                     src={img3}
                     alt="Img"
-                     style={{height:"195px"}}
+                    style={{ height: "195px" }}
                   />
                 </div>
-                <div className="staff">
+                <div className="staff w-100">
                   <img
-                    className="img-fluid"
+                    className="img-fluid object-fit-cover second-img w-100"
                     src={img4}
                     alt="Img"
-                     style={{height:"195px"}}
+                    style={{ height: "195px" }}
                   />
                 </div>
               </div>

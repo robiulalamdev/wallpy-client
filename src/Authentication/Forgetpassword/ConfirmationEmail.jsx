@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const ConfirmationEmail = () => {
   return (
     <>
-      <div className="bgShadowTop pt_85">
+      <div className="bgShadowTop pt-4">
         <div className="container auth_Container">
           <h1 className="d-md-none register-p-title">THE WALLPAPER SOCIETY</h1>
           <div className="row brightBg px-1 py-3 px-md-3 py-md-4 mx-auto">

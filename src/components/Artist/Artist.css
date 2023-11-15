@@ -1,55 +1,99 @@
-
 /* Featured Artists Start */
 
 .artist {
-    padding: 53px 112px;
-    border-radius: 40px;
-    background: #131619;
-    overflow: hidden;
+  padding: 20px;
+  border-radius: 40px;
+  background: #131619;
+  overflow: hidden;
 }
 
 .artist .proImg,
 .artist .proImg img {
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
 }
 
 .artist .proImg img:hover {
-    transform: scale(1.02);
-    cursor: pointer;
+  transform: scale(1.02);
+  cursor: pointer;
 }
 
 .profileInner a img {
-    opacity: .9;
-    transition: 0.4s ease-in-out;
+  opacity: 0.9;
+  transition: 0.4s ease-in-out;
 }
 
 .profileInner a img:hover {
-    opacity: 1;
+  opacity: 1;
 }
-
 
 .artist p,
 .viewProfile {
-    color: #FFF;
-    font-family: var(--bak);
-    font-size: 15px;
-    font-weight: 400;
-    transition: 0.4s ease-in-out;
+  color: #fff;
+  font-family: var(--bak);
+  font-size: 15px;
+  font-weight: 400;
+  transition: 0.4s ease-in-out;
 }
 
 .viewProfile {
-    border-radius: 15px !important;
-    background: #000 !important;
-    padding: 8px 18px;
-    transition: 0.4s ease-in-out;
+  border-radius: 15px !important;
+  background: #000 !important;
+  padding: 8px 18px;
+  transition: 0.4s ease-in-out;
 }
 
 .viewProfile:hover {
-    opacity: .9;
-    background-color: #292e32 !important;
+  opacity: 0.9;
+  background-color: #292e32 !important;
+}
+
+.artist-card {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 100%;
 }
 
 /* Featured Artists End*/
+
+/* Media query for devices with a maximum width of 767px (e.g., smartphones) */
+@media only screen and (max-width: 767px) {
+  .artist {
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .artist .proImg,
+  .artist .proImg img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+  .profileInner p {
+    font-size: 10px;
+  }
+  .profileInner img {
+    width: 10px;
+  }
+  .viewProfile {
+    font-size: 8px;
+  }
+
+  .viewProfile {
+    border-radius: 8px !important;
+    padding: 5px 5px;
+  }
+  .artist-card {
+    width: 100%;
+  }
+}
+
+/* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablets */
+}
+
+/* Media query for devices with a minimum width of 1024px (e.g., desktops) */
+@media only screen and (min-width: 1024px) {
+  /* Styles for desktops */
+}

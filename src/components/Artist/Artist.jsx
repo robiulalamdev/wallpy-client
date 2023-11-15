@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const artistData = [
   {
     img: img1,
-    title: "Diberkato / Ilustrator",
+    title: "Diberkato",
     twitter: twitter,
     instagram: instagram,
     behance: behance,
@@ -19,7 +19,7 @@ const artistData = [
   },
   {
     img: img2,
-    title: "krs / AI Creations",
+    title: "krs",
     twitter: twitter,
     instagram: instagram,
     behance: behance,
@@ -27,7 +27,7 @@ const artistData = [
   },
   {
     img: img1,
-    title: "fyween / Ilustrator",
+    title: "fyween",
     twitter: twitter,
     instagram: instagram,
     behance: behance,
@@ -35,7 +35,7 @@ const artistData = [
   },
   {
     img: img2,
-    title: "maDHoney / Ilustrator",
+    title: "maDHoney",
     twitter: twitter,
     instagram: instagram,
     behance: behance,
@@ -43,7 +43,7 @@ const artistData = [
   },
   {
     img: img1,
-    title: "DanaUlama / Ilustrator",
+    title: "DanaUlama",
     twitter: twitter,
     instagram: instagram,
     behance: behance,
@@ -56,23 +56,24 @@ const Artist = () => {
     <>
       =
       <div className="container all_mb">
-        <h2 className="mb-4">Featured Artists</h2>
+        <h2 className="mb-4 home-section-title">Featured Artists</h2>
         <div className="artist">
-          <div className="d-flex flex-column flex-lg-row justify-content-between align-items-center gap-4">
+          <div className="row gap-md-4 px-2">
             {artistData.map((data, index) => (
-              <div
-                className="d-flex flex-column gap-2 align-items-center"
-                key={index}
-              >
-                <div class="proImg overflow-hidden">
-                  <img class="mb-3" src={data.img} alt="Profile" />
-                </div>
-                <div className="profileInner">
-                  <div className="d-flex justify-content-start gap-1 align-items-center mb-2">
-                    <img src={verified} alt="img" />
-                    <p>{data.title}</p>
+              <div className="col-4 col-md-2 mb-2 mx-md-auto px-1 px-lg-0">
+                <div
+                  className=" d-flex flex-column gap-2 align-items-center artist-card w-100 p-2 p-md-3"
+                  key={index}
+                >
+                  <div class="proImg overflow-hidden">
+                    <img class="mb-3" src={data.img} alt="Profile" />
                   </div>
-                  <div className="d-flex justify-content-between align-items-center mb-3">
+                  <div className="profileInner">
+                    <div className="d-flex justify-content-start gap-1 align-items-center mb-2">
+                      <img src={verified} alt="img" />
+                      <p>{data.title}</p>
+                    </div>
+                    {/* <div className="d-flex justify-content-between align-items-center mb-3">
                     <Link to="#">
                       <img src={twitter} alt="Twitter" />
                     </Link>
@@ -85,15 +86,16 @@ const Artist = () => {
                     <Link to="#">
                       <img src={instagram} alt="Instragram" />
                     </Link>
+                  </div> */}
                   </div>
+                  <Link
+                    className="viewProfile"
+                    style={{ fontSize: "10px", color: "#fff" }}
+                    to="#"
+                  >
+                    View Profile
+                  </Link>
                 </div>
-                <Link
-                  className="viewProfile"
-                  style={{ fontSize: "10px", color: "#fff" }}
-                  to="#"
-                >
-                  View Profile
-                </Link>
               </div>
             ))}
           </div>

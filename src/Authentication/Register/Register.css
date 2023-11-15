@@ -6,6 +6,7 @@
   font-family: var(--bak);
   font-weight: 400;
   max-width: 990px;
+  margin-bottom: 20px;
 }
 
 .imgLogin {
