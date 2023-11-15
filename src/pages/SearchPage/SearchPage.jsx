@@ -8,25 +8,20 @@ import SearchTrending from "./SearchTrending";
 
 const SearchPage = () => {
   return (
-    <>
-      <div className="bgShadowTop">
-        <SearchHeader />
-        <SearchTrending />
-        <section className="search_Container">
-          <>
-            <div className="searchMain d-flex flex-wrap align-items-center gap-3 mb-5 mx-auto w-100">
-              <SearchImages />
-            </div>
-            <div>
-              <span className="d-block text-center">
-                <button className="loadBtn fontBak">Load More</button>
-              </span>
-            </div>
-          </>
-        </section>
-      </div>
+    <div className="container">
+      <SearchHeader />
+      <SearchTrending />
+      <hr className="w-100" />
+      <section className="search_Container">
+        <div className="row gy-3 mx-auto">
+          <SearchImages />
+        </div>
+        <span className="d-block text-center mt-4">
+          <button className="loadBtn fontBak">Load More</button>
+        </span>
+      </section>
       <Footer />
-    </>
+    </div>
   );
 };
 

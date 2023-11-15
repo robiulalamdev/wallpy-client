@@ -127,13 +127,9 @@ const SearchImages = () => {
   return (
     <>
       {imageArray.map((data) => (
-        <div className="tredImg">
+        <div className="tredImg col-4 col-md-2 px-1 px-md-2">
           <Link to="/">
-            <img
-              className="searchImg img-fluid"
-              src={data}
-              alt="img"
-            />
+            <img className="img-fluid w-100" src={data} alt="img" />
           </Link>
         </div>
       ))}
