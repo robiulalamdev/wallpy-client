@@ -6,14 +6,31 @@ import profile from "../../assets/profile.png";
 import login from "../../assets/login.png";
 import reg from "../../assets/reg.png";
 import logo from "../../assets/icons/logo.gif";
+import iSocial4 from "../../assets/icons/iSocial4.png";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import { Offcanvas } from "react-bootstrap";
+import {
+  iLogout,
+  iSocial1,
+  iSocial2,
+  iSocial3,
+  iSocial5,
+  iSocial6,
+  iUser,
+  iUserRegister,
+} from "../../utils/icons/global_icons";
+
+const items = [
+  { id: 1, title: "Profile", link: "profile" },
+  { id: 1, title: "Profile", link: "profile" },
+];
 
 const Header = () => {
   const [open, setOpen] = useState(false);
-  const [loggedIn, setLoggedIn] = useState(false);
-  // JSON.parse(localStorage.getItem("loggedIn"))
+  const [loggedIn, setLoggedIn] = useState(
+    JSON.parse(localStorage.getItem("loggedIn"))
+  );
 
   const handleLogout = () => {
     // Update the value in localStorage
@@ -22,7 +39,7 @@ const Header = () => {
   };
 
   return (
-    <div className="container">
+    <div className="container position-relative">
       <div className="d-flex justify-content-between align-items-center my-3">
         <div className="d-flex align-items-center gap-4">
           <Link class="navbar-brand" to="/">
@@ -126,13 +143,18 @@ const Header = () => {
         style={{ backgroundColor: "#121212", zIndex: 99999999 }}
       >
         <Offcanvas.Body
-          className="h-100 w-100"
+          className="h-100 w-100 position-relative"
           style={{ backgroundColor: "#121212" }}
         >
           <div className="d-flex justify-content-between align-items-center">
-            <Link class="navbar-brand" to="/">
-              <img className="logo-img" src={logo} alt="" />
-            </Link>
+            {loggedIn ? (
+              <Link class="navbar-brand" to="/">
+                <img className="logo-img" src={logo} alt="" />
+              </Link>
+            ) : (
+              <span></span>
+            )}
+
             <button
               onClick={() => setOpen(false)}
               className=""
@@ -158,6 +180,71 @@ const Header = () => {
                 </defs>
               </svg>
             </button>
+          </div>
+          <div>
+            {loggedIn && (
+              <div
+                class={`row mt-4`}
+                style={{ borderBottom: "1px solid #292d31" }}
+              >
+                <div class="col-6 px-3 childInner d-flex flex-column gap-3 text-nowrap border_right">
+                  <Link to="profile">Profile</Link>
+                  <Link to="#">Favorites</Link>
+                  <Link to="#">Collections</Link>
+                </div>
+                <div class="col-6 childInner d-flex flex-column gap-3 text-nowrap text-start">
+                  <Link to="#">Messages</Link>
+                  <Link to="#">The Vault</Link>
+                  <Link to="setting">Settings</Link>
+                </div>
+              </div>
+            )}
+            {!loggedIn && (
+              <div className="">
+                <Link to="/login">
+                  {" "}
+                  <button className="login-text">
+                    {iUser}
+                    <p>Login</p>
+                  </button>
+                </Link>
+                <Link to="/register">
+                  {" "}
+                  <button className="login-text mt-2">
+                    {iUserRegister}
+                    <p>Register</p>
+                  </button>
+                </Link>
+              </div>
+            )}
+          </div>
+          <div
+            className="position-absolute w-100 bg-warnding start-0 end-0 px-4"
+            style={{ bottom: "5px", maxHeight: "300px" }}
+          >
+            {loggedIn && (
+              <button
+                onClick={() => handleLogout()}
+                className="d-flex align-items-center gap-2 logout-btn"
+              >
+                {iLogout}
+                <p>Log Out</p>
+              </button>
+            )}
+            <hr className="my-1" style={{ border: "1px solid #5A5A5A" }} />
+            <div
+              className="d-flex justify-content-between align-items-center"
+              style={{ height: "50px" }}
+            >
+              <button>{iSocial1}</button>
+              <button>{iSocial2}</button>
+              <button>{iSocial3}</button>
+              <button>
+                <img style={{ width: "13px" }} src={iSocial4} alt="" />
+              </button>
+              <button>{iSocial5}</button>
+              <button>{iSocial6}</button>
+            </div>
           </div>
         </Offcanvas.Body>
       </Offcanvas>
