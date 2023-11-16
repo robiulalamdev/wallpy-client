@@ -97,6 +97,10 @@ export const router = createBrowserRouter([
         path: "/wallpaper",
         element: <WallPaper />,
       },
+      {
+        path: "/searchPage",
+        element: <SearchPage />,
+      },
     ],
   },
   {
@@ -118,9 +122,5 @@ export const router = createBrowserRouter([
   {
     path: "/confirmationEmail",
     element: <ConfirmationEmail />,
-  },
-  {
-    path: "/searchPage",
-    element: <SearchPage />,
   },
 ]);

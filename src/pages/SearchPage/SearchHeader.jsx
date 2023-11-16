@@ -1,10 +1,10 @@
 import React from "react";
 import profile from "../../assets/profile.png";
-    
+
 const SearchHeader = () => {
   return (
     <>
-      <div className="container search_Container">
+      <div className="search_Container">
         <div className="searchHeader">
           <div className="d-flex justify-content-between align-items-center mb-3">
             <div></div>

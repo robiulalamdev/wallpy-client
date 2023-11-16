@@ -9,19 +9,13 @@ import videogame_asset from "../../assets/videogame_asset.png";
 import autorenew from "../../assets/autorenew.png";
 import TDTab from "../../components/common-ui/tabs/TDTab";
 import { arrow_drop_down } from "../../utils/icons/global_icons";
+import SearchPageFilter3Tab from "./SearchPageFilter3Tab";
 
-const tabs = [
-  { id: 1, name: "All" },
-  { id: 2, name: "Illustration" },
-  { id: 3, name: "AI" },
-  { id: 4, name: "Photography" },
-];
 const SearchTrending = () => {
-  const [selectedTab, setSelectedTab] = useState(1);
   const [mainTab, setMainTab] = useState(1);
   const [sfwTab, setSfwTab] = useState(0);
   return (
-    <div className="d-flex justify-content-center align-items-center gap-1 d-none d-lg-inline-flex">
+    <div className="d-flex justify-content-center align-items-center gap-1 d-none d-lg-inline-flex w-100">
       <div className="allBtn">
         <button
           onClick={() => setMainTab(1)}
@@ -36,19 +30,7 @@ const SearchTrending = () => {
           Upcoming
         </button>
       </div>
-      <div className="allBtn d-flex justify-content-around align-items-center gap-1 px-2">
-        {tabs?.map((t, i) => (
-          <button
-            onClick={() => setSelectedTab(t.id)}
-            className={`${
-              selectedTab === t.id ? "allBtnActive" : "acs-dactive-btn"
-            }`}
-            key={i}
-          >
-            {t?.name}
-          </button>
-        ))}
-      </div>
+      <SearchPageFilter3Tab />
       <div className="td-tab-container d-flex justify-content-around align-items-center">
         {["SFW", "NSFW"]?.map((t, i) => (
           <button
