@@ -28,8 +28,8 @@ const Messages = () => {
       </div>
       <div className="msg-left-arrow d-lg-none">{leftArrow}</div>
       <section
-        className="d-flex justify-content-between gap-5 h-100"
-        style={{ maxHeight: "620px" }}
+        className="d-flex justify-content-between h-100"
+        style={{ maxHeight: "620px", columnGap: "54px" }}
       >
         <div
           className={`${

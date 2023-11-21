@@ -17,17 +17,15 @@ const ForgetEmail = () => {
               </div>
             </div>
             <div className="col-md-6">
-              <div className="d-flex flex-column justify-content-center align-items-center">
+              <div className="d-flex flex-column justify-content-center align-items-center w-100">
                 <h1 className="d-none d-md-block">THE WALLPAPER SOCIETY</h1>
                 <div
-                  className="authtab text-center mx-auto mt-5"
+                  className="authtab text-center mx-auto mt-4"
                   style={{ marginBottom: "120px" }}
                 >
-                  <button className="tabInner">
-                    <Link className="text-dark" to="/forgetpassword">
-                      Password
-                    </Link>
-                  </button>
+                  <Link className="text-dark" to="/forgetpassword">
+                    <button className="tabInner">Password</button>
+                  </Link>
                   <button className="tabInner tabActive">
                     <Link className="text-dark" to="/forgetemail">
                       E-mail

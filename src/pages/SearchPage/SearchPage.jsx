@@ -12,13 +12,20 @@ const SearchPage = () => {
   const [selectedTab, setSelectedTab] = useState(1);
   return (
     <div className="container">
-      <h1 className="fontBak text-center d-none d-md-block">
+      <h1
+        className="fontBak text-center d-none d-md-block"
+        style={{ marginBottom: "18px" }}
+      >
         THE WALLPAPER SOCIETY
       </h1>
-      <form action="" className="mx-auto mt-md-3 mb-4">
+      <form
+        action=""
+        className="mx-auto mt-md-3"
+        style={{ marginBottom: "39px" }}
+      >
         <div className="searchNav mx-auto">
           <input
-            className="w-100"
+            className="w-100 px-4"
             type="search"
             placeholder="Find more wallpapers..."
           />
@@ -26,7 +33,7 @@ const SearchPage = () => {
       </form>
       <SearchTrending />
       <hr className="w-100" />
-      <div className="mb-4 d-flex gap-0 mt-3">
+      <div className="mb-4 d-flex gap-0 mt-3 d-lg-none">
         <div className="allBtn">
           <button
             onClick={() => setSelectedTab(1)}
@@ -43,14 +50,14 @@ const SearchPage = () => {
         </div>
         <img
           onClick={() => setOpen(!open)}
-          className="d-md-none"
+          className="d-lg-none"
           style={{ width: "57px" }}
           src={img}
           alt=""
         />
       </div>
       <section className="search_Container">
-        <div className="row gy-3 mx-auto">
+        <div className="row mx-auto">
           <SearchImages />
         </div>
         <span className="d-block text-center mt-4">

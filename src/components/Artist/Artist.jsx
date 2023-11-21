@@ -54,15 +54,14 @@ const artistData = [
 const Artist = () => {
   return (
     <>
-      =
-      <div className="container all_mb">
-        <h2 className="mb-4 home-section-title">Featured Artists</h2>
+      <div className="container">
+        <h2 className="home-section-title">Featured Artists</h2>
         <div className="artist">
           <div className="row gap-md-4 px-2">
             {artistData.map((data, index) => (
               <div className="col-4 col-md-2 mb-2 mx-md-auto px-1 px-lg-0">
                 <div
-                  className=" d-flex flex-column gap-2 align-items-center artist-card w-100 p-2 p-md-3"
+                  className=" d-flex flex-column gap-2 align-items-center artist-card p-2 p-md-3"
                   key={index}
                 >
                   <div class="proImg overflow-hidden">

@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 
-const SingleChat = ({ chat, open, setOpen }) => {
+const SingleChat = ({ key, chat, open, setOpen }) => {
+  const [selectedChat, setSelectedChat] = useState(0);
   return (
     <div
-      onClick={() => setOpen(!open)}
-      className="single-chat-container d-flex gap-2"
+      onClick={() => {
+        setOpen(!open);
+        setSelectedChat(key);
+      }}
+      className={`single-chat-container d-flex gap-2 mt-2 ${
+        key === selectedChat && "selected-chat"
+      }`}
     >
       <img src={chat?.img} alt="" />
       <div className="w-100">
@@ -12,7 +18,9 @@ const SingleChat = ({ chat, open, setOpen }) => {
           <h1 className="chat-username">{chat?.name}</h1>
           <p className="chat-time">{chat?.time}</p>
         </div>
-        <p className="chat-last-message mt-2">{chat?.lastMessage}</p>
+        <p className="chat-last-message" style={{ marginTop: "6px" }}>
+          {chat?.lastMessage}
+        </p>
       </div>
     </div>
   );

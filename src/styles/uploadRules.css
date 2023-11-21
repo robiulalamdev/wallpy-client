@@ -18,9 +18,19 @@
   text-align: center;
 }
 
+.upload-rules-container .upload-content-p {
+  color: #fff;
+  font-family: Bakbak One !important;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 /* upload-section */
 .upload-rules-container .upload-section {
   max-width: 933px;
+  height: 100%;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.4);
 }
@@ -43,7 +53,7 @@
 }
 
 .upload-section-content {
-  max-width: 397px;
+  max-width: 100%;
   min-height: 585px;
 }
 

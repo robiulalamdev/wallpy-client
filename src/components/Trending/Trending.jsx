@@ -39,7 +39,7 @@ const Trending = () => {
     <>
       <div className="container">
         <div className="trending all_mb">
-          <div className="trendingHeader d-flex justify-content-start align-items-center mb-3">
+          <div className="trendingHeader d-flex justify-content-start align-items-center">
             <div className="allBtn">
               <button
                 onClick={() => setMainTab(1)}
@@ -55,7 +55,7 @@ const Trending = () => {
               </button>
             </div>
             <h1 className="wallpaper-title d-md-none">Wallpapers</h1>
-            <div className="allBtn d-flex justify-content-around align-items-center gap-1 px-2 d-none d-md-block">
+            <div className="allBtn d-flex justify-content-between align-items-center gap-2 d-none d-md-block">
               {tabs?.map((t, i) => (
                 <button
                   onClick={() => setSelectedTab(t.id)}
@@ -70,11 +70,12 @@ const Trending = () => {
             </div>
           </div>
           <div className="trendingInner mb-4 px-1">
-            <div className="row gy-4">
+            <div className="row">
               {imageData.map((image, index) => (
                 <div
                   key={index}
                   className="col-4 col-md-3 px-1 px-md-3 tredImg"
+                  style={{ marginBottom: "40px" }}
                 >
                   <Link to="wallpaper">
                     <img

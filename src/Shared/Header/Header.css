@@ -7,9 +7,12 @@ nav {
 
 header,
 .nav-link {
-  font-family: var(--bak);
-  font-weight: 400;
   color: #fff;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .navbar {
@@ -17,9 +20,21 @@ header,
   padding-bottom: 34px;
 }
 
-.navbar-brand {
+.brand {
   color: #fff;
+  font-family: Bakbak One;
   font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.brand:hover {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .nav-link {
@@ -31,11 +46,11 @@ header,
 }
 
 .nav-link:hover {
-  color: #fdf516;
+  color: #fdf516 !important;
 }
 
 .nav-link:active {
-  color: #fdf516;
+  color: #fdf516 !important;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -62,26 +77,29 @@ header,
 .searchNav {
   position: relative;
   z-index: 999999;
-  max-width: 771px;
+  width: 100%;
+  max-width: 771px !important;
   height: 45px;
   background-image: url("../assets/Search.png");
   background-repeat: no-repeat;
   background-position: center left 2%;
   background-size: initial;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .searchNav input {
   position: relative;
   z-index: 999999;
   background: transparent;
-  padding: 13px 13px 13px 50px;
+  padding: 13px 13px 13px 0px;
   border: none;
-  font-family: var(--lato);
+  color: #5a5a5a;
+  font-family: Lato;
   font-size: 15px;
+  font-style: normal;
   font-weight: 400;
-  color: #fff;
+  line-height: normal;
 }
 
 .searchNav input::placeholder {
@@ -141,7 +159,7 @@ header,
 .navBg {
   padding: 12px 22px;
   border-radius: 10px;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .accountParent {

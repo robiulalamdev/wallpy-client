@@ -23,7 +23,7 @@ const BrandTab = ({ step, setStep }) => {
       </div>
       <div>
         <h2 className="mb-4">Proof of Identity</h2>
-        <p>
+        <p className="ac-verify-brand-tab-p">
           This could be a screenshot, selfie, or any other form of proof to
           verify your identity. Please refrain from uploading government-issued
           IDs.

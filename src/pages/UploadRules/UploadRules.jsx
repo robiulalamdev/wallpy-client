@@ -15,7 +15,6 @@ const UploadRules = () => {
     setImages(updatedImages);
   };
 
-  console.log(step);
   return (
     <div className="container upload-rules-container">
       <h1 className="title">Upload Files</h1>
@@ -27,7 +26,7 @@ const UploadRules = () => {
       </p>
 
       <section className="row upload-section mt-5 mx-auto ">
-        <div className="col-md-6 p-3 p-md-4">
+        <div className="col-md-6 p-3">
           {step === 1 && (
             <img className="img-fluid w-100 h-100" src={banner} alt="" />
           )}
@@ -38,11 +37,11 @@ const UploadRules = () => {
             <UploadRulesUploadInput setImages={setImages} images={images} />
           )}
         </div>
-        <div className="col-md-6 upload-section-content mx-auto p-3 p-md-4">
+        <div className="col-md-6 upload-section-content mx-auto p-3">
           {step === 1 && (
             <>
-              <h1 className="title">Accept to Continue</h1>
-              <p className="mt-5">
+              <h1 className="title my-0">Accept to Continue</h1>
+              <p className="mt-5 upload-content-p">
                 We are delighted that you've chosen to join our community. To
                 ensure the highest quality of our wallpapers and maintain the
                 integrity of our site, we request that you review our community
@@ -85,7 +84,7 @@ const UploadRules = () => {
 
           {step === 2 && (
             <div className="d-flex flex-column justify-content-between h-100">
-              <h1 className="title">Files</h1>
+              <h1 className="title my-0">Files</h1>
 
               <div>
                 {step === 2 && (
@@ -156,7 +155,7 @@ const UploadRules = () => {
           )}
           {step === 3 && (
             <div className="d-flex flex-column justify-content-between h-100">
-              <h1 className="title">Files</h1>
+              <h1 className="title my-0">Files</h1>
 
               <div>
                 {step === 2 && (

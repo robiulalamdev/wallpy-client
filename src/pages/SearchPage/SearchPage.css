@@ -150,7 +150,7 @@
 }
 
 .filter-dropdown {
-  min-width: 110px !important;
+  min-width: 115px !important;
   width: fit-content !important;
   height: 42px !important;
   max-height: 42px !important;
@@ -166,6 +166,7 @@
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-align: center;
 }
 
 .filter-btns button {
@@ -187,3 +188,14 @@
   text-align: center;
 }
 /* Search Page End */
+
+@media only screen and (max-width: 1024px) {
+  .searchImgPadding {
+    padding: 0 5px 16px 5px !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .searchImgPadding {
+    padding: 0 13px 42px 13px !important;
+  }
+}

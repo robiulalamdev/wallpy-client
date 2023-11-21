@@ -17,11 +17,18 @@ const chats = [
     time: "8:41 PM",
     img: img,
   },
+  {
+    id: 3,
+    name: "Ostia",
+    lastMessage: "Yoooo...",
+    time: "8:41 PM",
+    img: img,
+  },
 ];
 
 const SidebarChats = ({ open, setOpen }) => {
   return (
-    <div className="message-chats-container p-3">
+    <div className="message-chats-container p-2">
       {chats?.map((chat, index) => (
         <SingleChat key={index} chat={chat} open={open} setOpen={setOpen} />
       ))}

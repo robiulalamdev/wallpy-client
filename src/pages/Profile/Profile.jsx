@@ -46,7 +46,7 @@ const Profile = () => {
       <div className="search_Container">
         <div className="coverImg">
           <img
-            className="cover_photo w-100 img-fluid"
+            className="cover_photo w-100 img-fluid ps-md-4 ps-lg-5"
             src={cover_photo}
             alt="Cover image"
           />
@@ -71,7 +71,18 @@ const Profile = () => {
 
         <div className="profileDetail d-flex justify-content-between align-items-start">
           <div></div>
-          <div className="update_follower d-flex justify-content-between align-items-center gap-5 d-none d-lg-inline-flex">
+          <div className="update_follower d-flex justify-content-between align-items-center flex-wrap gap-5 d-none d-lg-inline-flex">
+            <p className="fontBak">
+              Uploads: <span style={{ color: "#ccc" }}>1549</span>
+            </p>
+            <p className="fontBak">
+              Last Active: <span style={{ color: "#ccc" }}>Today</span>
+            </p>
+            <p className="fontBak">
+              Member Since: <span style={{ color: "#ccc" }}>1549</span>
+            </p>
+          </div>
+          {/* <div className="update_follower d-flex justify-content-between align-items-center gap-5 d-none d-lg-inline-flex">
             <div>
               <p className="fontBak">
                 Uploads: <span style={{ color: "#ccc" }}>1549</span>
@@ -88,7 +99,7 @@ const Profile = () => {
                 Last Active: <span style={{ color: "#ccc" }}>Today</span>
               </p>
             </div>
-          </div>
+          </div> */}
           <div className="d-flex flex-column gap-3">
             <div className="d-flex justify-content-end align-items-center gap-2">
               <div className="followBtn d-none d-md-block">
@@ -279,7 +290,7 @@ const Profile = () => {
               </button>
             ))}
           </div>
-          <form action="" className="searchNav col-md-4 ms-auto mt-4 mt-md-0">
+          <form action="" className="searchNav col-md-4 ms-auto mt-4 mt-lg-0">
             <input
               className="w-100"
               type="search"
@@ -288,9 +299,9 @@ const Profile = () => {
           </form>
           <div className="col-md-4"></div>
         </div>
-        <div className="row align-items-center gy-5 mb-5">
+        <div className="row align-items-center mb-5">
           {data.map((image) => (
-            <div className="col-4 col-md-3 col-lg-2 ownWall text-center h-100">
+            <div className="col-4 col-md-3 col-lg-2 text-center h-100 profileImages-padding">
               <Link to="/wallpaper">
                 <img
                   className="img-fluid ownWall w-100 h-100"

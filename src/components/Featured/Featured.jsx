@@ -22,35 +22,25 @@ const featureData = [
 
 const Featured = () => {
   return (
-    <>
-      <div className="bgShadowBottom mt-5">
-        <div className="container">
-          <div className="feature all_mb">
-            <h2 className="mb-4 home-section-title">Featured Wallpapers</h2>
-            <div className="row gy-4">
-              {featureData.map((image, index) => (
-                <div
-                  key={index}
-                  className={`${
-                    index === 0 ? "col-12 col-md-4" : "col-6 col-md-4"
-                  }`}
-                >
-                  <div className="featuredImage w-100">
-                    <Link to="/">
-                      <img
-                        className="img-fluid w-100"
-                        src={image.src}
-                        alt={image.alt}
-                      />
-                    </Link>
-                  </div>
-                </div>
-              ))}
-            </div>
+    <div className="container">
+      <h2 className="home-section-title">Featured Wallpapers</h2>
+      <div className="row gy-4">
+        {featureData.map((image, index) => (
+          <div
+            key={index}
+            className={` ${index === 0 ? "col-12 col-md-4" : "col-6 col-md-4"}`}
+          >
+            <Link to="/" className="w-100">
+              <img
+                className="featuredImage w-100 mx-auto"
+                src={image.src}
+                alt={image.alt}
+              />
+            </Link>
           </div>
-        </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

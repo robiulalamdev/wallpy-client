@@ -44,11 +44,14 @@ const OfficialBrands = () => {
   // console.log(characters);
   return (
     <div className="container official-brands-container">
-      <div className="d-flex justify-content-center w-100 mb-3">
+      <div
+        className="d-flex justify-content-center w-100"
+        style={{ marginTop: "18px", marginBottom: "41px" }}
+      >
         <div className="position-relative w-100" style={{ maxWidth: "771px" }}>
           <input
             className="official-brand-input"
-            type="text"
+            type="search"
             placeholder="Search your favorite brand, artist or eSports team"
           />
           <span className="official-brand-search-icon">{iSearch}</span>
@@ -58,7 +61,9 @@ const OfficialBrands = () => {
         <button>Featured</button>
         <div className="d-flex justify-content-between align-items-center gap-4 filter-brands px-4">
           {characters?.map((c, i) => (
-            <div className="character cursor-pointer">{c}</div>
+            <div key={i} className="character cursor-pointer">
+              {c}
+            </div>
           ))}
         </div>
       </div>
@@ -68,7 +73,7 @@ const OfficialBrands = () => {
         {[brands1, brands2, brands3]?.map((b, i) => (
           <div
             key={i}
-            className="col-md-6 d-flex flex-column justify-content-center align-items-center gap-3 mt-4"
+            className="col-md-6 d-flex flex-column justify-content-center align-items-center gap-2 mt-4 px-2"
           >
             <img className="w-100 img-fluid h-100" src={b.img} alt="" />
             <h1>{b.title}</h1>
@@ -77,7 +82,7 @@ const OfficialBrands = () => {
         {otherBrands?.map((b, i) => (
           <div
             key={i}
-            className="col-4 col-md-3 d-flex flex-column justify-content-center align-items-center gap-3 mt-4"
+            className="col-4 col-md-3 d-flex flex-column justify-content-center align-items-center gap-2 mt-4 px-2"
           >
             <img className="w-100 img-fluid h-100" src={b.img} alt="" />
             <h1>{b.title}</h1>

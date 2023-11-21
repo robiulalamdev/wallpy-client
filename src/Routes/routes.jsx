@@ -101,26 +101,27 @@ export const router = createBrowserRouter([
         path: "/searchPage",
         element: <SearchPage />,
       },
+
+      {
+        path: "/register",
+        element: <Register />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+      {
+        path: "/forgetpassword",
+        element: <Forgetpassword />,
+      },
+      {
+        path: "/forgetemail",
+        element: <ForgetEmail />,
+      },
+      {
+        path: "/confirmationEmail",
+        element: <ConfirmationEmail />,
+      },
     ],
-  },
-  {
-    path: "/register",
-    element: <Register />,
-  },
-  {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/forgetpassword",
-    element: <Forgetpassword />,
-  },
-  {
-    path: "/forgetemail",
-    element: <ForgetEmail />,
-  },
-  {
-    path: "/confirmationEmail",
-    element: <ConfirmationEmail />,
   },
 ]);

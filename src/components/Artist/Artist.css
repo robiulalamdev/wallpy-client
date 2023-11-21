@@ -53,6 +53,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   width: 100%;
+  max-width: 245px !important;
 }
 
 /* Featured Artists End*/

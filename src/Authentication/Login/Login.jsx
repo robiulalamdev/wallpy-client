@@ -55,15 +55,13 @@ const Login = () => {
             </div>
 
             <div className="col-md-6">
-              <div className="d-flex flex-column justify-content-center align-items-center mt-5">
+              <div className="d-flex flex-column justify-content-center align-items-center w-100">
                 <h1 className="d-none d-md-block">THE WALLPAPER SOCIETY</h1>
-                <div className="authtab text-center mx-auto">
+                <div className="authtab text-center mx-auto mt-4">
                   <button className="tabInner tabActive">Sign In</button>
-                  <button className="tabInner">
-                    <Link className="text-dark" to="/register">
-                      Sign Up
-                    </Link>
-                  </button>
+                  <Link className="text-dark" to="/register">
+                    <button className="tabInner">Sign Up</button>
+                  </Link>
                 </div>
                 <form onSubmit={handleLogin} className="mb-5">
                   <label for="email">Email</label>

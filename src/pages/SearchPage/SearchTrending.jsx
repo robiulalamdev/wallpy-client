@@ -15,8 +15,11 @@ const SearchTrending = () => {
   const [mainTab, setMainTab] = useState(1);
   const [sfwTab, setSfwTab] = useState(0);
   return (
-    <div className="d-flex justify-content-center align-items-center gap-1 d-none d-lg-inline-flex w-100">
-      <div className="allBtn">
+    <div
+      className="d-flex justify-content-center align-items-center gap-1 d-none d-lg-inline-flex w-100"
+      style={{ overflowX: "auto" }}
+    >
+      <div className="allBtn d-flex" style={{ minWidth: "207px" }}>
         <button
           onClick={() => setMainTab(1)}
           className={mainTab === 1 && "allBtnActive"}
@@ -181,10 +184,10 @@ const SearchTrending = () => {
           </div>
         </div>
       </div>
-      <button className="filter-dropdown">
+      {/* <button className="filter-dropdown">
         <span>Keywords</span>
         {arrow_drop_down}
-      </button>
+      </button> */}
       <div className="autorenew">
         <button>
           <img src={autorenew} alt="Autorenew" />

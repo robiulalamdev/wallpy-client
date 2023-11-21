@@ -14,7 +14,7 @@ const AccountVerification = () => {
         {step === 1 && (
           <>
             <h2>Type of Request</h2>
-            <div className="account-verify-tab-container d-flex justify-content-around align-items-center">
+            <div className="account-verify-tab-container d-flex justify-content-between align-items-center px-2">
               {tabs?.map((t, i) => (
                 <button
                   onClick={() => setSelectedTab(i)}

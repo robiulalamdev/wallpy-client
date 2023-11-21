@@ -12,6 +12,7 @@ import Swal from "sweetalert2";
 import { Offcanvas } from "react-bootstrap";
 import {
   iLogout,
+  iSearch,
   iSocial1,
   iSocial2,
   iSocial3,
@@ -39,32 +40,32 @@ const Header = () => {
   };
 
   return (
-    <div className="container position-relative">
-      <div className="d-flex justify-content-between align-items-center my-3">
-        <div className="d-flex align-items-center gap-4">
-          <Link class="navbar-brand" to="/">
+    <div className="container position-relative w-100">
+      <div className="d-flex justify-content-between align-items-center my-3 w-100">
+        <div className="d-flex align-items-center flex-grow gap-4 w-75">
+          <Link className="brand" to="/">
             WPS
           </Link>
-          <div
-            class="searchNav d-none d-md-inline-flex"
-            style={{ width: "350px" }}
-          >
+          <div className="searchNav d-flex align-items-center flex-grow d-none d-md-inline-flex w-100">
+            <button className="px-3">{iSearch}</button>
             <input
               className="w-100"
               type="search"
               placeholder="Find your next wallpaper..."
             />
           </div>
-          <ul class="navBg d-flex justify-content-center gap-3 d-none d-md-inline-flex">
-            <li class="accountParent">
-              <Link class="nav-link" to="#">
+          <ul className="navBg d-flex justify-content-center gap-3 d-none d-md-inline-flex">
+            <li className="accountParent">
+              <Link className="nav-link" to="#">
                 Account
               </Link>
-              <div class="accountChild">
-                {/* <div class="row navBorder"> */}
-                <div class={`row ${loggedIn ? "navBorder" : "login_padding"}`}>
-                  <div class="col-6">
-                    <div class="childInner d-flex flex-column gap-3 text-nowrap border_right">
+              <div className="accountChild">
+                {/* <div className="row navBorder"> */}
+                <div
+                  className={`row ${loggedIn ? "navBorder" : "login_padding"}`}
+                >
+                  <div className="col-6">
+                    <div className="childInner d-flex flex-column gap-3 text-nowrap border_right">
                       {!loggedIn && (
                         <Link to="/login">
                           {" "}
@@ -81,8 +82,8 @@ const Header = () => {
                       )}
                     </div>
                   </div>
-                  <div class="col-6" s>
-                    <div class="childInner d-flex flex-column gap-3 text-nowrap">
+                  <div className="col-6" s>
+                    <div className="childInner d-flex flex-column gap-3 text-nowrap">
                       {!loggedIn && (
                         <Link to="/register">
                           {" "}
@@ -100,7 +101,7 @@ const Header = () => {
                   </div>
                 </div>
                 {loggedIn && (
-                  <button onClick={handleLogout} class="logoutBtn mx-auto">
+                  <button onClick={handleLogout} className="logoutBtn mx-auto">
                     <img src={logout} alt="Logout" className="me-2" />
                     Log Out
                   </button>
@@ -111,7 +112,7 @@ const Header = () => {
               <span className="border_right"></span>
             </li>
             <li>
-              <Link class="nav-link" to="#">
+              <Link className="nav-link" to="#">
                 Upload
               </Link>
             </li>
@@ -124,11 +125,11 @@ const Header = () => {
         />
         <button
           onClick={() => setOpen(!open)}
-          class="navbar-toggler d-md-none"
+          className="navbar-toggler d-md-none"
           type="button"
         >
           <span>
-            <i class="fa fa-bars"></i>
+            <i className="fa fa-bars"></i>
           </span>
         </button>
       </div>
@@ -148,7 +149,7 @@ const Header = () => {
         >
           <div className="d-flex justify-content-between align-items-center">
             {loggedIn ? (
-              <Link class="navbar-brand" to="/">
+              <Link className="navbar-brand" to="/">
                 <img className="logo-img" src={logo} alt="" />
               </Link>
             ) : (
@@ -184,15 +185,15 @@ const Header = () => {
           <div>
             {loggedIn && (
               <div
-                class={`row mt-4`}
+                className={`row mt-4`}
                 style={{ borderBottom: "1px solid #292d31" }}
               >
-                <div class="col-6 px-3 childInner d-flex flex-column gap-3 text-nowrap border_right">
+                <div className="col-6 px-3 childInner d-flex flex-column gap-3 text-nowrap border_right">
                   <Link to="profile">Profile</Link>
                   <Link to="#">Favorites</Link>
                   <Link to="#">Collections</Link>
                 </div>
-                <div class="col-6 childInner d-flex flex-column gap-3 text-nowrap text-start">
+                <div className="col-6 childInner d-flex flex-column gap-3 text-nowrap text-start">
                   <Link to="#">Messages</Link>
                   <Link to="#">The Vault</Link>
                   <Link to="setting">Settings</Link>

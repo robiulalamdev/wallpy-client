@@ -38,7 +38,7 @@ const WallPaper = () => {
       <div className="bgShadowTop">
         <section>
           <div className="custom_Container">
-            <div className="d-flex justify-content-center align-items-start gap-2 all_mb">
+            <div className="d-flex justify-content-center align-items-start gap-3 all_mb">
               <div className="d-none d-md-block">
                 <WallpaperSidebar />
               </div>
