@@ -37,6 +37,7 @@ const Header = () => {
     // Update the value in localStorage
     localStorage.setItem("loggedIn", JSON.stringify(false));
     setLoggedIn(false);
+    setOpen(!open);
   };
 
   return (
@@ -188,12 +189,18 @@ const Header = () => {
                 className={`row mt-4`}
                 style={{ borderBottom: "1px solid #292d31" }}
               >
-                <div className="col-6 px-3 childInner d-flex flex-column gap-3 text-nowrap border_right">
+                <div
+                  onClick={() => setOpen(!open)}
+                  className="col-6 px-3 childInner d-flex flex-column gap-3 text-nowrap border_right"
+                >
                   <Link to="profile">Profile</Link>
                   <Link to="#">Favorites</Link>
                   <Link to="#">Collections</Link>
                 </div>
-                <div className="col-6 childInner d-flex flex-column gap-3 text-nowrap text-start">
+                <div
+                  onClick={() => setOpen(!open)}
+                  className="col-6 childInner d-flex flex-column gap-3 text-nowrap text-start"
+                >
                   <Link to="#">Messages</Link>
                   <Link to="#">The Vault</Link>
                   <Link to="setting">Settings</Link>
@@ -204,14 +211,17 @@ const Header = () => {
               <div className="">
                 <Link to="/login">
                   {" "}
-                  <button className="login-text">
+                  <button onClick={() => setOpen(!open)} className="login-text">
                     {iUser}
                     <p>Login</p>
                   </button>
                 </Link>
                 <Link to="/register">
                   {" "}
-                  <button className="login-text mt-2">
+                  <button
+                    onClick={() => setOpen(!open)}
+                    className="login-text mt-2"
+                  >
                     {iUserRegister}
                     <p>Register</p>
                   </button>
@@ -234,6 +244,7 @@ const Header = () => {
             )}
             <hr className="my-1" style={{ border: "1px solid #5A5A5A" }} />
             <div
+              onClick={() => setOpen(!open)}
               className="d-flex justify-content-between align-items-center"
               style={{ height: "50px" }}
             >
