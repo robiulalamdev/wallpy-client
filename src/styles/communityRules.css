@@ -87,7 +87,23 @@
 }
 
 /* Media query for devices with a maximum width of 767px (e.g., smartphones) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 425px) {
+  .cmr-container .cmr-title {
+    font-size: 20px;
+  }
+  .cmr-content-container span {
+    font-size: 14px;
+  }
+  .cmr-content-container {
+    font-size: 12px;
+  }
+  .cmr-content-categories,
+  .cmr-content-categories p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
   .cmr-container .cmr-title {
     font-size: 20px;
   }

@@ -189,7 +189,19 @@
 }
 /* Search Page End */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 425px) {
+  .searchImgPadding {
+    padding: 0 5px 16px 5px !important;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .searchImgPadding {
+    padding: 0 5px 16px 5px !important;
+  }
+}
+
+@media only screen and (max-width: 426px) and(max-width: 1024px) {
   .searchImgPadding {
     padding: 0 5px 16px 5px !important;
   }

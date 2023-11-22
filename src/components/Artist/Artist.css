@@ -58,8 +58,7 @@
 
 /* Featured Artists End*/
 
-/* Media query for devices with a maximum width of 767px (e.g., smartphones) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 425px) {
   .artist {
     border-radius: 10px;
     padding: 10px;
@@ -68,6 +67,65 @@
   .artist .proImg img {
     width: 44px;
     height: 44px;
+    border-radius: 50%;
+  }
+  .profileInner p {
+    font-size: 10px;
+  }
+  .profileInner img {
+    width: 10px;
+  }
+  .viewProfile {
+    font-size: 8px;
+  }
+
+  .viewProfile {
+    border-radius: 8px !important;
+    padding: 5px 5px;
+  }
+  .artist-card {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .artist {
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .artist .proImg,
+  .artist .proImg img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+  }
+  .profileInner p {
+    font-size: 10px;
+  }
+  .profileInner img {
+    width: 10px;
+  }
+  .viewProfile {
+    font-size: 8px;
+  }
+
+  .viewProfile {
+    border-radius: 8px !important;
+    padding: 5px 5px;
+  }
+  .artist-card {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .artist {
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .artist .proImg,
+  .artist .proImg img {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
   }
   .profileInner p {

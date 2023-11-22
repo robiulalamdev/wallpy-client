@@ -28,14 +28,6 @@ header,
   font-weight: 400;
   line-height: normal;
 }
-.brand:hover {
-  color: #fff;
-  font-family: Bakbak One;
-  font-size: 40px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
 
 .nav-link {
   padding: 0;
@@ -284,4 +276,29 @@ header,
 }
 .logout-btn:hover {
   color: green;
+}
+
+@media only screen and (max-width: 425px) {
+  .brand {
+    color: #fff;
+    font-family: Bakbak One;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .navbar-search-input {
+    display: none !important;
+  }
+  .navbar-search-btn {
+    display: block;
+  }
+}
+@media only screen and (min-width: 426px) {
+  .navbar-search-input {
+    display: inline-block;
+  }
+  .navbar-search-btn {
+    display: none;
+  }
 }

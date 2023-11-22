@@ -34,7 +34,6 @@ const Header = () => {
   );
 
   const handleLogout = () => {
-    // Update the value in localStorage
     localStorage.setItem("loggedIn", JSON.stringify(false));
     setLoggedIn(false);
     setOpen(!open);
@@ -43,14 +42,37 @@ const Header = () => {
   return (
     <div className="container position-relative w-100">
       <div className="d-flex justify-content-between align-items-center my-3 w-100">
-        <div className="d-flex align-items-center flex-grow gap-4 w-75">
+        <div className="d-flex align-items-center flex-grow gap-2 gap-sm-4 w-75">
           <Link className="brand" to="/">
             WPS
           </Link>
-          <div className="searchNav d-flex align-items-center flex-grow d-none d-md-inline-flex w-100">
+          <button className="px-3 text-white navbar-search-btn mb-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <circle
+                cx="9.16667"
+                cy="9.16668"
+                r="5.83333"
+                stroke="white"
+                stroke-width="2"
+              />
+              <path
+                d="M16.6667 16.6667L14.1667 14.1667"
+                stroke="white"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <div className="searchNav navbar-search-input d-flex align-items-center flex-grow w-100">
             <button className="px-3">{iSearch}</button>
             <input
-              className="w-100"
+              className="w-100 "
               type="search"
               placeholder="Find your next wallpaper..."
             />

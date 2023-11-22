@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "../../Shared/Header/Header";
-import Footer from "../../Shared/Footer/Footer";
 import "../../styles/socials.css";
 import banner from "../../assets/images/socials/banner.png";
 import icon1 from "../../assets/images/socials/icon1.png";

@@ -74,8 +74,7 @@ const Trending = () => {
               {imageData.map((image, index) => (
                 <div
                   key={index}
-                  className="col-4 col-md-3 px-1 px-md-3 tredImg"
-                  style={{ marginBottom: "40px" }}
+                  className="col-4 col-md-3 px-1 px-md-3 tredImg mb-3 mb-md-5"
                 >
                   <Link to="wallpaper">
                     <img

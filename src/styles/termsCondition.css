@@ -57,7 +57,22 @@
 }
 
 /* Media query for devices with a maximum width of 767px (e.g., smartphones) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 425px) {
+  .terms-condition-content-container p {
+    font-size: 12px;
+  }
+  .terms-condition-container .top-content p {
+    font-size: 12px;
+  }
+  .terms-condition-container .date-title {
+    font-size: 12px;
+  }
+  .table-content {
+    font-size: 12;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
   .terms-condition-content-container p {
     font-size: 12px;
   }

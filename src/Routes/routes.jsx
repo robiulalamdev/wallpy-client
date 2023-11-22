@@ -101,7 +101,6 @@ export const router = createBrowserRouter([
         path: "/searchPage",
         element: <SearchPage />,
       },
-
       {
         path: "/register",
         element: <Register />,

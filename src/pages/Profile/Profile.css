@@ -233,7 +233,7 @@
 /* Profile Page End */
 
 /* Media query for devices with a maximum width of 767px (e.g., smartphones) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 425px) {
   .cover_photo {
     height: 102px;
     border-radius: 10px;
@@ -263,6 +263,29 @@
   .ownWall {
     height: 152px !important;
     object-fit: cover;
+  }
+  .profileImages-padding {
+    margin-bottom: 20px;
+    padding: 0 8px;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .profile-container {
+    display: absolute;
+    bottom: -30px;
+    height: 300px;
+  }
+  .profile-container h3 {
+    font-size: 20px !important;
+    margin-top: 100px;
+  }
+  .profile-container span {
+    font-size: 12px !important;
+  }
+  .msgBtn {
+    width: fit-content !important;
+    height: fit-content !important;
   }
   .profileImages-padding {
     margin-bottom: 20px;

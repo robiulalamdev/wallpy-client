@@ -269,7 +269,7 @@ input[type="number"] {
 }
 
 /* Media query for devices with a maximum width of 767px (e.g., smartphones) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 425px) {
   .home-bb {
     background-color: #141414;
     padding: 5px;
@@ -285,6 +285,9 @@ input[type="number"] {
     object-fit: cover;
     border-radius: 10px;
   }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
 }
 
 /* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */

@@ -164,7 +164,7 @@
 /* Login Page & Register Page End */
 
 /* Media query for devices with a maximum width of 767px (e.g., smartphones) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 425px) {
   .imgLogin {
     height: 171px;
     border-radius: 10px !important;

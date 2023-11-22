@@ -10,13 +10,11 @@ import whatsapp from "../../assets/whatsapp.png";
 import discord from "../../assets/discord.png";
 import email from "../../assets/email.png";
 import link from "../../assets/link.png";
-import left_light from "../../assets/left_light.png";
 import cover_photo from "../../assets/cover_photo.png";
 import clear from "../../assets/clear.png";
 import behance from "../../assets/behance.png";
 import dribble from "../../assets/dribble.png";
 import instagram from "../../assets/instagram.png";
-import Footer from "../../Shared/Footer/Footer";
 import { Link } from "react-router-dom";
 
 const data = [

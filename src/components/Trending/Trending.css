@@ -118,8 +118,7 @@
 }
 /* Trending End */
 
-/* Media query for devices with a maximum width of 767px (e.g., smartphones) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 425px) {
   .trending {
     border-radius: 10px;
     padding: 10px;
@@ -155,6 +154,25 @@
     transition: 0.4s ease-in-out;
     max-height: 131px;
     object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .trending {
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .trendingHeader {
+    gap: 10px;
+  }
+  .staff {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .staff img {
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+    width: 100%;
   }
 }
 

@@ -59,7 +59,19 @@
 }
 
 /* Responsive Design for Small Screens (Mobile Devices) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 425px) {
+  .ci-content-container span {
+    font-size: 14px;
+  }
+  .ci-content-container {
+    text-align: left;
+    font-size: 12px;
+  }
+  .ci-content-container ul {
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
   .ci-content-container span {
     font-size: 14px;
   }
