@@ -257,8 +257,16 @@
     font-size: 12px !important;
   }
   .msgBtn {
-    width: fit-content !important;
-    height: fit-content !important;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px !important;
+  }
+  .msgBtn svg {
+    width: 15px;
+    height: 15px;
   }
   .ownWall {
     height: 152px !important;
@@ -284,8 +292,16 @@
     font-size: 12px !important;
   }
   .msgBtn {
-    width: fit-content !important;
-    height: fit-content !important;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px !important;
+  }
+  .msgBtn svg {
+    width: 25px;
+    height: 25px;
   }
   .profileImages-padding {
     margin-bottom: 20px;
@@ -294,6 +310,20 @@
 }
 
 /* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
+@media only screen and (min-width: 768px) {
+  .msgBtn {
+    width: 36px !important;
+    height: 35px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px !important;
+  }
+  .msgBtn svg {
+    width: 24px;
+    height: 24px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .profileImages-padding {
     margin-bottom: 40px;
