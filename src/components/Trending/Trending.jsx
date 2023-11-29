@@ -10,20 +10,33 @@ import img7 from "../../assets/trending.png";
 import img8 from "../../assets/trending3.png";
 import fire from "../../assets/fire.png";
 import chart from "../../assets/chart.png";
+
+import fram1 from "../../assets/search/Frame1.png";
+import fram2 from "../../assets/search/Frame2.png";
+import fram3 from "../../assets/search/Frame3.png";
+import fram4 from "../../assets/search/Frame4.png";
+import fram5 from "../../assets/search/Frame5.png";
+import fram6 from "../../assets/search/Frame6.png";
+import fram7 from "../../assets/search/Frame7.png";
+import fram8 from "../../assets/search/Frame8.png";
+import fram9 from "../../assets/search/Frame9.png";
+import fram10 from "../../assets/search/Frame10.png";
+import fram11 from "../../assets/search/Frame11.png";
+import fram12 from "../../assets/search/Frame12.png";
 import { Link } from "react-router-dom";
-const imageData = [
-  { src: img1, alt: "Image 1" },
-  { src: img2, alt: "Image 2" },
-  { src: img3, alt: "Image 3" },
-  { src: img4, alt: "Image 4" },
-  { src: img5, alt: "Image 5" },
-  { src: img6, alt: "Image 6" },
-  { src: img7, alt: "Image 7" },
-  { src: img8, alt: "Image 8" },
-  { src: img1, alt: "Image 1" },
-  { src: img2, alt: "Image 2" },
-  { src: img3, alt: "Image 3" },
-  { src: img4, alt: "Image 4" },
+const images = [
+  fram1,
+  fram2,
+  fram3,
+  fram4,
+  fram5,
+  fram6,
+  fram7,
+  fram8,
+  fram9,
+  fram10,
+  fram11,
+  fram12,
 ];
 
 const tabs = [
@@ -71,17 +84,13 @@ const Trending = () => {
           </div>
           <div className="trendingInner px-1">
             <div className="row">
-              {imageData.map((image, index) => (
+              {images.map((image, index) => (
                 <div
                   key={index}
                   className="col-4 col-md-3 px-1 px-md-3 tredImg mb-3 mb-md-5"
                 >
                   <Link to="wallpaper">
-                    <img
-                      className="img-fluid w-100"
-                      src={image.src}
-                      alt={image.alt}
-                    />
+                    <img className="img-fluid w-100" src={image} alt="image" />
                   </Link>
                 </div>
               ))}

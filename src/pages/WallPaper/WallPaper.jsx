@@ -33,6 +33,7 @@ const items = [
   { id: 4, name: "Anime" },
   { id: 5, name: "Landscapes" },
 ];
+
 const WallPaper = () => {
   const [open, setOpen] = useState(false);
   return (
@@ -77,7 +78,10 @@ const WallPaper = () => {
                     </div>
                     <div className="d-flex flex-column justify-content-start align-items-start">
                       {items?.map((item, index) => (
-                        <button className="collection-list border-bottom w-100">
+                        <button
+                          key={index}
+                          className="collection-list border-bottom w-100"
+                        >
                           <img
                             className="img-fluid"
                             src={photo_library}
