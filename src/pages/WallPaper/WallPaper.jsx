@@ -36,77 +36,75 @@ const WallPaper = () => {
   return (
     <div className="container">
       <div className="bgShadowTop">
-        <section>
-          <div className="custom_Container">
-            <div className="d-flex justify-content-center align-items-start gap-3 all_mb">
-              <div className="d-none d-md-block">
-                <WallpaperSidebar />
-              </div>
-              <div className="wallpaper fontBak d-flex justify-content-end align-items-start pt-2 pe-2 position-relative">
-                {/* <img className="img-fluid" src={wallpaper} alt="WallPaper" /> */}
-                <div
-                  className="btnPosition d-flex justify-content-end align-items-center gap-3 p-1"
-                  style={{
-                    backgroundColor: "rgba(0, 0, 0, 0.60)",
-                    width: "fit-content",
-                  }}
-                >
-                  <img
-                    onClick={() => setOpen(!open)}
-                    className="d-md-none"
-                    style={{ width: "57px" }}
-                    src={img}
-                    alt=""
-                  />
-                  <div className="addLibrary">
-                    <button>
-                      <span>
-                        <img src={library_add} alt="Add Library" />
-                      </span>
-                    </button>
-                    <div className="libraryOption">
-                      <div className="search-collections justify-content-between d-flex align-items-center gap-2">
-                        <input
-                          className="flex-grow w-100 px-1"
-                          type="search"
-                          placeholder="Search Collections"
-                        />
-                        <button>{add_box}</button>
-                      </div>
-                      <div className="d-flex flex-column justify-content-start align-items-start">
-                        {items?.map((item, index) => (
-                          <button className="collection-list border-bottom w-100">
-                            <img
-                              className="img-fluid"
-                              src={photo_library}
-                              alt="img"
-                            />
-                            {item?.name}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                  <button className="like">
+        <div className="custom_Container">
+          <div className="d-flex justify-content-center align-items-start gap-3 all_mb">
+            <div className="d-none d-md-block">
+              <WallpaperSidebar />
+            </div>
+            <div className="wallpaper fontBak d-flex justify-content-end align-items-start pt-2 pe-2 position-relative">
+              {/* <img className="img-fluid" src={wallpaper} alt="WallPaper" /> */}
+              <div
+                className="btnPosition d-flex justify-content-end align-items-center gap-3 p-1"
+                style={{
+                  backgroundColor: "rgba(0, 0, 0, 0.60)",
+                  width: "fit-content",
+                }}
+              >
+                <img
+                  onClick={() => setOpen(!open)}
+                  className="d-md-none"
+                  style={{ width: "57px" }}
+                  src={img}
+                  alt=""
+                />
+                <div className="addLibrary">
+                  <button>
                     <span>
-                      <img src={likedgray} alt="Liked" />
+                      <img src={library_add} alt="Add Library" />
                     </span>
                   </button>
-                </div>
-                <div
-                  className="w-100 position-absolute d-flex justify-content-between px-4 align-items-center"
-                  style={{ bottom: "10px" }}
-                >
-                  <div className="home-bb">
-                    {" "}
-                    <img style={{ width: "100%" }} src={download} alt="" />
+                  <div className="libraryOption">
+                    <div className="search-collections justify-content-between d-flex align-items-center gap-2">
+                      <input
+                        className="flex-grow w-100 px-1"
+                        type="search"
+                        placeholder="Search Collections"
+                      />
+                      <button>{add_box}</button>
+                    </div>
+                    <div className="d-flex flex-column justify-content-start align-items-start">
+                      {items?.map((item, index) => (
+                        <button className="collection-list border-bottom w-100">
+                          <img
+                            className="img-fluid"
+                            src={photo_library}
+                            alt="img"
+                          />
+                          {item?.name}
+                        </button>
+                      ))}
+                    </div>
                   </div>
-                  <div className="home-bb">{iShare}</div>
                 </div>
+                <button className="like">
+                  <span>
+                    <img src={likedgray} alt="Liked" />
+                  </span>
+                </button>
+              </div>
+              <div
+                className="w-100 position-absolute d-flex justify-content-between px-4 align-items-center"
+                style={{ bottom: "10px" }}
+              >
+                <div className="home-bb">
+                  {" "}
+                  <img style={{ width: "100%" }} src={download} alt="" />
+                </div>
+                <div className="home-bb">{iShare}</div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
       </div>
 
       <div className="container custom_Container">
@@ -156,6 +154,7 @@ const WallPaper = () => {
       <Drawer
         open={open}
         setOpen={setOpen}
+        bgColorCode="rgba(0, 0, 0, 0.2)"
         {...{
           scroll: false,
           backdrop: false,

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import profile from "../../assets/profile.png";
+import profile from "../../assets/images/profile.gif";
 import Verified from "../../assets/Verified.png";
 import twitter from "../../assets/twitter.png";
 import behance from "../../assets/behance.png";
@@ -50,15 +50,15 @@ const WallpaperSidebar = () => {
     <div className="sideBar fontBak h-100" style={{ minHeight: "802px" }}>
       <p className="text-center mb-3">Posted by</p>
       <div className="d-flex justify-content-center align-items-center gap-5 mb-4">
-        <div className="text-center" style={{ height: "75px", width: "75px" }}>
-          <img className="sideImgPro" src={profile} alt="Profile Image" />
+        <div className="w-profile-container">
+          <img className="" src={profile} alt="Profile Image" />
         </div>
-        <div className="d-flex flex-column justify-content-center align-items-center gap-2">
-          <h3>
+        <div className="d-flex flex-column justify-content-center align-items-center gap-0">
+          <h3 className="w-profile-username">
             krs
-            <img src={Verified} alt="Verified" />
+            <img className="ms-1" src={Verified} alt="Verified" />
           </h3>
-          <div className="d-flex justify-content-center gap-3 align-items-center mb-4">
+          {/* <div className="d-flex justify-content-center gap-3 align-items-center mb-4">
             <Link to="/">
               <img src={twitter} alt="Twitter" />
             </Link>
@@ -71,17 +71,17 @@ const WallpaperSidebar = () => {
             <Link to="/">
               <img src={instagram} alt="Instragram" />
             </Link>
-          </div>
-          <Link className="viewProfile" to="#" style={{ fontSize: "10px" }}>
-            View Profile
+          </div> */}
+          <Link to="/profile">
+            <button className="w-viewProfileBtn">View Profile</button>
           </Link>
         </div>
       </div>
-      <hr />
+      <hr style={{ border: "1px solid #393939" }} />
 
       <div className="d-flex flex-column align-items-center gap-1 mb-3">
         <p style={{ color: "#ccc" }}>Dimensions</p>
-        <p>3840 x 2160</p>
+        <p className="w-dimension">3840 x 2160</p>
         <div
           className="d-flex align-items-center gap-2"
           style={{ color: "#ccc", fontSize: "12px" }}
@@ -110,11 +110,11 @@ const WallpaperSidebar = () => {
         <>
           <div className="mb-3">
             <p className="text-center mb-2" style={{ color: "#ccc" }}>
-              Tag
+              Tags
             </p>
             <p
               className="text-center"
-              style={{ color: "#FDF516", fontSize: "12px" }}
+              style={{ color: "#0AB745", fontSize: "12px" }}
             >
               SFW
             </p>
@@ -135,30 +135,30 @@ const WallpaperSidebar = () => {
               Statistics & Information
             </p>
             <div className="info d-flex justify-content-between gap-4">
-              <div>
+              <div className="w-statistics-container">
                 <p>
                   Views: <span>8947</span>
                 </p>
                 <p>
-                  Category:: <span>Gaming</span>
+                  Category: <span>Gaming</span>
                 </p>
               </div>
-              <div>
+              <div className="w-statistics-container">
                 <p>
-                  Favorites:: <span>1489</span>
+                  Favorites: <span>1489</span>
                 </p>
                 <p>
-                  Size:: <span>12.2MB</span>
+                  Size: <span>12.2MB</span>
                 </p>
               </div>
             </div>
           </div>
 
-          <div className="mb-4">
+          <div className="mb-4 ">
             <p className="text-center mb-3" style={{ color: "#ccc" }}>
               Credits
             </p>
-            <div className="info">
+            <div className="info w-statistics-container">
               <p>Source:</p>
               <p>Original Author:</p>
             </div>
@@ -172,10 +172,7 @@ const WallpaperSidebar = () => {
           </div>
 
           <div className="ownerShip d-flex flex-column gap-4">
-            <p
-              className="text-center"
-              style={{ color: "#5A5A5A", fontSize: "12px" }}
-            >
+            <p className="text-center w-ownership-text">
               Ownership of all images belongs to their respective original
               owners & illustrators.
             </p>
@@ -185,8 +182,12 @@ const WallpaperSidebar = () => {
             </div>
 
             <div className="d-flex justify-content-center align-items-center gap-3">
-              <Link to="/">Privacy Policy</Link>
-              <Link to="/">Terms and Conditions</Link>
+              <Link to="/" className="w-pt">
+                Privacy Policy
+              </Link>
+              <Link to="/" className="w-pt">
+                Terms and Conditions
+              </Link>
             </div>
           </div>
         </>
