@@ -187,6 +187,44 @@
   line-height: normal;
   text-align: center;
 }
+
+.sfnw_desabled_content {
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 39px;
+  min-height: 656px;
+  width: 100%;
+}
+
+.sfnw_desabled_content p {
+  width: 270px;
+  height: 36px;
+  color: #aaa;
+  text-align: center;
+  font-family: Lato;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.sfnw_desabled_content button {
+  width: 133px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 /* Search Page End */
 
 @media only screen and (max-width: 425px) {

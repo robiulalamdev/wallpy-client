@@ -54,50 +54,40 @@ const artistData = [
 const Artist = () => {
   return (
     <>
-      <div className="container">
+      <div className="container w-100">
         <h2 className="home-section-title">Featured Artists</h2>
         <div className="artist">
-          <div className="row gap-md-4 px-2">
-            {artistData.map((data, index) => (
-              <div className="col-4 col-md-2 mb-2 mx-md-auto px-1 px-lg-0">
-                <div
-                  className=" d-flex flex-column gap-2 align-items-center artist-card p-2 p-md-3"
-                  key={index}
-                >
-                  <div class="proImg overflow-hidden">
-                    <img class="mb-3" src={data.img} alt="Profile" />
-                  </div>
-                  <div className="profileInner">
-                    <div className="d-flex justify-content-start gap-1 align-items-center mb-2">
-                      <img src={verified} alt="img" />
-                      <p>{data.title}</p>
-                    </div>
-                    {/* <div className="d-flex justify-content-between align-items-center mb-3">
-                    <Link to="#">
-                      <img src={twitter} alt="Twitter" />
-                    </Link>
-                    <Link to="#">
-                      <img src={behance} alt="Behance" />
-                    </Link>
-                    <Link to="#">
-                      <img src={dribble} alt="Dribble" />
-                    </Link>
-                    <Link to="#">
-                      <img src={instagram} alt="Instragram" />
-                    </Link>
-                  </div> */}
-                  </div>
-                  <Link
-                    className="viewProfile"
-                    style={{ fontSize: "10px", color: "#fff" }}
-                    to="#"
-                  >
-                    View Profile
-                  </Link>
+          {artistData.map((data, index) => (
+            <div
+              className="d-flex flex-column gap-2 align-items-center artist-card "
+              key={index}
+            >
+              <img class="artist-profile mb-3" src={data.img} alt="Profile" />
+              <div className="profileInner">
+                <div className="artist-pro d-flex justify-content-center gap-1 align-items-center mb-2">
+                  <img src={verified} alt="img" />
+                  <p>{data.title}</p>
                 </div>
+                {/* <div className="d-flex justify-content-between align-items-center mb-3">
+                <Link to="#">
+                  <img src={twitter} alt="Twitter" />
+                </Link>
+                <Link to="#">
+                  <img src={behance} alt="Behance" />
+                </Link>
+                <Link to="#">
+                  <img src={dribble} alt="Dribble" />
+                </Link>
+                <Link to="#">
+                  <img src={instagram} alt="Instragram" />
+                </Link>
+              </div> */}
               </div>
-            ))}
-          </div>
+              <Link className="artist-view-profile" to="/profile">
+                View Profile
+              </Link>
+            </div>
+          ))}
         </div>
       </div>
     </>

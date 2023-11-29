@@ -69,7 +69,7 @@ const Trending = () => {
               ))}
             </div>
           </div>
-          <div className="trendingInner mb-4 px-1">
+          <div className="trendingInner px-1">
             <div className="row">
               {imageData.map((image, index) => (
                 <div

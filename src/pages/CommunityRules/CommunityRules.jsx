@@ -1,9 +1,12 @@
 import React from "react";
 import "../../styles/communityRules.css";
 import banner from "../../assets/images/community-rules/banner.png";
+import Header from "../../Shared/Header/Header";
+import Footer from "../../Shared/Footer/Footer";
 const CommunityRules = () => {
   return (
-    <>
+    <div className="wallpaper_bg">
+      <Header />
       <div className="container mx-auto cmr-container">
         <h1 className="title">Community Rules</h1>
         <hr style={{ border: "1px solid #5A5A5A" }} />
@@ -122,7 +125,8 @@ const CommunityRules = () => {
           </ul>
         </section>
       </div>
-    </>
+      <Footer />
+    </div>
   );
 };
 

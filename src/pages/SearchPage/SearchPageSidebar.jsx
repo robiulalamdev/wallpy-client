@@ -10,15 +10,33 @@ import videogame_asset from "../../assets/videogame_asset.png";
 import autorenew from "../../assets/autorenew.png";
 import { arrow_drop_down } from "../../utils/icons/global_icons";
 
-const SearchPageSidebar = ({ open, setOpen, children, ...props }) => {
-  const [sfwTab, setSfwTab] = useState(0);
+const tabs = [
+  { id: 1, name: "All" },
+  { id: 2, name: "Illustration" },
+  { id: 3, name: "AI" },
+  { id: 4, name: "Photography" },
+];
+
+const SearchPageSidebar = ({
+  open,
+  setOpen,
+  sfwTab,
+  setSfwTab,
+  children,
+  ...props
+}) => {
+  const [selectedTab, setSelectedTab] = useState(1);
   return (
     <Offcanvas
       show={open}
       onHide={() => setOpen(false)}
-      className="h-100"
+      className="h-100 w-100"
       {...props}
-      style={{ backgroundColor: "#121212", zIndex: 99999999 }}
+      style={{
+        backgroundColor: "#121212",
+        zIndex: 99999999,
+        maxWidth: "361px",
+      }}
     >
       <Offcanvas.Body className="h-100" style={{ backgroundColor: "#121212" }}>
         <div className="d-flex justify-content-between align-items-center">
@@ -31,9 +49,34 @@ const SearchPageSidebar = ({ open, setOpen, children, ...props }) => {
             {iDrawerBack}
           </button>
         </div>
-        <SearchPageFilter3Tab
-          style={{ backgroundColor: "#313131", marginTop: "20px" }}
-        />
+
+        <div
+          className="allBtn d-flex justify-content-around align-items-center gap-0 px-2 w-100"
+          style={{
+            maxWidth: "327px",
+            backgroundColor: "#313131",
+            marginTop: "20px",
+          }}
+        >
+          {tabs?.map((t, i) => (
+            <button
+              onClick={() => setSelectedTab(t.id)}
+              className={`${
+                selectedTab === t.id ? "allBtnActive" : "acs-dactive-btn"
+              }`}
+              key={i}
+              style={{
+                maxWidth: "fit-content",
+                fontSize: "12px",
+                padding: "0px 10px",
+                height: "32px",
+                minWidth: "66px",
+              }}
+            >
+              {t?.name}
+            </button>
+          ))}
+        </div>
         <div
           className="td-tab-container d-flex justify-content-around align-items-center mx-auto mt-4"
           style={{ backgroundColor: "#313131" }}
@@ -49,6 +92,9 @@ const SearchPageSidebar = ({ open, setOpen, children, ...props }) => {
                   : "td-tab-dactive-btn"
               }`}
               key={i}
+              style={{
+                fontSize: "12px",
+              }}
             >
               {t}
             </button>

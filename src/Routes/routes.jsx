@@ -25,102 +25,105 @@ import AccountSettings from "../pages/AccountSettings/AccountSettings";
 import Upload from "../pages/Upload/Upload";
 
 export const router = createBrowserRouter([
+  // {
+  //   path: "/",
+  //   element: <Layout />,
+  //   children: [
+
+  //   ],
+  // },
   {
     path: "/",
-    element: <Layout />,
-    children: [
-      {
-        path: "/",
-        element: <Home />,
-      },
-      {
-        path: "/upload-rules",
-        element: <UploadRules />,
-      },
-      {
-        path: "/account-verification",
-        element: <AccountVerification />,
-      },
-      {
-        path: "/contact",
-        element: <Contact />,
-      },
-      {
-        path: "/official-brands",
-        element: <OfficialBrands />,
-      },
-      {
-        path: "/messages",
-        element: <Messages />,
-      },
-      {
-        path: "/media-center",
-        element: <MediaCenter />,
-      },
-      {
-        path: "/account-settings",
-        element: <AccountSettings />,
-      },
-      {
-        path: "/upload",
-        element: <Upload />,
-      },
-      {
-        path: "/profile",
-        element: <Profile />,
-      },
-      {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/copyright-information",
-        element: <CopyrightInformation />,
-      },
-      {
-        path: "/socials",
-        element: <Socials />,
-      },
-      {
-        path: "/community-rules",
-        element: <CommunityRules />,
-      },
-      {
-        path: "/privacy-policy",
-        element: <PrivacyPolicy />,
-      },
-      {
-        path: "/terms-and-conditions",
-        element: <TermsConditions />,
-      },
-      {
-        path: "/wallpaper",
-        element: <WallPaper />,
-      },
-      {
-        path: "/searchPage",
-        element: <SearchPage />,
-      },
-      {
-        path: "/register",
-        element: <Register />,
-      },
-      {
-        path: "/login",
-        element: <Login />,
-      },
-      {
-        path: "/forgetpassword",
-        element: <Forgetpassword />,
-      },
-      {
-        path: "/forgetemail",
-        element: <ForgetEmail />,
-      },
-      {
-        path: "/confirmationEmail",
-        element: <ConfirmationEmail />,
-      },
-    ],
+    element: <Home />,
+  },
+  {
+    path: "/upload-rules",
+    element: <UploadRules />,
+  },
+  {
+    path: "/account-verification",
+    element: <AccountVerification />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+  {
+    path: "/official-brands",
+    element: <OfficialBrands />,
+  },
+  {
+    path: "/messages",
+    element: <Messages />,
+  },
+  {
+    path: "/media-center",
+    element: <MediaCenter />,
+  },
+  {
+    path: "/account-settings",
+    element: <AccountSettings />,
+  },
+  {
+    path: "/upload",
+    element: <Upload />,
+  },
+
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/copyright-information",
+    element: <CopyrightInformation />,
+  },
+  {
+    path: "/socials",
+    element: <Socials />,
+  },
+  {
+    path: "/community-rules",
+    element: <CommunityRules />,
+  },
+  {
+    path: "/privacy-policy",
+    element: <PrivacyPolicy />,
+  },
+  {
+    path: "/terms-and-conditions",
+    element: <TermsConditions />,
+  },
+
+  {
+    path: "/searchPage",
+    element: <SearchPage />,
+  },
+  {
+    path: "/register",
+    element: <Register />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/forgetpassword",
+    element: <Forgetpassword />,
+  },
+  {
+    path: "/forgetemail",
+    element: <ForgetEmail />,
+  },
+  {
+    path: "/confirmationEmail",
+    element: <ConfirmationEmail />,
+  },
+  {
+    path: "/profile",
+    element: <Profile />,
+  },
+  {
+    path: "/wallpaper",
+    element: <WallPaper />,
   },
 ]);

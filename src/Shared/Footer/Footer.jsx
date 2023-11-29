@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <footer>
-        <div className="container">
+      <footer style={{ backgroundColor: "transparent" }}>
+        <div className="container" style={{ backgroundColor: "transparent" }}>
           <div className="row gy-2 text-start">
             <div className="col-12 col-md-6">
               <p className="footer-title">THE WALLPAPER SOCIETY</p>

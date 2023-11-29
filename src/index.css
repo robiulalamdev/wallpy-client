@@ -14,6 +14,44 @@
 
 body {
   background-color: #202529;
+  background: linear-gradient(
+    to bottom,
+    #202326 0%,
+    #151618 25%,
+    #1a1c1f 50%,
+    #151618 75%,
+    #151618 100%
+  ) !important;
+  min-height: 100vh;
+}
+
+.home_bg {
+  background: linear-gradient(
+    to bottom,
+    #202326 0%,
+    #151618 25%,
+    #1a1c1f 50%,
+    #151618 75%,
+    #151618 100%
+  ) !important;
+  min-height: 100vh;
+}
+.wallpaper_bg {
+  background: linear-gradient(
+    to bottom,
+    #202326 0%,
+    #1a1c1f 35%,
+    #151618 80%
+  ) !important;
+  min-height: 100vh;
+}
+
+.auth_bg {
+  background-image: url("./assets/Vector.png") !important;
+  background-size: 100% 100% !important;
+  width: 100vw !important;
+  min-height: 100% !important;
+  background-repeat: no-repeat !important;
 }
 
 .container {

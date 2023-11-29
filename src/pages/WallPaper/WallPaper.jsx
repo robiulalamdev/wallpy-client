@@ -24,6 +24,8 @@ import img from "../../assets/icons/mixer.png";
 import Drawer from "../../components/common-ui/drawers/Drawer";
 import { add_box, iDownload, iShare } from "../../utils/icons/global_icons";
 import download from "../../assets/icons/download.svg";
+import Header from "../../Shared/Header/Header";
+import Footer from "../../Shared/Footer/Footer";
 const items = [
   { id: 1, name: "Call of Duty" },
   { id: 2, name: "World of Warcraft" },
@@ -34,8 +36,9 @@ const items = [
 const WallPaper = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className="container">
-      <div className="bgShadowTop">
+    <div className="wallpaper_bg">
+      <Header />
+      <div className="container">
         <div className="custom_Container">
           <div className="d-flex justify-content-center align-items-start gap-3 all_mb">
             <div className="d-none d-md-block">
@@ -162,6 +165,7 @@ const WallPaper = () => {
       >
         <WallpaperSidebar />
       </Drawer>
+      <Footer />
     </div>
   );
 };

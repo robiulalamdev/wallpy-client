@@ -11,30 +11,38 @@ import TDTab from "../../components/common-ui/tabs/TDTab";
 import { arrow_drop_down } from "../../utils/icons/global_icons";
 import SearchPageFilter3Tab from "./SearchPageFilter3Tab";
 
-const SearchTrending = () => {
+const SearchTrending = ({ sfwTab, setSfwTab }) => {
   const [mainTab, setMainTab] = useState(1);
-  const [sfwTab, setSfwTab] = useState(0);
   return (
     <div
       className="d-flex justify-content-center align-items-center gap-1 d-none d-lg-inline-flex w-100"
-      style={{ overflowX: "auto" }}
+      style={{ overflow: "hidden" }}
     >
-      <div className="allBtn d-flex" style={{ minWidth: "207px" }}>
+      <div className="allBtn d-flex" style={{ maxWidth: "207px" }}>
         <button
           onClick={() => setMainTab(1)}
-          className={mainTab === 1 && "allBtnActive"}
+          className={`d-flex justify-content-center align-items-center ${
+            mainTab === 1 && "allBtnActive"
+          }`}
+          style={{ maxWidth: "88px" }}
         >
           Trending
         </button>
         <button
           onClick={() => setMainTab(2)}
-          className={mainTab === 2 && "allBtnActive"}
+          className={`d-flex justify-content-center align-items-center ${
+            mainTab === 2 && "allBtnActive"
+          }`}
+          style={{ maxWidth: "88px" }}
         >
           Upcoming
         </button>
       </div>
       <SearchPageFilter3Tab />
-      <div className="td-tab-container d-flex justify-content-around align-items-center">
+      <div
+        className="td-tab-container d-flex justify-content-around align-items-center gap-0"
+        style={{ maxWidth: "166px" }}
+      >
         {["SFW", "NSFW"]?.map((t, i) => (
           <button
             onClick={() => setSfwTab(i)}
@@ -46,6 +54,7 @@ const SearchTrending = () => {
                 : "td-tab-dactive-btn"
             }`}
             key={i}
+            style={{ maxWidth: "65px" }}
           >
             {t}
           </button>

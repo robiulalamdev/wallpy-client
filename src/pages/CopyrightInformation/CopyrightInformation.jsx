@@ -1,10 +1,13 @@
 import React from "react";
 import "../../styles/copyrightInfo.css";
 import banner from "../../assets/images/copyright-info/banner.png";
+import Header from "../../Shared/Header/Header";
+import Footer from "../../Shared/Footer/Footer";
 
 const CopyrightInformation = () => {
   return (
-    <>
+    <div className="wallpaper_bg">
+      <Header />
       <div className="container mx-auto ci-container">
         <h1 className="title">Copyright Information</h1>
         <hr style={{ border: "1px solid #5A5A5A" }} />
@@ -97,7 +100,8 @@ const CopyrightInformation = () => {
           </p>
         </div>
       </div>
-    </>
+      <Footer />
+    </div>
   );
 };
 

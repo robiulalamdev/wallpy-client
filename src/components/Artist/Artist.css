@@ -1,10 +1,14 @@
 /* Featured Artists Start */
 
 .artist {
-  padding: 20px;
+  width: 100%;
+  padding: 29px 59px;
   border-radius: 40px;
+  position: relative;
   background: #131619;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 63px;
 }
 
 .artist .proImg,
@@ -54,15 +58,67 @@
   border-radius: 10px;
   width: 100%;
   max-width: 245px !important;
+  padding: 12px 5px;
+}
+
+.artist-view-profile {
+  width: 92px;
+  height: 31px;
+  border-radius: 15px;
+  background: #131313;
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.artist-pro img {
+  width: 18.242px;
+}
+.artist-pro p {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 /* Featured Artists End*/
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 375px) {
+  .artist {
+    padding: 13px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 12px;
+  }
+  .artist-profile {
+    width: 45px;
+    height: 45px;
+  }
+  .artist-pro p {
+    font-size: 8px;
+  }
+  .artist-view-profile {
+    width: fit-content;
+    padding: 0 8px;
+  }
+}
+@media only screen and (min-width: 376px) and (max-width: 425px) {
   .artist {
     border-radius: 10px;
-    padding: 10px;
+    padding: 13px 14px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 9px;
   }
+
   .artist .proImg,
   .artist .proImg img {
     width: 44px;
@@ -84,13 +140,43 @@
     padding: 5px 5px;
   }
   .artist-card {
-    width: 100%;
+    width: 100% !important;
+    max-width: 87px !important;
+  }
+  .artist-profile {
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50% !important;
+  }
+  .artist-view-profile {
+    width: 70px;
+    height: 25px;
+    border-radius: 15px;
+    font-size: 8px;
+  }
+  .artist-pro img {
+    width: 10px;
+  }
+  .artist-pro p {
+    color: #fff;
+    font-family: Bakbak One;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
 @media only screen and (min-width: 426px) and (max-width: 767px) {
   .artist {
     border-radius: 10px;
     padding: 10px;
+  }
+  .artist {
+    border-radius: 10px;
+    padding: 13px 14px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 9px;
   }
   .artist .proImg,
   .artist .proImg img {
@@ -104,8 +190,13 @@
   .profileInner img {
     width: 10px;
   }
-  .viewProfile {
-    font-size: 8px;
+  .artist {
+    column-gap: 25px;
+  }
+  .artist-profile {
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50% !important;
   }
 
   .viewProfile {
@@ -119,8 +210,9 @@
 
 @media only screen and (min-width: 426px) and (max-width: 767px) {
   .artist {
-    border-radius: 10px;
-    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 9px;
   }
   .artist .proImg,
   .artist .proImg img {
@@ -149,10 +241,19 @@
 
 /* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Styles for tablets */
+  .artist {
+    padding: 13px 18px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) !important;
+    gap: 12px;
+  }
 }
 
 /* Media query for devices with a minimum width of 1024px (e.g., desktops) */
 @media only screen and (min-width: 1024px) {
-  /* Styles for desktops */
+  .artist-profile {
+    width: 129.351px !important;
+    height: 130px !important;
+    object-fit: cover;
+  }
 }
