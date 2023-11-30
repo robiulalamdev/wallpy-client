@@ -258,7 +258,7 @@ const Profile = () => {
                 </button>
               </div>
               <div className="share">
-                <div className="d-flex justify-content-end justify-content-md-start align-items-center gap-3">
+                <div className="d-flex justify-content-end align-items-center gap-3">
                   <Link to="/" className="overflow-hidden">
                     <img src={twitter} alt="Twitter" />
                   </Link>
