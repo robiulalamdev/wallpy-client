@@ -78,6 +78,45 @@
   opacity: 1;
 }
 
+.profile_images {
+  margin-top: 53px;
+}
+.profile_search {
+  position: relative;
+  z-index: 999999;
+  max-width: 771px !important;
+  height: 45px;
+  background-image: url("../assets/Search.png");
+  background-repeat: no-repeat;
+  background-position: center left 2%;
+  background-size: initial;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.profile_search input {
+  position: relative;
+  z-index: 999999;
+  background: transparent;
+  padding: 13px 13px 13px 0px;
+  border: none;
+  color: #5a5a5a;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profile_search input::placeholder {
+  position: relative;
+  z-index: 999999;
+  color: #5a5a5a;
+  font-family: var(--lato);
+  font-size: 15px;
+  font-weight: 400;
+}
+
 .shareProfile {
   padding: 5px 20px 20px 20px;
   border-radius: 10px;
@@ -277,6 +316,9 @@
   .profileImages-padding {
     margin-bottom: 20px;
     padding: 0 8px;
+  }
+  .profile_images {
+    margin-top: 18px;
   }
 }
 

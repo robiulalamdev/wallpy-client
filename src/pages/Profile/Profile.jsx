@@ -18,26 +18,28 @@ import instagram from "../../assets/instagram.png";
 import { Link } from "react-router-dom";
 import Header from "../../Shared/Header/Header";
 import Footer from "../../Shared/Footer/Footer";
+import { iSearch } from "../../utils/icons/global_icons";
+
+import img1 from "../../assets/images/profile/img1.png";
+import img2 from "../../assets/images/profile/img2.png";
+import img3 from "../../assets/images/profile/img3.png";
+import img4 from "../../assets/images/profile/img4.png";
+import img5 from "../../assets/images/profile/img5.png";
+import img6 from "../../assets/images/profile/img6.png";
+import img7 from "../../assets/images/profile/img7.png";
+import img8 from "../../assets/images/profile/img8.png";
+import img9 from "../../assets/images/profile/img9.png";
 
 const data = [
-  { img: kitten },
-  { img: kitten },
-  { img: kitten },
-  { img: kitten },
-  { img: kitten },
-  { img: kitten },
-  { img: kitten },
-  { img: kitten },
-  { img: kitten },
-  { img: kitten },
-  { img: kitten },
-  { img: kitten },
-  { img: kitten },
-  { img: kitten },
-  { img: kitten },
-  { img: kitten },
-  { img: kitten },
-  { img: kitten },
+  { img: img1 },
+  { img: img2 },
+  { img: img3 },
+  { img: img4 },
+  { img: img5 },
+  { img: img6 },
+  { img: img7 },
+  { img: img8 },
+  { img: img9 },
 ];
 const Profile = () => {
   const [tab, setTab] = useState(0);
@@ -279,8 +281,8 @@ const Profile = () => {
           <hr className="w-100" />
         </div>
 
-        <div className="">
-          <div className="row mb-5 px-2">
+        <div className="w-100">
+          <div className="row px-2">
             <div className="profile-tab-container mx-auto mx-md-0 col-md-4 d-flex justify-content-around gap-3 align-items-center">
               {["Uploads", "Favorites", "Collections"]?.map((t, i) => (
                 <button
@@ -292,23 +294,23 @@ const Profile = () => {
                 </button>
               ))}
             </div>
-            <form action="" className="searchNav col-md-4 ms-auto mt-4 mt-lg-0">
+            <form
+              action=""
+              className="profile_search col-md-4 ms-auto mt-4 mt-lg-0 d-flex align-items-center gap-2 d-none d-md-block"
+            >
+              {iSearch}
               <input
                 className="w-100"
                 type="search"
                 placeholder="Search this profile"
               />
             </form>
-            <div className="col-md-4"></div>
+            <div className="col-md-4 d-none d-md-block"></div>
           </div>
-          <div className="search_images_container mb-5">
+          <div className="search_images_container profile_images mb-5">
             {data.map((image) => (
               <Link to="/wallpaper">
-                <img
-                  className="img-fluid w-100 h-100"
-                  src={image.img}
-                  alt="img"
-                />
+                <img className="w-100" src={image.img} alt="img" />
               </Link>
             ))}
           </div>
