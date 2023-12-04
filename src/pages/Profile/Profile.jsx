@@ -296,7 +296,7 @@ const Profile = () => {
             </div>
             <form
               action=""
-              className="profile_search col-md-4 ms-auto mt-4 mt-lg-0 d-flex align-items-center gap-2 d-none d-md-block"
+              className="profile_search col-md-4 ms-auto mt-4 mt-lg-0 d-flex align-items-center gap-2 d-none d-md-inline-flex"
             >
               {iSearch}
               <input
