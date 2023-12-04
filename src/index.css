@@ -265,6 +265,8 @@ hr {
   }
   .home-section-title {
     font-size: 15px;
+    margin-top: 36px !important;
+    margin-bottom: 19px !important;
   }
 }
 @media only screen and(min-width: 426px) and (max-width: 767px) {
