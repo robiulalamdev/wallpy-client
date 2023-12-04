@@ -10,46 +10,21 @@ import arrow_down_light from "../../assets/arrow_down_light.png";
 import { Link } from "react-router-dom";
 import { redClose } from "../../utils/icons/global_icons";
 
-const items = [
-  {
-    id: 1,
-    section: "Ultra Wide",
-    sizes: [
-      { id: 1, size: "2560 × 1080" },
-      { id: 2, size: "3440 × 1440" },
-      { id: 3, size: "3840 × 1600" },
-    ],
-  },
-  {
-    id: 2,
-    section: "4:3",
-    sizes: [
-      { id: 1, size: "1280 × 960" },
-      { id: 2, size: "1600 × 1200" },
-      { id: 3, size: "1920 × 1440" },
-      { id: 4, size: "2560 × 1920" },
-      { id: 5, size: "3840 × 2880" },
-    ],
-  },
-  {
-    id: 3,
-    section: "16:9",
-    sizes: [
-      { id: 1, size: "1280 × 720" },
-      { id: 2, size: "1600 × 900" },
-      { id: 3, size: "1920 × 1080" },
-      { id: 4, size: "2560 × 1440" },
-      { id: 5, size: "3840 × 2160" },
-    ],
-  },
-];
-
-const WallpaperSidebar = () => {
+const WallpaperSidebar = ({ bgColorCode }) => {
   const [selected, setSelected] = useState(true);
   return (
-    <div className="sideBar fontBak h-100" style={{ minHeight: "802px" }}>
+    <div
+      className="w_sideBar fontBak h-100"
+      style={{
+        minHeight: "802px",
+        background: bgColorCode || "rgba(0, 0, 0, 0.20)",
+      }}
+    >
       <p className="text-center mb-3">Posted by</p>
-      <div className="d-flex justify-content-center align-items-center gap-5 mb-4">
+      <div
+        className="d-flex justify-content-center align-items-center mb-4"
+        style={{ gap: "38px" }}
+      >
         <div className="w-profile-container">
           <img className="" src={profile} alt="Profile Image" />
         </div>
@@ -58,20 +33,6 @@ const WallpaperSidebar = () => {
             krs
             <img className="ms-1" src={Verified} alt="Verified" />
           </h3>
-          {/* <div className="d-flex justify-content-center gap-3 align-items-center mb-4">
-            <Link to="/">
-              <img src={twitter} alt="Twitter" />
-            </Link>
-            <Link to="/">
-              <img src={behance} alt="Behance" />
-            </Link>
-            <Link to="/">
-              <img src={dribble} alt="Dribble" />
-            </Link>
-            <Link to="/">
-              <img src={instagram} alt="Instragram" />
-            </Link>
-          </div> */}
           <Link to="/profile">
             <button className="w-viewProfileBtn">View Profile</button>
           </Link>
@@ -195,10 +156,10 @@ const WallpaperSidebar = () => {
 
       {!selected && (
         <>
-          <div className="d-flex justify-content-between w-100 gap-2">
+          {/* <div className="d-flex justify-content-between w-100 gap-2">
             {items?.map((item, index) => (
               <div key={index}>
-                <button className="size-title">{item?.section}</button>
+                <button className="size-title text-center">{item?.section}</button>
                 <div className="w-100">
                   {item?.sizes?.map((size, i) => (
                     <button key={i} className="size-btn mt-2">
@@ -208,6 +169,45 @@ const WallpaperSidebar = () => {
                 </div>
               </div>
             ))}
+          </div> */}
+          <div
+            className="row gy-4 mb-4 w-100"
+            style={{ padding: "17px 0px 17px 17px" }}
+          >
+            <div className="col-4 px-0 d-flex flex-column align-items-center gap-2">
+              <p className="text-nowrap size-title text-center">Ultra Wide</p>
+              <button className="size-btn">2560 × 1080</button>
+              <button className="size-btn">3440 × 1440</button>
+              <button className="size-btn">3840 × 1600</button>
+              <p className="size-title text-center">4:3</p>
+              <button className="size-btn">1280 × 960</button>
+              <button className="size-btn">1600 × 1200</button>
+              <button className="size-btn">1920 × 1440</button>
+              <button className="size-btn">2560 × 1920</button>
+              <button className="size-btn">3840 × 2880</button>
+            </div>
+            <div className="col-4 px-0 d-flex flex-column align-items-center gap-2">
+              <p className="size-title text-center">16:9</p>
+              <button className="size-btn">1280 × 720</button>
+              <button className="size-btn">1600 × 900</button>
+              <button className="size-btn">1920 × 1080</button>
+              <button className="size-btn">2560 × 1440</button>
+              <button className="size-btn">3840 × 2160</button>
+              <p className="size-title text-center">16:9</p>
+              <button className="size-btn">1280 × 1024</button>
+              <button className="size-btn">1600 × 1280</button>
+              <button className="size-btn">1920 × 1536</button>
+              <button className="size-btn">2560 × 2048</button>
+              <button className="size-btn">3840 × 3072</button>
+            </div>
+            <div className="col-4 px-0 d-flex flex-column align-items-center gap-2">
+              <p className="size-title text-center">16:10</p>
+              <button className="size-btn">1280 × 800</button>
+              <button className="size-btn">1600 × 1000</button>
+              <button className="size-btn">1920 × 1200</button>
+              <button className="size-btn">2560 × 1600</button>
+              <button className="size-btn">3840 × 2400</button>
+            </div>
           </div>
           <hr className="my-3" style={{ border: "1px solid #5A5A5A" }} />
           <div className="d-flex flex-column align-items-center gap-4">

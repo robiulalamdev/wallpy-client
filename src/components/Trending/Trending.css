@@ -99,9 +99,21 @@
 
 .first-img {
   border-radius: 15px;
+  height: 535px !important;
 }
 .second-img {
   border-radius: 15px;
+  height: 253px !important;
+}
+.third-img {
+  border-radius: 15px;
+  height: 253px !important;
+}
+.ow_pr {
+  padding: 36px;
+}
+.ow_gap {
+  gap: 29px;
 }
 
 .staff {
@@ -115,6 +127,9 @@
   border-radius: 30px;
   transition: 0.4s ease-in-out;
   width: 100%;
+}
+.fw_pr {
+  padding-right: 55px;
 }
 /* Trending End */
 
@@ -155,6 +170,28 @@
     max-height: 131px;
     object-fit: cover;
   }
+  .first-img {
+    height: 86px !important;
+  }
+  .second-img {
+    height: 86px !important;
+  }
+  .third-img {
+    height: 131px !important;
+    max-height: 131px !important;
+  }
+  .ow_pr {
+    padding: 9px;
+  }
+  .ow_gap {
+    gap: 10px;
+  }
+  .fw_mrt {
+    margin-top: 10px;
+  }
+  .fw_pr {
+    padding-right: 10px;
+  }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 767px) {
@@ -166,13 +203,28 @@
     gap: 10px;
   }
   .staff {
-    border-radius: 5px;
+    border-radius: 15px;
     overflow: hidden;
   }
   .staff img {
-    border-radius: 5px;
+    border-radius: 15px;
     transition: 0.4s ease-in-out;
     width: 100%;
+  }
+  .first-img {
+    height: 86px !important;
+  }
+  .second-img {
+    height: 86px !important;
+  }
+  .third-img {
+    height: 131px !important;
+  }
+  .fw_mrt {
+    margin-top: 10px;
+  }
+  .fw_pr {
+    padding-right: 10px;
   }
 }
 

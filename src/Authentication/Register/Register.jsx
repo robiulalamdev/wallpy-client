@@ -3,6 +3,8 @@ import leftright from "../../assets/left_light.png";
 import "./Register.css";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
+import Header from "../../Shared/Header/Header";
+import { iInfo } from "../../utils/icons/global_icons";
 
 const Register = () => {
   const initialFormData = {
@@ -37,10 +39,12 @@ const Register = () => {
   return (
     <>
       <div className="auth_bg pt-4 mx-auto">
+        <Header />
         <div className="container mx-auto auth_Container">
           <h1 className="d-md-none register-p-title">THE WALLPAPER SOCIETY</h1>
           <div className="row brightBg px-1 py-3 px-md-3 py-md-4 mx-auto">
-            <div className="col-md-6">
+            <div className="col-md-6 position-relative">
+              <div className="auth_iInfoBtn">{iInfo}</div>
               <div className="imgLogin d-flex flex-column justify-content-between align-items-center">
                 <p className="d-none d-md-block">Welcome to the Society</p>
                 <div className="text-center d-none d-md-block">

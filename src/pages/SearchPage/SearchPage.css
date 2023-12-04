@@ -40,7 +40,7 @@
 }
 .resChild-sidebar {
   position: absolute;
-  left: 0;
+  right: -15px;
   width: 100%;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.5);
@@ -48,6 +48,17 @@
   visibility: hidden;
   opacity: 0;
   z-index: 2 !important;
+}
+
+.search_sidebar_btn button {
+  width: 126px;
+  height: 38px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
 }
 
 .searchMain {
@@ -225,11 +236,37 @@
   font-weight: 400;
   line-height: normal;
 }
+
+.search_images_container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 26px;
+  row-gap: 42px;
+}
+
+.search_images_container img {
+  width: 330px;
+  height: 170px;
+  border-radius: 15px !important;
+}
+
 /* Search Page End */
 
 @media only screen and (max-width: 425px) {
   .searchImgPadding {
     padding: 0 5px 16px 5px !important;
+  }
+  .search_images_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 14px;
+    row-gap: 14px;
+  }
+
+  .search_images_container img {
+    width: 115px;
+    height: 152px;
+    border-radius: 5px !important;
   }
 }
 
@@ -237,11 +274,35 @@
   .searchImgPadding {
     padding: 0 5px 16px 5px !important;
   }
+  .search_images_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 14px;
+    row-gap: 14px;
+  }
+
+  .search_images_container img {
+    width: 330px;
+    height: 170px;
+    border-radius: 5px !important;
+  }
 }
 
-@media only screen and (max-width: 426px) and(max-width: 1024px) {
+@media only screen and (min-width: 426px) and (max-width: 1024px) {
   .searchImgPadding {
     padding: 0 5px 16px 5px !important;
+  }
+  .search_images_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 14px;
+    row-gap: 14px;
+  }
+
+  .search_images_container img {
+    width: 330px;
+    height: 170px;
+    border-radius: 5px !important;
   }
 }
 @media only screen and (min-width: 1024px) {

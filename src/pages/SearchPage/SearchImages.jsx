@@ -127,16 +127,9 @@ const SearchImages = () => {
   return (
     <>
       {imageArray.map((data) => (
-        <div className="tredImg col-4 col-md-2 px-1 searchImgPadding">
-          <Link to="/">
-            <img
-              className="img-fluid w-100"
-              src={data}
-              alt="img"
-              style={{ objectFit: "cover" }}
-            />
-          </Link>
-        </div>
+        <Link to="/">
+          <img className="img-fluid w-100" src={data} alt="img" />
+        </Link>
       ))}
     </>
   );

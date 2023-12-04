@@ -112,33 +112,18 @@ const SearchPageSidebar = ({
                 {arrow_drop_down}
               </button>
               <div
-                className="resChild p-1 w-100"
-                style={{ maxWidth: "380px", minWidth: "315px" }}
+                className="resChild p-1 w-100 mx-auto"
+                style={{ maxWidth: "380px", minWidth: "310px" }}
               >
-                <div className="d-flex justify-content-center align-items-start flex-wrap gap-1 mb-4 w-100">
-                  <div className="d-flex flex-column align-items-center gap-2">
+                <div
+                  className="row gy-2 mb-4 w-100"
+                  style={{ padding: "17px 0px 17px 17px" }}
+                >
+                  <div className="col-4 px-0 d-flex flex-column align-items-center gap-2">
                     <p className="text-nowrap">Ultra Wide</p>
                     <button>2560 × 1080</button>
                     <button>3440 × 1440</button>
                     <button>3840 × 1600</button>
-                  </div>
-                  <div className="d-flex flex-column align-items-center gap-2">
-                    <p>16:9</p>
-                    <button>1280 × 720</button>
-                    <button>1600 × 900</button>
-                    <button>1920 × 1080</button>
-                    <button>2560 × 1440</button>
-                    <button>3840 × 2160</button>
-                  </div>
-                  <div className="d-flex flex-column align-items-center gap-2">
-                    <p>16:10</p>
-                    <button>1280 × 800</button>
-                    <button>1600 × 1000</button>
-                    <button>1920 × 1200</button>
-                    <button>2560 × 1600</button>
-                    <button>3840 × 2400</button>
-                  </div>
-                  <div className="d-flex flex-column align-items-center gap-2">
                     <p>4:3</p>
                     <button>1280 × 960</button>
                     <button>1600 × 1200</button>
@@ -146,13 +131,27 @@ const SearchPageSidebar = ({
                     <button>2560 × 1920</button>
                     <button>3840 × 2880</button>
                   </div>
-                  <div className="d-flex flex-column align-items-center gap-2">
+                  <div className="col-4 px-0 d-flex flex-column align-items-center gap-2">
+                    <p>16:9</p>
+                    <button>1280 × 720</button>
+                    <button>1600 × 900</button>
+                    <button>1920 × 1080</button>
+                    <button>2560 × 1440</button>
+                    <button>3840 × 2160</button>
                     <p>16:9</p>
                     <button>1280 × 1024</button>
                     <button>1600 × 1280</button>
                     <button>1920 × 1536</button>
                     <button>2560 × 2048</button>
                     <button>3840 × 3072</button>
+                  </div>
+                  <div className="col-4 px-0 d-flex flex-column align-items-center gap-2">
+                    <p>16:10</p>
+                    <button>1280 × 800</button>
+                    <button>1600 × 1000</button>
+                    <button>1920 × 1200</button>
+                    <button>2560 × 1600</button>
+                    <button>3840 × 2400</button>
                   </div>
                 </div>
                 <div className="mb-4">
@@ -182,12 +181,10 @@ const SearchPageSidebar = ({
                 {arrow_drop_down}
               </button>
               <div
-                className="resChild-sidebar lgFont deviceBtn p-1"
-                style={{
-                  left: 0,
-                }}
+                className="resChild-sidebar lgFont p-1"
+                style={{ width: "322px", height: "166px" }}
               >
-                <div className="d-flex justify-content-center flex-wrap align-items-start gap-2 p-1">
+                <div className="search_sidebar_btn d-flex justify-content-center flex-wrap align-items-start gap-2 pt-3">
                   <button>
                     <img className="me-1" src={desktop_windows} alt="Desktop" />
                     Desktop
@@ -225,7 +222,10 @@ const SearchPageSidebar = ({
                 <span>Sort By</span>
                 {arrow_drop_down}
               </button>
-              <div className="resChild">
+              <div
+                className="resChild"
+                style={{ width: "315px", height: "166px" }}
+              >
                 <div className="lgFont d-flex flex-column align-items-center gap-2">
                   <button style={{ background: "transparent" }}>Random</button>
                   <button style={{ background: "transparent" }}>Views</button>

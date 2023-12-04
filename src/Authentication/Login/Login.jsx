@@ -5,6 +5,9 @@ import fbsignin from "../../assets/fbsignin.png";
 import googlesignIn from "../../assets/googlesignIn.png";
 import applesignIn from "../../assets/applesignIn.png";
 import { Link, useNavigate } from "react-router-dom";
+import Header from "../../Shared/Header/Header";
+import Footer from "../../Shared/Footer/Footer";
+import { iInfo } from "../../utils/icons/global_icons";
 // import Swal from "sweetalert2";
 
 const Login = () => {
@@ -32,11 +35,13 @@ const Login = () => {
 
   return (
     <>
-      <div className="pt-4 auth_bg ">
+      <div className="pt-4 auth_bg">
+        <Header />
         <div className="container auth_Container">
           <h1 className="d-md-none register-p-title">THE WALLPAPER SOCIETY</h1>
           <div className="row brightBg px-1 py-3 px-md-3 py-md-4 mx-auto">
-            <div className="col-md-6">
+            <div className="col-md-6 position-relative">
+              <div className="auth_iInfoBtn">{iInfo}</div>
               <div className="imgLogin login_bg d-flex flex-column justify-content-between align-items-center">
                 <p className="d-none d-md-block">
                   Welcome back; we missed you.
@@ -98,7 +103,10 @@ const Login = () => {
                     </Link>
                   </div>
                 </form>
-                <div className="socialBtn d-flex flex-column justify-content-center align-items-center gap-2">
+                <div
+                  className="socialBtn d-flex flex-column justify-content-center align-items-center"
+                  style={{ gap: "12px" }}
+                >
                   <button
                     className="w-100 text-start"
                     style={{ background: "#1877F2" }}

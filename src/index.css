@@ -49,8 +49,9 @@ body {
 .auth_bg {
   background-image: url("./assets/Vector.png") !important;
   background-size: 100% 100% !important;
-  width: 100vw !important;
+  width: 100% !important;
   min-height: 100% !important;
+  height: 100%;
   background-repeat: no-repeat !important;
 }
 
@@ -103,6 +104,7 @@ input {
   max-width: 1090px;
   position: relative;
   z-index: 9999999;
+  min-height: 100vh;
 }
 
 .search_Container {
@@ -119,7 +121,7 @@ input {
 }
 
 .home-section-title {
-  font-size: 15px;
+  font-size: 35px;
   margin-top: 91px !important;
   margin-bottom: 47px !important;
   color: #fff;
@@ -261,14 +263,20 @@ hr {
   .title {
     font-size: 16px;
   }
+  .home-section-title {
+    font-size: 15px;
+  }
 }
-@media only screen and(max-width: 426px) and (max-width: 767px) {
+@media only screen and(min-width: 426px) and (max-width: 767px) {
   .sw-full {
     width: 100% !important;
   }
 
   .title {
     font-size: 16px;
+  }
+  .home-section-title {
+    font-size: 24px;
   }
 }
 

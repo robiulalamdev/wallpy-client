@@ -100,12 +100,11 @@ const WallPaper = () => {
                 </button>
               </div>
               <div
-                className="w-100 position-absolute d-flex justify-content-between px-4 align-items-center"
+                className="w-100 position-absolute d-flex justify-content-between align-items-center"
                 style={{ bottom: "10px" }}
               >
-                <div className="home-bb">
-                  {" "}
-                  <img style={{ width: "100%" }} src={download} alt="" />
+                <div className="home-bb" style={{ paddingLeft: "40px" }}>
+                  <img src={download} alt="" />
                 </div>
                 <div className="home-bb">{iShare}</div>
               </div>
@@ -116,40 +115,28 @@ const WallPaper = () => {
 
       <div className="container custom_Container">
         <h3 className="all_mb">You may also like</h3>
-        <div className="row gy-4 mb-4">
-          <div className="col-4 px-1 px-md-2">
-            <div className="w-100">
-              <Link to="/">
-                <img
-                  className="w-image img-fluid w-100"
-                  src={wallpaper}
-                  alt="img"
-                />
-              </Link>
-            </div>
-          </div>
-          <div className="col-4 px-1 px-md-2">
-            <div className="w-100">
-              <Link to="/">
-                <img
-                  className="w-image img-fluid w-100"
-                  src={wallpaper1}
-                  alt="img"
-                />
-              </Link>
-            </div>
-          </div>
-          <div className="col-4 px-1 px-md-2">
-            <div className="w-100">
-              <Link to="/">
-                <img
-                  className="w-image img-fluid w-100"
-                  src={wallpaper2}
-                  alt="img"
-                />
-              </Link>
-            </div>
-          </div>
+        <div className="w_also_like_container mb-4">
+          <Link to="/">
+            <img
+              className="w-image img-fluid w-100"
+              src={wallpaper}
+              alt="img"
+            />
+          </Link>
+          <Link to="/">
+            <img
+              className="w-image img-fluid w-100"
+              src={wallpaper1}
+              alt="img"
+            />
+          </Link>
+          <Link to="/">
+            <img
+              className="w-image img-fluid w-100"
+              src={wallpaper2}
+              alt="img"
+            />
+          </Link>
         </div>
         <span className="d-block text-center">
           <button className="viewProfile px-3" style={{ fontSize: "12px" }}>
@@ -161,13 +148,13 @@ const WallPaper = () => {
       <Drawer
         open={open}
         setOpen={setOpen}
-        bgColorCode="rgba(0, 0, 0, 0.2)"
+        bgColorCode="#121212"
         {...{
           scroll: false,
           backdrop: false,
         }}
       >
-        <WallpaperSidebar />
+        <WallpaperSidebar bgColorCode="#121212" />
       </Drawer>
       <Footer />
     </div>

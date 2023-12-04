@@ -1,15 +1,19 @@
 import React from "react";
 import leftright from "../../assets/left_light.png";
 import { Link } from "react-router-dom";
+import Header from "../../Shared/Header/Header";
+import { iInfo } from "../../utils/icons/global_icons";
 
 const ForgetEmail = () => {
   return (
     <>
       <div className="auth_bg pt-4">
+        <Header />
         <div className=" container auth_Container">
           <h1 className="d-md-none register-p-title">THE WALLPAPER SOCIETY</h1>
           <div className="row brightBg px-1 py-3 px-md-3 py-md-4 mx-auto">
-            <div className="col-md-6">
+            <div className="col-md-6 position-relative">
+              <div className="auth_iInfoBtn">{iInfo}</div>
               <div className="imgLogin forgetpass_bg">
                 <p className="text-center d-none d-md-block">
                   Forgot your e-mail?

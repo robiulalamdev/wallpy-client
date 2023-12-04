@@ -279,8 +279,8 @@ const Profile = () => {
           <hr className="w-100" />
         </div>
 
-        <div className="container search_Container">
-          <div className="row mb-5">
+        <div className="">
+          <div className="row mb-5 px-2">
             <div className="profile-tab-container mx-auto mx-md-0 col-md-4 d-flex justify-content-around gap-3 align-items-center">
               {["Uploads", "Favorites", "Collections"]?.map((t, i) => (
                 <button
@@ -301,17 +301,15 @@ const Profile = () => {
             </form>
             <div className="col-md-4"></div>
           </div>
-          <div className="row align-items-center mb-5">
+          <div className="search_images_container mb-5">
             {data.map((image) => (
-              <div className="col-4 col-md-3 col-lg-2 text-center h-100 profileImages-padding">
-                <Link to="/wallpaper">
-                  <img
-                    className="img-fluid ownWall w-100 h-100"
-                    src={image.img}
-                    alt="img"
-                  />
-                </Link>
-              </div>
+              <Link to="/wallpaper">
+                <img
+                  className="img-fluid w-100 h-100"
+                  src={image.img}
+                  alt="img"
+                />
+              </Link>
             ))}
           </div>
           <div>

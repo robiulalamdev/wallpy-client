@@ -18,6 +18,11 @@
 }
 
 /* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .login_bg {
+    height: 200px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   /* Styles for tablets */
 }

@@ -9,19 +9,32 @@
   max-height: 804px;
   width: 100%;
   height: 100%;
-  margin-bottom: 20px;
+}
+
+.auth_iInfoBtn {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 23px !important;
+  right: 32px !important;
+  cursor: pointer;
 }
 
 .imgLogin {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  border-radius: 30px;
   display: block;
   color: #f4f4f4;
-  padding: 70px 20px;
+  padding: 71px 20px;
   height: 746px;
-  background-image: url("../../assets/registarBg.png");
+  border-radius: 30px;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.7) 0%,
+      rgba(0, 0, 0, 0.7) 100%
+    ),
+    url("../../assets/registarBg.png");
 }
 
 .register-p-title {
@@ -44,9 +57,13 @@
 }
 
 .addedWall {
+  width: 385px;
+  height: 136px;
   border-radius: 15px;
   background: rgba(0, 0, 0, 0.5);
-  padding: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .brightBg h1 {
@@ -93,7 +110,7 @@
   color: #373737;
   font-size: 12px;
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 .brightBg form {
@@ -164,7 +181,10 @@
 /* Login Page & Register Page End */
 
 /* Media query for devices with a maximum width of 767px (e.g., smartphones) */
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 350px) {
+  .community a {
+    font-size: 8px;
+  }
   .imgLogin {
     height: 171px;
     border-radius: 10px !important;
@@ -172,11 +192,29 @@
   .brightBg {
     border-radius: 10px !important;
   }
+  .brightBg form label {
+    text-align: center !important;
+  }
+}
+@media only screen and (min-width: 351px) and (max-width: 425px) {
+  .imgLogin {
+    height: 171px;
+    border-radius: 10px !important;
+  }
+  .brightBg {
+    border-radius: 10px !important;
+  }
+  .brightBg form label {
+    text-align: center !important;
+  }
 }
 
 /* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Styles for tablets */
+  .addedWall {
+    width: 285px;
+    height: 136px;
+  }
 }
 
 /* Media query for devices with a minimum width of 1024px (e.g., desktops) */

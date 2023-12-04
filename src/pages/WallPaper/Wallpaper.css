@@ -24,6 +24,12 @@
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.2) !important;
 }
+.w_sideBar {
+  width: 347px;
+  height: 100%;
+  padding: 15px 30px;
+  border-radius: 10px;
+}
 
 .sideImgPro {
   height: 75px;
@@ -225,7 +231,6 @@
 }
 .size-btn {
   width: 83px;
-  /* width: 100%; */
   height: 29px;
   border-radius: 5px;
   background: rgba(0, 0, 0, 0.4);
@@ -286,7 +291,7 @@ input[type="number"] {
 .w-image {
   max-width: 545px;
   height: 277px;
-  border-radius: 15px;
+  border-radius: 10px;
 }
 
 .search-collections input {
@@ -370,6 +375,12 @@ input[type="number"] {
   color: white !important;
 }
 
+.w_also_like_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 83px;
+}
+
 /* Media query for devices with a maximum width of 767px (e.g., smartphones) */
 @media only screen and (max-width: 425px) {
   .home-bb {
@@ -385,20 +396,38 @@ input[type="number"] {
   .w-image {
     height: 160px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 5px;
+  }
+  .w_also_like_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
   }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 767px) {
+  .w_also_like_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+  }
 }
 
 /* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Styles for tablets */
+  .w_also_like_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+  }
 }
 
 /* Media query for devices with a minimum width of 1024px (e.g., desktops) */
 @media only screen and (min-width: 1024px) {
-  /* Styles for desktops */
+  .w_also_like_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 86px;
+  }
 }
 /* WallPaper Page End */

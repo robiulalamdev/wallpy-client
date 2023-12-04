@@ -25,13 +25,6 @@ import AccountSettings from "../pages/AccountSettings/AccountSettings";
 import Upload from "../pages/Upload/Upload";
 
 export const router = createBrowserRouter([
-  // {
-  //   path: "/",
-  //   element: <Layout />,
-  //   children: [
-
-  //   ],
-  // },
   {
     path: "/",
     element: <Home />,

@@ -6,6 +6,7 @@ import img from "../../assets/icons/mixer.png";
 import SearchImages from "./SearchImages";
 import SearchTrending from "./SearchTrending";
 import SearchPageSidebar from "./SearchPageSidebar";
+import Header from "../../Shared/Header/Header";
 
 const SearchPage = () => {
   const [open, setOpen] = useState(false);
@@ -13,6 +14,7 @@ const SearchPage = () => {
   const [sfwTab, setSfwTab] = useState(0);
   return (
     <div className="wallpaper_bg">
+      <Header />
       <div className="container">
         <h1
           className="fontBak text-center d-none d-md-block"
@@ -34,8 +36,11 @@ const SearchPage = () => {
           </div>
         </form>
         <SearchTrending sfwTab={sfwTab} setSfwTab={setSfwTab} />
-        <hr className="w-100" />
-        <div className="mb-4 d-flex gap-0 mt-3 d-lg-none">
+        <hr className="w-100 d-none d-md-block" />
+        <div
+          className="mb-4 d-flex gap-0 d-lg-none"
+          style={{ marginTop: "27px" }}
+        >
           <div className="allBtn">
             <button
               onClick={() => setSelectedTab(1)}
@@ -61,7 +66,7 @@ const SearchPage = () => {
         <section className="search_Container">
           {sfwTab === 1 ? (
             <>
-              <div className="row mx-auto">
+              <div className="search_images_container">
                 <SearchImages />
               </div>
               <span className="d-block text-center mt-4">

@@ -24,15 +24,17 @@ const Featured = () => {
   return (
     <div className="container">
       <h2 className="home-section-title">Featured Wallpapers</h2>
-      <div className="row gy-4">
+      <div className="row">
         {featureData.map((image, index) => (
           <div
             key={index}
-            className={` ${index === 0 ? "col-12 col-md-4" : "col-6 col-md-4"}`}
+            className={`${index !== 2 && "fw_pr"} ${
+              index === 2 && "ps-0 ps-md-1"
+            } ${index === 0 ? "col-12 col-md-4" : "col-6 col-md-4 fw_mrt"}`}
           >
             <Link to="/" className="w-100">
               <img
-                className="featuredImage w-100 mx-auto"
+                className="featuredImage w-100"
                 src={image.src}
                 alt={image.alt}
               />

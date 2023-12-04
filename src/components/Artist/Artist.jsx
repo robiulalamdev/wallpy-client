@@ -1,6 +1,9 @@
 import React from "react";
 import img1 from "../../assets/artist.png";
-import img2 from "../../assets/artist2.png";
+import img2 from "../../assets/icons/logo.gif";
+import img3 from "../../assets/images/home/aimg3.png";
+import img4 from "../../assets/images/home/aimg4.png";
+import img5 from "../../assets/images/home/aimg5.png";
 import verified from "../../assets/Verified.png";
 import instagram from "../../assets/instagram.png";
 import twitter from "../../assets/twitter.png";
@@ -26,7 +29,7 @@ const artistData = [
     dribble: dribble,
   },
   {
-    img: img1,
+    img: img3,
     title: "fyween",
     twitter: twitter,
     instagram: instagram,
@@ -34,7 +37,7 @@ const artistData = [
     dribble: dribble,
   },
   {
-    img: img2,
+    img: img4,
     title: "maDHoney",
     twitter: twitter,
     instagram: instagram,
@@ -42,7 +45,7 @@ const artistData = [
     dribble: dribble,
   },
   {
-    img: img1,
+    img: img5,
     title: "DanaUlama",
     twitter: twitter,
     instagram: instagram,
@@ -62,11 +65,16 @@ const Artist = () => {
               className="d-flex flex-column gap-2 align-items-center artist-card "
               key={index}
             >
-              <img class="artist-profile mb-3" src={data.img} alt="Profile" />
+              <img
+                class="artist-profile"
+                src={data.img}
+                alt="Profile"
+                style={{ borderRadius: "50%" }}
+              />
               <div className="profileInner">
                 <div className="artist-pro d-flex justify-content-center gap-1 align-items-center mb-2">
                   <img src={verified} alt="img" />
-                  <p>{data.title}</p>
+                  <p className="artist-title">{data.title}</p>
                 </div>
                 {/* <div className="d-flex justify-content-between align-items-center mb-3">
                 <Link to="#">
