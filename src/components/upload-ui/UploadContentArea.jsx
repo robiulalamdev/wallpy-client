@@ -35,23 +35,9 @@ const UploadContentArea = ({ images, setImages }) => {
         </div>
       ) : (
         <div className="w-100 d-flex flex-column justify-content-between gap-4">
-          <section className="row">
-            <div className="col-4 col-lg-3 mc-card px-2 ps-md-2 mb-3">
-              <img
-                className="w-100 h-100"
-                src={img1}
-                alt=""
-                style={{ objectFit: "cover", borderRadius: "10px" }}
-              />
-            </div>
-            <div className="col-4 col-lg-3 mc-card px-2 ps-md-2 mb-3">
-              <img
-                className="w-100 h-100"
-                src={img1}
-                alt=""
-                style={{ objectFit: "cover", borderRadius: "10px" }}
-              />
-            </div>
+          <section className="upload_images_container">
+            <img className="upload_img w-100" src={img1} alt="" />
+            <img className="upload_img w-100" src={img1} alt="" />
           </section>
 
           <button className="view-more-btn mx-auto text-center">
