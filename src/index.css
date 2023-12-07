@@ -259,6 +259,10 @@ hr {
   margin: 0 0 16px 0 !important;
 }
 
+.sm_plus_none {
+  display: none !important;
+}
+
 /* Media query for devices with a maximum width of 767px (e.g., smartphones) */
 @media only screen and (max-width: 425px) {
   .sw-full {
@@ -275,6 +279,12 @@ hr {
   }
   .title_hr {
     margin: 0 0 10px 0 !important;
+  }
+  .sm_none {
+    display: none !important;
+  }
+  .sm_plus_none {
+    display: grid !important;
   }
 }
 @media only screen and(min-width: 426px) and (max-width: 767px) {

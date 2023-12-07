@@ -48,10 +48,7 @@ const OfficialBrands = () => {
     <div className="wallpaper_bg">
       <Header />
       <div className="container official-brands-container">
-        <div
-          className="d-flex justify-content-center w-100"
-          style={{ marginTop: "18px", marginBottom: "41px" }}
-        >
+        <div className="d-flex justify-content-center w-100 ob_search">
           <div
             className="position-relative w-100"
             style={{ maxWidth: "771px" }}
@@ -64,9 +61,9 @@ const OfficialBrands = () => {
             <span className="official-brand-search-icon">{iSearch}</span>
           </div>
         </div>
-        <div className="d-flex justify-content-start justify-content-md-center align-items-center flex-wrap gap-4 official-brand-header">
+        <div className="d-flex justify-content-start justify-content-md-center align-items-center flex-wrap official-brand-header">
           <button>Featured</button>
-          <div className="d-flex justify-content-between align-items-center gap-2 filter-brands px-4">
+          <div className="d-flex justify-content-between align-items-center gap-2 filter-brands px-4 sm_none">
             {characters?.map((c, i) => (
               <div key={i} className="character cursor-pointer">
                 {c}
@@ -74,25 +71,87 @@ const OfficialBrands = () => {
             ))}
           </div>
         </div>
-        <hr style={{ border: "1px solid #5A5A5A" }} />
+        <hr
+          className="sm_none"
+          style={{ border: "1px solid #5A5A5A", margin: "0 0 50px 0" }}
+        />
 
-        <section className="row">
+        <section
+          className="sm_plus_none"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(2,1fr)",
+            columnGap: "9px",
+            marginBottom: "13px",
+          }}
+        >
+          <div className="d-flex flex-column justify-content-center align-items-center gap-0">
+            <img className="ob_first_image" src={img1} alt="" />
+            <h1 className="ob_card_title">Riot Games</h1>
+          </div>
+          <div
+            className=""
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(1,1fr)",
+              rowGap: "6px",
+            }}
+          >
+            <div className="d-flex flex-column justify-content-center align-items-center gap-0">
+              <img
+                className="ob_image"
+                style={{ minHeight: "92px" }}
+                src={img4}
+                alt=""
+              />
+              <h1 className="ob_card_title">s4df8d</h1>
+            </div>
+            <div className="d-flex flex-column justify-content-center align-items-center gap-0">
+              <img
+                className="ob_image"
+                style={{ minHeight: "92px" }}
+                src={img5}
+                alt=""
+              />
+              <h1 className="ob_card_title">s4df8d</h1>
+            </div>
+          </div>
+        </section>
+
+        <section className="official_brands_first_cards sm_none">
           {[brands1, brands2, brands3]?.map((b, i) => (
             <div
               key={i}
-              className="col-md-6 d-flex flex-column justify-content-center align-items-center gap-2 mt-4 px-2"
+              className="d-flex flex-column justify-content-center align-items-center gap-0"
             >
-              <img className="w-100 img-fluid h-100" src={b.img} alt="" />
-              <h1>{b.title}</h1>
+              <img
+                className="w-100 img-fluid h-100"
+                style={{ maxHeight: "266px", borderRadius: "30px" }}
+                src={b.img}
+                alt=""
+              />
+              <h1 className="ob_card_title">{b.title}</h1>
             </div>
           ))}
+          <div className="official_brands_first_cards">
+            <div className="d-flex flex-column justify-content-center align-items-center gap-0">
+              <img className="ob_image" src={img4} alt="" />
+              <h1 className="ob_card_title">s4df8d</h1>
+            </div>
+            <div className="d-flex flex-column justify-content-center align-items-center gap-0">
+              <img className="ob_image" src={img5} alt="" />
+              <h1 className="ob_card_title">s4df8d</h1>
+            </div>
+          </div>
+        </section>
+        <section className="official_brands_second_cards">
           {otherBrands?.map((b, i) => (
             <div
               key={i}
-              className="col-4 col-md-3 d-flex flex-column justify-content-center align-items-center gap-2 mt-4 px-2"
+              className="d-flex flex-column justify-content-center align-items-center gap-0"
             >
-              <img className="w-100 img-fluid h-100" src={b.img} alt="" />
-              <h1>{b.title}</h1>
+              <img className="ob_image w-100" src={b.img} alt="" />
+              <h1 className="ob_card_title">{b.title}</h1>
             </div>
           ))}
         </section>
