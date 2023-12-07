@@ -17,6 +17,7 @@ const WallpaperSidebar = ({ bgColorCode }) => {
       className="w_sideBar fontBak h-100"
       style={{
         minHeight: "802px",
+        maxHeight: "802px",
         background: bgColorCode || "rgba(0, 0, 0, 0.20)",
       }}
     >
@@ -38,11 +39,15 @@ const WallpaperSidebar = ({ bgColorCode }) => {
           </Link>
         </div>
       </div>
-      <hr style={{ border: "1px solid #393939" }} />
+      <hr className="sm_none" style={{ border: "1px solid #393939" }} />
 
       <div className="d-flex flex-column align-items-center gap-1 mb-3">
-        <p style={{ color: "#ccc" }}>Dimensions</p>
-        <p className="w-dimension">3840 x 2160</p>
+        {selected && (
+          <>
+            <p style={{ color: "#ccc" }}>Dimensions</p>
+            <p className="w-dimension">3840 x 2160</p>
+          </>
+        )}
         <div
           className="d-flex align-items-center gap-2"
           style={{ color: "#ccc", fontSize: "12px" }}
@@ -155,7 +160,13 @@ const WallpaperSidebar = ({ bgColorCode }) => {
       )}
 
       {!selected && (
-        <>
+        <div className="" style={{ overflowY: "auto" }}>
+          <div className="auto_screen_container">
+            <p className="auto_detection">Auto Detection</p>
+            <p className="screen_resolution">
+              Your screen resolution is 1920 × 1080.
+            </p>
+          </div>
           {/* <div className="d-flex justify-content-between w-100 gap-2">
             {items?.map((item, index) => (
               <div key={index}>
@@ -182,9 +193,9 @@ const WallpaperSidebar = ({ bgColorCode }) => {
               <p className="size-title text-center">4:3</p>
               <button className="size-btn">1280 × 960</button>
               <button className="size-btn">1600 × 1200</button>
-              <button className="size-btn">1920 × 1440</button>
+              {/* <button className="size-btn">1920 × 1440</button>
               <button className="size-btn">2560 × 1920</button>
-              <button className="size-btn">3840 × 2880</button>
+              <button className="size-btn">3840 × 2880</button> */}
             </div>
             <div className="col-4 px-0 d-flex flex-column align-items-center gap-2">
               <p className="size-title text-center">16:9</p>
@@ -195,10 +206,10 @@ const WallpaperSidebar = ({ bgColorCode }) => {
               <button className="size-btn">3840 × 2160</button>
               <p className="size-title text-center">16:9</p>
               <button className="size-btn">1280 × 1024</button>
-              <button className="size-btn">1600 × 1280</button>
+              {/* <button className="size-btn">1600 × 1280</button>
               <button className="size-btn">1920 × 1536</button>
               <button className="size-btn">2560 × 2048</button>
-              <button className="size-btn">3840 × 3072</button>
+              <button className="size-btn">3840 × 3072</button> */}
             </div>
             <div className="col-4 px-0 d-flex flex-column align-items-center gap-2">
               <p className="size-title text-center">16:10</p>
@@ -209,16 +220,18 @@ const WallpaperSidebar = ({ bgColorCode }) => {
               <button className="size-btn">3840 × 2400</button>
             </div>
           </div>
-          <hr className="my-3" style={{ border: "1px solid #5A5A5A" }} />
+          <hr
+            style={{ border: "1px solid #939393", margin: "23px 0 13px 0" }}
+          />
           <div className="d-flex flex-column align-items-center gap-4">
-            <p className="text-center">Custom Resolution</p>
+            <p className="text-center custom_resolution">Custom Resolution</p>
             <div className="wh-inputs">
               <input type="number" min={1} placeholder="Width" />
               <input type="number" min={1} placeholder="Height" />
             </div>
             <button className="generate-btn mx-auto">Generate</button>
           </div>
-        </>
+        </div>
       )}
     </div>
   );

@@ -381,6 +381,39 @@ input[type="number"] {
   column-gap: 83px;
 }
 
+.auto_screen_container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.auto_screen_container .auto_detection {
+  color: #fff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 7px;
+}
+
+.auto_screen_container .screen_resolution {
+  color: #fff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.custom_resolution {
+  color: #fff;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 /* Media query for devices with a maximum width of 767px (e.g., smartphones) */
 @media only screen and (max-width: 425px) {
   .home-bb {
