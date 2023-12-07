@@ -532,3 +532,5 @@ export const iInfo = (
     />
   </svg>
 );
+
+// contact page social icons

@@ -1,9 +1,18 @@
 import React, { useState } from "react";
 import "../../styles/contact.css";
 import img1 from "../../assets/images/contact/img1.png";
+import img2 from "../../assets/images/contact/img2.png";
 import { Link } from "react-router-dom";
 import Header from "../../Shared/Header/Header";
 import Footer from "../../Shared/Footer/Footer";
+import { iInfo } from "../../utils/icons/global_icons";
+
+import icon1 from "../../assets/icons/contact/icon1.png";
+import icon2 from "../../assets/icons/contact/icon2.png";
+import icon3 from "../../assets/icons/contact/icon3.png";
+import icon4 from "../../assets/icons/contact/icon4.png";
+import icon5 from "../../assets/icons/contact/icon5.png";
+import icon6 from "../../assets/icons/contact/icon6.png";
 
 const Contact = () => {
   const [step, setStep] = useState(1);
@@ -12,20 +21,45 @@ const Contact = () => {
       <Header />
       <div className="container contact-container">
         <h1 className="title">Contact Us</h1>
-        <hr style={{ border: "1px solid #5A5A5A" }} />
-        <section className="row contact-main mx-auto p-3 p-md-4 h-100">
-          <div className="col-md-6 px-0 pe-md-4">
-            <img className="w-100 h-100" src={img1} alt="" />
+        <hr className="title_hr" />
+        <section className="contact-main mx-auto h-100">
+          <div className="position-relative">
+            <img
+              className="contact_image_large w-100 h-100"
+              src={img1}
+              alt=""
+            />
+            <img
+              className="contact_image_small w-100 h-100"
+              src={img2}
+              alt=""
+            />
+            <div className="contact_social_container">
+              <div
+                className="d-flex align-items-center"
+                style={{ gap: "10px" }}
+              >
+                <img width="17" height="17" src={icon1} alt="" />
+                <img width="17" height="17" src={icon2} alt="" />
+                <img width="17" height="17" src={icon3} alt="" />
+                <img width="17" height="17" src={icon4} alt="" />
+                <img width="17" height="17" src={icon5} alt="" />
+                <img width="17" height="17" src={icon6} alt="" />
+              </div>
+              <div>{iInfo}</div>
+            </div>
           </div>
-          <div className="col-md-6 ps-md-4 mt-4 m-md-0 contact-content-section h-100 text-center py-4">
+          <div className="m-md-0 contact-content-section h-100 text-center py-4">
             {step === 1 && (
               <>
-                <h1>Hello, somebody there?</h1>
-                <p>
+                <h1 className="hello_there">Hello, somebody there?</h1>
+                <p className="note_72_h sm_none">
                   Note that we strive to respond to all inquiries within a
                   timeframe of 24 to 72 hours.
                 </p>
-                <p>Please always check your spam folder.</p>
+                <p className="note_72_h">
+                  Please always check your spam folder.
+                </p>
 
                 <div className="mt-5">
                   <input
@@ -69,9 +103,7 @@ const Contact = () => {
                   our response.
                 </p>
                 <Link to="/">
-                  <button className="contact-return-btn mt-4">
-                    Return Home
-                  </button>
+                  <button className="contact-return-btn">Return Home</button>
                 </Link>
               </div>
             )}
