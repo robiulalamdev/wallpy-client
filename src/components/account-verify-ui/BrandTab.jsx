@@ -5,11 +5,13 @@ const BrandTab = ({ step, setStep }) => {
   return (
     <form className="d-flex flex-column justify-content-center gap-3  align-items-center">
       <div className="">
-        <h2 className="mb-4">Name of Brand / Artist</h2>
+        <h2 className="brand_artist_title">Name of Brand / Artist</h2>
         <input className="account-verify-input" type="number" min={0} />
       </div>
       <div className="">
-        <h2 className="mb-4">Links to other verified profiles (optional)</h2>
+        <h2 className="verified_profile_title">
+          Links to other verified profiles (optional)
+        </h2>
         <input
           className="account-verify-input w-100"
           type="url"
@@ -22,7 +24,7 @@ const BrandTab = ({ step, setStep }) => {
         />
       </div>
       <div>
-        <h2 className="mb-4">Proof of Identity</h2>
+        <h2 className="proof_identity">Proof of Identity</h2>
         <p className="ac-verify-brand-tab-p">
           This could be a screenshot, selfie, or any other form of proof to
           verify your identity. Please refrain from uploading government-issued

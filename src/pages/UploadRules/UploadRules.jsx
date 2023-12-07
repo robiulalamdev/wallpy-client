@@ -22,7 +22,7 @@ const UploadRules = () => {
       <Header />
       <div className="container upload-rules-container">
         <h1 className="title">Upload Files</h1>
-        <hr className="title_hr" style={{ border: "1px solid #5A5A5A" }} />
+        <hr className="title_hr" />
         <p className="upload-rules-p">
           We strongly urge all users to carefully review our community rules
           prior to uploading any files. It is our ongoing commitment to

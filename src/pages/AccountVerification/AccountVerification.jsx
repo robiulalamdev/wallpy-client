@@ -13,11 +13,11 @@ const AccountVerification = () => {
       <Header />
       <div className="container account-verify-container">
         <h1 className="title">Request Verification</h1>
-        <hr style={{ border: "1px solid #5A5A5A" }} />
-        <section className="account-verify-form-section p-3">
+        <hr className="title_hr" />
+        <section className="account-verify-form-section">
           {step === 1 && (
             <>
-              <h2>Type of Request</h2>
+              <h2 className="type_of_req">Type of Request</h2>
               <div className="account-verify-tab-container d-flex justify-content-between align-items-center px-2">
                 {tabs?.map((t, i) => (
                   <button
@@ -34,7 +34,7 @@ const AccountVerification = () => {
             </>
           )}
           {step === 2 && (
-            <div className="d-flex flex-column justify-content-center align-items-center gap-3 py-5">
+            <div className="rq_verify_thanks_part">
               <p className="account-verify-thank">
                 Thank you for initiating the verification process. Please be
                 aware that all verification procedures are subject to manual
