@@ -310,3 +310,21 @@
     padding: 0 13px 42px 13px !important;
   }
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1470px) {
+  .searchImgPadding {
+    padding: 0 5px 16px 5px !important;
+  }
+  .search_images_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 22px;
+    row-gap: 32px !important;
+  }
+
+  .search_images_container img {
+    width: 115px;
+    height: 147px !important;
+    border-radius: 5px !important;
+  }
+}

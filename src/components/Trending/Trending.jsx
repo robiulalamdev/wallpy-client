@@ -1,15 +1,5 @@
 import React, { useState } from "react";
 import "./Trending.css";
-import img1 from "../../assets/trending.png";
-import img2 from "../../assets/trending2.png";
-import img3 from "../../assets/trending3.png";
-import img4 from "../../assets/trending4.png";
-import img5 from "../../assets/trending2.png";
-import img6 from "../../assets/trending4.png";
-import img7 from "../../assets/trending.png";
-import img8 from "../../assets/trending3.png";
-import fire from "../../assets/fire.png";
-import chart from "../../assets/chart.png";
 
 import fram1 from "../../assets/search/Frame1.png";
 import fram2 from "../../assets/search/Frame2.png";
@@ -82,19 +72,12 @@ const Trending = () => {
               ))}
             </div>
           </div>
-          <div className="trendingInner px-1">
-            <div className="row">
-              {images.map((image, index) => (
-                <div
-                  key={index}
-                  className="col-4 col-md-3 px-1 px-md-3 tredImg mb-3 mb-md-5"
-                >
-                  <Link to="wallpaper">
-                    <img className="img-fluid w-100" src={image} alt="image" />
-                  </Link>
-                </div>
-              ))}
-            </div>
+          <div className="trending_images_container">
+            {images.map((image, index) => (
+              <Link to="wallpaper">
+                <img className="img-fluid w-100" src={image} alt="image" />
+              </Link>
+            ))}
           </div>
           <button className="moreBtn">More Wallpapers</button>
         </div>

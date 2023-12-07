@@ -301,3 +301,12 @@ hr {
 @media only screen and (min-width: 1024px) {
   /* Styles for desktops */
 }
+
+/* for container */
+@media only screen and (min-width: 1024px) and (max-width: 1470px) {
+  .container {
+    max-width: 1222px !important;
+    padding: 0px 0px !important;
+    margin: 0 auto !important;
+  }
+}
