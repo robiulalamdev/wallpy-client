@@ -97,3 +97,15 @@
 @media only screen and (min-width: 1024px) {
   /* Styles for desktops */
 }
+
+/* for container */
+@media only screen and (min-width: 1024px) and (max-width: 1470px) {
+  .filter-brands .character {
+    color: #fff;
+    font-family: Lato;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}

@@ -66,7 +66,7 @@ const OfficialBrands = () => {
         </div>
         <div className="d-flex justify-content-start justify-content-md-center align-items-center flex-wrap gap-4 official-brand-header">
           <button>Featured</button>
-          <div className="d-flex justify-content-between align-items-center gap-4 filter-brands px-4">
+          <div className="d-flex justify-content-between align-items-center gap-2 filter-brands px-4">
             {characters?.map((c, i) => (
               <div key={i} className="character cursor-pointer">
                 {c}
