@@ -200,7 +200,7 @@ hr {
   font-weight: 400;
   line-height: normal;
   text-align: center;
-  margin: 35px 0;
+  margin: 35px 0 38px 0;
 }
 
 /* global */
@@ -254,19 +254,27 @@ hr {
   background-color: #ff003d !important;
 }
 
+.title_hr {
+  border: 1px solid #5a5a5a !important;
+  margin: 0 0 16px 0 !important;
+}
+
 /* Media query for devices with a maximum width of 767px (e.g., smartphones) */
 @media only screen and (max-width: 425px) {
   .sw-full {
     width: 100% !important;
   }
-
   .title {
-    font-size: 16px;
+    font-size: 15px;
+    margin: 16px 0 18px 0;
   }
   .home-section-title {
     font-size: 15px;
     margin-top: 36px !important;
     margin-bottom: 19px !important;
+  }
+  .title_hr {
+    margin: 0 0 10px 0 !important;
   }
 }
 @media only screen and(min-width: 426px) and (max-width: 767px) {

@@ -4,7 +4,7 @@ import { upload } from "../../utils/icons/global_icons";
 const UploadRulesUploadInput = ({ setImages, images }) => {
   return (
     <div
-      className="d-flex flex-column justify-content-center align-items-center w-100 h-100 position-relative p-3 rounded"
+      className="d-flex flex-column justify-content-center align-items-center w-100 h-100 position-relative p-3 rounded UploadRulesUploadInput"
       style={{ backgroundColor: "rgba(0, 0, 0, 0.50)" }}
     >
       <span>{upload}</span>

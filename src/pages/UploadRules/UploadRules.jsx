@@ -22,7 +22,7 @@ const UploadRules = () => {
       <Header />
       <div className="container upload-rules-container">
         <h1 className="title">Upload Files</h1>
-        <hr style={{ border: "1px solid #5A5A5A" }} />
+        <hr className="title_hr" style={{ border: "1px solid #5A5A5A" }} />
         <p className="upload-rules-p">
           We strongly urge all users to carefully review our community rules
           prior to uploading any files. It is our ongoing commitment to
@@ -30,10 +30,14 @@ const UploadRules = () => {
           guidelines.
         </p>
 
-        <section className="row upload-section mt-5 mx-auto ">
+        <section className="row upload-section mx-auto ">
           <div className="col-md-6 p-3">
             {step === 1 && (
-              <img className="img-fluid w-100 h-100" src={banner} alt="" />
+              <img
+                className="img-fluid w-100 h-100 upload_rules_img1"
+                src={banner}
+                alt=""
+              />
             )}
             {step === 2 && (
               <UploadRulesUploadInput setImages={setImages} images={images} />
@@ -45,8 +49,10 @@ const UploadRules = () => {
           <div className="col-md-6 upload-section-content mx-auto p-3">
             {step === 1 && (
               <>
-                <h1 className="title my-0">Accept to Continue</h1>
-                <p className="mt-5 upload-content-p">
+                <h1 className="upload_rules_part_title my-0">
+                  Accept to Continue
+                </h1>
+                <p className="upload-content-p">
                   We are delighted that you've chosen to join our community. To
                   ensure the highest quality of our wallpapers and maintain the
                   integrity of our site, we request that you review our
@@ -70,8 +76,7 @@ const UploadRules = () => {
                     continue.
                   </p>
                 </div>
-                <hr style={{ border: "1px solid #5A5A5A" }} />
-                <div className="d-flex justify-content-center mt-5">
+                <div className="d-flex justify-content-center upload-btn-ad">
                   {accept ? (
                     <button
                       onClick={() => setStep(2)}
@@ -90,38 +95,41 @@ const UploadRules = () => {
 
             {step === 2 && (
               <div className="d-flex flex-column justify-content-between h-100">
-                <h1 className="title my-0">Files</h1>
-
                 <div>
-                  {step === 2 && (
-                    <>
-                      {images?.map((img, index) => (
-                        <div
-                          key={index}
-                          className="d-flex align-items-center gap-2 mt-3"
-                        >
-                          <span>{Iimg}</span>
-                          <span className="img-title">{img?.name}</span>
-                          <button onClick={() => handleRemove(index)}>
-                            {iClose}
-                          </button>
-                        </div>
-                      ))}
-                    </>
-                  )}
-                  {step === 3 && (
-                    <>
-                      {images?.map((img, index) => (
-                        <div
-                          key={index}
-                          className="d-flex align-items-center gap-2 mt-3"
-                        >
-                          <span>{Iimg}</span>
-                          <div className="img-upload-progress"></div>
-                        </div>
-                      ))}
-                    </>
-                  )}
+                  <h1 className="title my-0">Files</h1>
+
+                  <div className="images_lines">
+                    {step === 2 && (
+                      <>
+                        {images?.map((img, index) => (
+                          <div
+                            key={index}
+                            className="d-flex align-items-center gap-2"
+                            style={{ marginBottom: "29px" }}
+                          >
+                            <span>{Iimg}</span>
+                            <span className="img-title">{img?.name}</span>
+                            <button onClick={() => handleRemove(index)}>
+                              {iClose}
+                            </button>
+                          </div>
+                        ))}
+                      </>
+                    )}
+                    {step === 3 && (
+                      <>
+                        {images?.map((img, index) => (
+                          <div
+                            key={index}
+                            className="d-flex align-items-center gap-2 mt-3"
+                          >
+                            <span>{Iimg}</span>
+                            <div className="img-upload-progress"></div>
+                          </div>
+                        ))}
+                      </>
+                    )}
+                  </div>
                 </div>
 
                 <div>
@@ -163,38 +171,41 @@ const UploadRules = () => {
             )}
             {step === 3 && (
               <div className="d-flex flex-column justify-content-between h-100">
-                <h1 className="title my-0">Files</h1>
+                <div style={{ height: "fit-content" }}>
+                  <h1 className="title my-0">Files</h1>
 
-                <div>
-                  {step === 2 && (
-                    <>
-                      {images?.map((img, index) => (
-                        <div
-                          key={index}
-                          className="d-flex align-items-center gap-2 mt-3"
-                        >
-                          <span>{Iimg}</span>
-                          <span className="img-title">{img?.name}</span>
-                          <button onClick={() => handleRemove(index)}>
-                            {iClose}
-                          </button>
-                        </div>
-                      ))}
-                    </>
-                  )}
-                  {step === 3 && (
-                    <>
-                      {images?.map((img, index) => (
-                        <div
-                          key={index}
-                          className="d-flex align-items-center gap-2 mt-3"
-                        >
-                          <span>{Iimg}</span>
-                          <div className="img-upload-progress"></div>
-                        </div>
-                      ))}
-                    </>
-                  )}
+                  <div className="images_lines">
+                    {step === 2 && (
+                      <>
+                        {images?.map((img, index) => (
+                          <div
+                            key={index}
+                            className="d-flex align-items-center gap-2"
+                            style={{ marginBottom: "29px" }}
+                          >
+                            <span>{Iimg}</span>
+                            <span className="img-title">{img?.name}</span>
+                            <button onClick={() => handleRemove(index)}>
+                              {iClose}
+                            </button>
+                          </div>
+                        ))}
+                      </>
+                    )}
+                    {step === 3 && (
+                      <>
+                        {images?.map((img, index) => (
+                          <div
+                            key={index}
+                            className="d-flex align-items-center gap-2 mt-3"
+                          >
+                            <span>{Iimg}</span>
+                            <div className="img-upload-progress"></div>
+                          </div>
+                        ))}
+                      </>
+                    )}
+                  </div>
                 </div>
 
                 <div>
