@@ -6,7 +6,7 @@ import { AuthContext } from "../../../context/AuthContext";
 const AuthHeader = () => {
   const { open, setOpen } = useContext(AuthContext);
   return (
-    <div className="container d-flex justify-content-between align-items-center my-3 w-100">
+    <div className="container d-flex justify-content-between align-items-center my-3 w-100 sm_none">
       <Link className="brand" to="/">
         WPS
       </Link>
