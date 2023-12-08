@@ -317,18 +317,58 @@
 
 @media only screen and (min-width: 1024px) and (max-width: 1470px) {
   .trending {
-    padding: 24px;
+    padding: 24px !important;
+    border-radius: 40px !important;
   }
   .trending_images_container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    column-gap: 22px;
-    row-gap: 32px !important;
+    column-gap: 18px;
+    row-gap: 25px !important;
   }
 
   .trending_images_container img {
-    width: 115px;
-    height: 147px !important;
+    width: 242px;
+    height: 130px !important;
     border-radius: 5px !important;
+  }
+
+  .allBtn {
+    border-radius: 24px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 4px;
+  }
+
+  .allBtn button {
+    padding: 10px 25px;
+    border-radius: 23.5px;
+    font-size: 10px;
+  }
+
+  .trending {
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .trendingHeader {
+    gap: 10px;
+  }
+  .staff {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  .staff img {
+    border-radius: 15px;
+    transition: 0.4s ease-in-out;
+    width: 100%;
+  }
+
+  .fw_mrt {
+    margin-top: 10px;
+  }
+  .fw_pr {
+    padding-right: 10px;
+  }
+  .moreBtn {
+    margin-top: 19px;
   }
 }

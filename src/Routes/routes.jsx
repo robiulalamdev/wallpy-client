@@ -61,7 +61,6 @@ export const router = createBrowserRouter([
     path: "/upload",
     element: <Upload />,
   },
-
   {
     path: "/about",
     element: <About />,

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import Header from "../../Shared/Header/Header";
 import { iInfo } from "../../utils/icons/global_icons";
+import AuthHeader from "../../components/common-ui/header/AuthHeader";
 
 const Register = () => {
   const initialFormData = {
@@ -39,7 +40,7 @@ const Register = () => {
   return (
     <>
       <div className="auth_bg pt-4 mx-auto">
-        <Header />
+        <AuthHeader />
         <div className="container mx-auto auth_Container">
           <h1 className="d-md-none register-p-title">THE WALLPAPER SOCIETY</h1>
           <div className="row brightBg px-1 py-3 px-md-3 py-md-4 mx-auto">

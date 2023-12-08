@@ -302,3 +302,51 @@ header,
     display: none;
   }
 }
+
+@media only screen and (min-width: 1024px) and (max-width: 1470px) {
+  .brand {
+    color: #fff;
+    font-family: Bakbak One;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  .searchNav {
+    position: relative;
+    z-index: 50;
+    width: 100%;
+    max-width: 771px !important;
+    height: 35px;
+    background-image: url("../assets/Search.png");
+    background-repeat: no-repeat;
+    background-position: center left 2%;
+    background-size: initial;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .searchNav input {
+    font-size: 12px !important;
+  }
+  .nav-link {
+    color: #fff;
+    font-family: Bakbak One;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .navBg {
+    padding: 8px 15px 3px 15px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .navBg ul li {
+    list-style: none;
+  }
+  .navbar-search-input button {
+    padding: 0 10px !important;
+  }
+}

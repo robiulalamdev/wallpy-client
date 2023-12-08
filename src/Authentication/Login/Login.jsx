@@ -8,6 +8,7 @@ import { Link, useNavigate } from "react-router-dom";
 import Header from "../../Shared/Header/Header";
 import Footer from "../../Shared/Footer/Footer";
 import { iInfo } from "../../utils/icons/global_icons";
+import AuthHeader from "../../components/common-ui/header/AuthHeader";
 // import Swal from "sweetalert2";
 
 const Login = () => {
@@ -36,7 +37,7 @@ const Login = () => {
   return (
     <>
       <div className="pt-4 auth_bg">
-        <Header />
+        <AuthHeader />
         <div className="container auth_Container">
           <h1 className="d-md-none register-p-title">THE WALLPAPER SOCIETY</h1>
           <div className="row brightBg px-1 py-3 px-md-3 py-md-4 mx-auto">
