@@ -1,12 +1,13 @@
 import React from "react";
 import "../../styles/termsCondition.css";
-import Header from "../../Shared/Header/Header";
 import Footer from "../../Shared/Footer/Footer";
+import RulesHeader from "../../components/common-ui/header/RulesHeader";
 
 const TermsConditions = () => {
   return (
     <div className="wallpaper_bg">
-      <Header />
+      <br />
+      <RulesHeader />
       <div className="container mx-auto terms-condition-container">
         <h1 className="title">Terms and Conditions</h1>
         <hr style={{ border: "1px solid #5A5A5A" }} />
