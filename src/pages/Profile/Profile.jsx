@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Profile.css";
 import kitten from "../../assets/kitten.png";
 import profile from "../../assets/profile.png";
@@ -29,6 +29,8 @@ import img6 from "../../assets/images/profile/img6.png";
 import img7 from "../../assets/images/profile/img7.png";
 import img8 from "../../assets/images/profile/img8.png";
 import img9 from "../../assets/images/profile/img9.png";
+import HeaderDrawer from "../../components/common-ui/header/HeaderDrawer";
+import { AuthContext } from "../../context/AuthContext";
 
 const data = [
   { img: img1 },
@@ -42,12 +44,66 @@ const data = [
   { img: img9 },
 ];
 const Profile = () => {
+  const { open, setOpen } = useContext(AuthContext);
   const [tab, setTab] = useState(0);
   const [msgStep, setMsgStep] = useState(0);
   return (
     <div className="wallpaper_bg">
-      <Header />
-      <div className="container">
+      <HeaderDrawer />
+      <br />
+      <div
+        className="container d-flex align-items-center justify-content-between"
+        style={{ marginBottom: "18px" }}
+      >
+        <div className="d-flex align-items-center" style={{ gap: "29px" }}>
+          <Link className="brand" to="/">
+            WPS
+          </Link>
+
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="sm_plus_none"
+          >
+            <circle
+              cx="9.16667"
+              cy="9.16659"
+              r="5.83333"
+              stroke="white"
+              stroke-width="2"
+            />
+            <path
+              d="M16.6667 16.6667L14.1667 14.1667"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          <input
+            className="w-100 wallPaper_search"
+            type="search"
+            placeholder="Find more wallpapers..."
+          />
+        </div>
+        <img
+          className="logo-img d-none d-md-inline-flex"
+          src={profile}
+          alt=""
+        />
+        <button
+          onClick={() => setOpen(!open)}
+          className="navbar-toggler d-md-none"
+          type="button"
+        >
+          <span>
+            <i className="fa fa-bars"></i>
+          </span>
+        </button>
+      </div>
+      <div className="container wallPaper_mt">
         <div className="search_Container">
           <div className="coverImg">
             <img
@@ -55,22 +111,17 @@ const Profile = () => {
               src={cover_photo}
               alt="Cover image"
             />
-            <button>
+            <button className="sm_none">
               <img src={edit_cover} alt="Edit" />
             </button>
-            <div className="profile-container d-flex align-items-end gap-2 h-100">
-              <div className="profile_photo pb-4">
+            <div className="profile-container h-100">
+              <div className="profile_photo mb-4">
                 <img src={profile} alt="Profile" />
               </div>
-              <div className="">
-                <h3 className="text-start text-white">
-                  krs
-                  <img src={Verified} alt="Verified" />
-                </h3>
-                <span className="fontBak d-none d-md-block">
-                  WPS Admin / AI Art
-                </span>
-              </div>
+              <h3 className="text-start text-white">
+                KRS
+                <img className="ms-1" src={Verified} alt="Verified" />
+              </h3>
             </div>
           </div>
 

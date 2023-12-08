@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Wallpaper.css";
 import profile from "../../assets/profile.png";
 import logo from "../../assets/logo.png";
@@ -32,6 +32,7 @@ import download from "../../assets/icons/download.svg";
 import Header from "../../Shared/Header/Header";
 import Footer from "../../Shared/Footer/Footer";
 import HeaderDrawer from "../../components/common-ui/header/HeaderDrawer";
+import { AuthContext } from "../../context/AuthContext";
 const items = [
   { id: 1, name: "Call of Duty" },
   { id: 2, name: "World of Warcraft" },
@@ -41,7 +42,8 @@ const items = [
 ];
 
 const WallPaper = () => {
-  const [open, setOpen] = useState(false);
+  const { open, setOpen } = useContext(AuthContext);
+  const [openD, setOpenD] = useState(false);
   return (
     <div className="wallpaper_bg">
       <HeaderDrawer />
@@ -113,7 +115,7 @@ const WallPaper = () => {
                 }}
               >
                 {/* <img
-                  onClick={() => setOpen(!open)}
+                  onClick={() => setOpen(!openD)}
                   className="d-md-none"
                   style={{ width: "57px", height: "40px" }}
                   src={img}
@@ -204,8 +206,8 @@ const WallPaper = () => {
       </div>
 
       <Drawer
-        open={open}
-        setOpen={setOpen}
+        open={openD}
+        setOpen={setOpenD}
         bgColorCode="#121212"
         {...{
           scroll: false,
