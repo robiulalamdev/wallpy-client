@@ -414,6 +414,25 @@ input[type="number"] {
   line-height: normal;
 }
 
+.wallPaper_search {
+  width: 348px;
+  height: 37px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #5a5a5a;
+  font-family: Lato;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 0 10px;
+}
+
+.wallPaper_mt {
+  margin-top: 45px !important;
+}
+
 /* Media query for devices with a maximum width of 767px (e.g., smartphones) */
 @media only screen and (max-width: 425px) {
   .home-bb {
@@ -436,6 +455,16 @@ input[type="number"] {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 16px;
   }
+  .wallPaper_search {
+    display: none;
+  }
+  .wallPaper_mt {
+    margin-top: 27px !important;
+  }
+  .wallpaper {
+    position: relative;
+    background-image: url("../../assets/images/wallpaper/img1.png");
+  }
 }
 
 @media only screen and (min-width: 426px) and (max-width: 767px) {
@@ -443,6 +472,9 @@ input[type="number"] {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 24px;
+  }
+  .wallPaper_search {
+    display: none;
   }
 }
 

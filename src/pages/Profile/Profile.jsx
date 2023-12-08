@@ -43,6 +43,7 @@ const data = [
 ];
 const Profile = () => {
   const [tab, setTab] = useState(0);
+  const [msgStep, setMsgStep] = useState(0);
   return (
     <div className="wallpaper_bg">
       <Header />
@@ -176,7 +177,14 @@ const Profile = () => {
                     aria-hidden="true"
                   >
                     <div className="modal-dialog  modal-dialog-centered">
-                      <div className="modal-content">
+                      <div
+                        className="modal-content"
+                        style={{
+                          zIndex: 500,
+                          backgroundColor: "#2D2D2D",
+                          height: "332px",
+                        }}
+                      >
                         <div className="d-flex justify-content-end">
                           <button
                             type="button"
@@ -187,34 +195,65 @@ const Profile = () => {
                             <img src={clear} alt="close" />
                           </button>
                         </div>
-                        <div className="msgModal">
-                          <h4 className="fontBak mb-2">Send a message</h4>
-                          <p className="fontBak mb-4">
-                            Please be sure to familiarize yourself with the site
-                            rules before composing your message
-                          </p>
-                          <form action="">
-                            <label for="message" className="fontBak mb-2">
-                              Message
-                            </label>
-                            <textarea
-                              name="message"
-                              id="message"
-                              cols="30"
-                              rows="7"
-                              placeholder="Write the details here..."
-                            ></textarea>
+                        {msgStep === 0 && (
+                          <>
+                            <div
+                              className="msgModal"
+                              style={{
+                                zIndex: 500,
+                                backgroundColor: "#2D2D2D",
+                              }}
+                            >
+                              <h4 className="fontBak mb-2">Send a message</h4>
+                              <p className="fontBak mb-4">
+                                Please be sure to familiarize yourself with the
+                                site rules before composing your message
+                              </p>
+                              <form action="">
+                                <>
+                                  <label for="message" className="fontBak mb-2">
+                                    Message
+                                  </label>
+                                  <textarea
+                                    name="message"
+                                    id="message"
+                                    cols="30"
+                                    rows="7"
+                                    placeholder="Write the details here..."
+                                  ></textarea>
+                                </>
 
-                            <div className="d-flex flex-column align-items-center gap-3">
-                              <button className="sendBtn fontBak">
-                                Send Message
-                              </button>
-                              <button className="cancleBtn fontBak">
-                                Cancel
-                              </button>
+                                <div className="d-flex flex-column align-items-center gap-3">
+                                  <button
+                                    onClick={() => setMsgStep(1)}
+                                    className="sendBtn fontBak"
+                                  >
+                                    Send Message
+                                  </button>
+
+                                  <button className="cancleBtn fontBak">
+                                    Cancel
+                                  </button>
+                                </div>
+                              </form>
                             </div>
-                          </form>
-                        </div>
+                          </>
+                        )}
+
+                        {msgStep === 1 && (
+                          <div className="h-100 d-flex flex-column justify-content-around align-items-center">
+                            <div></div>
+                            <p className="msg_success">
+                              Your message has been sent successfully
+                            </p>
+                            <button
+                              onClick={() => setMsgStep(1)}
+                              className="msg_close_btn"
+                            >
+                              Close
+                            </button>
+                          </div>
+                        )}
                       </div>
                     </div>
                   </div>

@@ -250,6 +250,19 @@
   border-radius: 15px !important;
 }
 
+@media only screen and (max-width: 426px) {
+  .trending_images_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) !important;
+    column-gap: 14px;
+    row-gap: 14px;
+  }
+  .trending_images_container img {
+    width: 115px;
+    height: 152px;
+    border-radius: 5px !important;
+  }
+}
 @media only screen and (min-width: 426px) and (max-width: 767px) {
   .trending {
     border-radius: 10px;
@@ -284,6 +297,11 @@
   }
   .moreBtn {
     margin-top: 19px;
+  }
+  .trending_images_container img {
+    width: 330px;
+    height: 170px;
+    border-radius: 15px !important;
   }
 }
 

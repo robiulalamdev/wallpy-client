@@ -22,10 +22,16 @@ import { Link } from "react-router-dom";
 import WallpaperSidebar from "../../components/wallpapers-ui/WallpaperSidebar";
 import img from "../../assets/icons/mixer.png";
 import Drawer from "../../components/common-ui/drawers/Drawer";
-import { add_box, iDownload, iShare } from "../../utils/icons/global_icons";
+import {
+  add_box,
+  iDownload,
+  iSearch,
+  iShare,
+} from "../../utils/icons/global_icons";
 import download from "../../assets/icons/download.svg";
 import Header from "../../Shared/Header/Header";
 import Footer from "../../Shared/Footer/Footer";
+import HeaderDrawer from "../../components/common-ui/header/HeaderDrawer";
 const items = [
   { id: 1, name: "Call of Duty" },
   { id: 2, name: "World of Warcraft" },
@@ -38,15 +44,67 @@ const WallPaper = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="wallpaper_bg">
-      <Header />
-      <div className="container">
+      <HeaderDrawer />
+      <br />
+      <div
+        className="container d-flex align-items-center justify-content-between"
+        style={{ marginBottom: "18px" }}
+      >
+        <div className="d-flex align-items-center" style={{ gap: "29px" }}>
+          <Link className="brand" to="/">
+            WPS
+          </Link>
+
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="sm_plus_none"
+          >
+            <circle
+              cx="9.16667"
+              cy="9.16659"
+              r="5.83333"
+              stroke="white"
+              stroke-width="2"
+            />
+            <path
+              d="M16.6667 16.6667L14.1667 14.1667"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          <input
+            className="w-100 wallPaper_search"
+            type="search"
+            placeholder="Find your next wallpaper..."
+          />
+        </div>
+        <img
+          className="logo-img d-none d-md-inline-flex"
+          src={profile}
+          alt=""
+        />
+        <button
+          onClick={() => setOpen(!open)}
+          className="navbar-toggler d-md-none"
+          type="button"
+        >
+          <span>
+            <i className="fa fa-bars"></i>
+          </span>
+        </button>
+      </div>
+      <div className="container wallPaper_mt">
         <div className="custom_Container">
           <div className="d-flex justify-content-center align-items-start gap-3 all_mb">
             <div className="d-none d-md-block">
               <WallpaperSidebar />
             </div>
             <div className="wallpaper fontBak d-flex justify-content-end align-items-start pt-2 pe-2 position-relative">
-              {/* <img className="img-fluid" src={wallpaper} alt="WallPaper" /> */}
               <div
                 className="btnPosition d-flex justify-content-end align-items-center gap-3 p-1"
                 style={{
@@ -54,14 +112,14 @@ const WallPaper = () => {
                   width: "fit-content",
                 }}
               >
-                <img
+                {/* <img
                   onClick={() => setOpen(!open)}
                   className="d-md-none"
-                  style={{ width: "57px" }}
+                  style={{ width: "57px", height: "40px" }}
                   src={img}
                   alt=""
-                />
-                <div className="addLibrary">
+                /> */}
+                <div className="addLibrary" style={{ borderRadius: "5px" }}>
                   <button>
                     <span>
                       <img src={library_add} alt="Add Library" />
@@ -104,7 +162,7 @@ const WallPaper = () => {
                 style={{ bottom: "10px" }}
               >
                 <div className="home-bb" style={{ paddingLeft: "40px" }}>
-                  <img src={download} alt="" />
+                  <img width={24} src={download} alt="" />
                 </div>
                 <div className="home-bb">{iShare}</div>
               </div>

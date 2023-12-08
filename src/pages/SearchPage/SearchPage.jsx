@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./SearchPage.css";
 import profile from "../../assets/profile.png";
 import img from "../../assets/icons/mixer.png";
@@ -7,24 +7,49 @@ import SearchImages from "./SearchImages";
 import SearchTrending from "./SearchTrending";
 import SearchPageSidebar from "./SearchPageSidebar";
 import Header from "../../Shared/Header/Header";
+import { AuthContext } from "../../context/AuthContext";
+import { Link } from "react-router-dom";
+import HeaderDrawer from "../../components/common-ui/header/HeaderDrawer";
 
 const SearchPage = () => {
-  const [open, setOpen] = useState(false);
+  const { open, setOpen } = useContext(AuthContext);
+  const [openD, setOpenD] = useState(false);
   const [selectedTab, setSelectedTab] = useState(1);
   const [sfwTab, setSfwTab] = useState(0);
   return (
     <div className="wallpaper_bg">
-      <Header />
-      <div className="container">
-        <h1
-          className="fontBak text-center d-none d-md-block"
-          style={{ marginBottom: "18px" }}
-        >
+      <HeaderDrawer />
+      <br />
+      <div
+        className="container d-flex align-items-center justify-content-between"
+        style={{ marginBottom: "18px" }}
+      >
+        <Link className="brand" to="/">
+          WPS
+        </Link>
+
+        <h1 className="fontBak text-center d-none d-md-block">
           THE WALLPAPER SOCIETY
         </h1>
+        <img
+          className="logo-img d-none d-md-inline-flex"
+          src={profile}
+          alt=""
+        />
+        <button
+          onClick={() => setOpen(!open)}
+          className="navbar-toggler d-md-none"
+          type="button"
+        >
+          <span>
+            <i className="fa fa-bars"></i>
+          </span>
+        </button>
+      </div>
+      <div className="container">
         <form
           action=""
-          className="mx-auto mt-md-3"
+          className="mx-auto mt-3"
           style={{ marginBottom: "39px" }}
         >
           <div className="searchNav mx-auto">
@@ -56,7 +81,7 @@ const SearchPage = () => {
             </button>
           </div>
           <img
-            onClick={() => setOpen(!open)}
+            onClick={() => setOpenD(!openD)}
             className="d-lg-none"
             style={{ width: "57px" }}
             src={img}
@@ -101,8 +126,8 @@ const SearchPage = () => {
         <SearchPageSidebar
           sfwTab={sfwTab}
           setSfwTab={setSfwTab}
-          open={open}
-          setOpen={setOpen}
+          open={openD}
+          setOpen={setOpenD}
           {...{
             scroll: false,
             backdrop: false,

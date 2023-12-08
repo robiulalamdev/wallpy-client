@@ -75,7 +75,12 @@ const Trending = () => {
           <div className="trending_images_container">
             {images.map((image, index) => (
               <Link to="wallpaper">
-                <img className="img-fluid w-100" src={image} alt="image" />
+                <img
+                  key={index}
+                  className="img-fluid w-100"
+                  src={image}
+                  alt="image"
+                />
               </Link>
             ))}
           </div>
