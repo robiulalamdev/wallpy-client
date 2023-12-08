@@ -265,6 +265,10 @@ hr {
 
 /* Media query for devices with a maximum width of 767px (e.g., smartphones) */
 @media only screen and (max-width: 425px) {
+  .container {
+    padding: 0px 4vw !important;
+    margin: 0 auto !important;
+  }
   .sw-full {
     width: 100% !important;
   }
