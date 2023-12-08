@@ -52,10 +52,10 @@ const Forgetpassword = () => {
                     </button>
                   </div>
                 </form>
-                <div className="community d-flex justify-content-center gap-4 align-items-center">
-                  <Link to="/">Community Rules</Link>
-                  <Link to="/">Privacy Policy</Link>
-                  <Link to="/">Terms and Conditions</Link>
+                <div className="community d-flex justify-content-center gap-4 align-items-center mt-5">
+                  <Link to="#">Community Rules</Link>
+                  <Link to="#">Privacy Policy</Link>
+                  <Link to="#">Terms and Conditions</Link>
                 </div>
               </div>
             </div>
