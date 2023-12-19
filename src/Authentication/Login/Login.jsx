@@ -136,7 +136,7 @@ const Login = () => {
                     Sign In with Apple
                   </button>
                 </div>
-                <div className="community d-flex justify-content-center gap-4 align-items-center pb-4">
+                <div className="community d-flex justify-content-center gap-4 align-items-center mt-5">
                   <Link to="/">Community Rules</Link>
                   <Link to="/">Privacy Policy</Link>
                   <Link to="/">Terms and Conditions</Link>
