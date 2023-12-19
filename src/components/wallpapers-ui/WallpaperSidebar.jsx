@@ -8,7 +8,7 @@ import instagram from "../../assets/instagram.png";
 import filter_alt from "../../assets/filter_alt.png";
 import arrow_down_light from "../../assets/arrow_down_light.png";
 import { Link } from "react-router-dom";
-import { redClose } from "../../utils/icons/global_icons";
+import { iAdd, redClose } from "../../utils/icons/global_icons";
 
 const WallpaperSidebar = ({ bgColorCode }) => {
   const [selected, setSelected] = useState(true);
@@ -17,7 +17,7 @@ const WallpaperSidebar = ({ bgColorCode }) => {
       className="w_sideBar fontBak h-100"
       style={{
         minHeight: "802px",
-        maxHeight: "802px",
+        maxHeight: "830px",
         background: bgColorCode || "rgba(0, 0, 0, 0.20)",
       }}
     >
@@ -41,7 +41,7 @@ const WallpaperSidebar = ({ bgColorCode }) => {
       </div>
       <hr className="sm_none" style={{ border: "1px solid #393939" }} />
 
-      <div className="d-flex flex-column align-items-center gap-1 mb-3">
+      <div className="d-flex flex-column justify-content-center align-items-center gap-1 mb-3">
         {selected && (
           <>
             <p style={{ color: "#ccc" }}>Dimensions</p>
@@ -49,7 +49,7 @@ const WallpaperSidebar = ({ bgColorCode }) => {
           </>
         )}
         <div
-          className="d-flex align-items-center gap-2"
+          className="d-flex justify-content-center align-items-center gap-2 ps-2"
           style={{ color: "#ccc", fontSize: "12px" }}
         >
           <p>Size Configuration</p>
@@ -78,6 +78,7 @@ const WallpaperSidebar = ({ bgColorCode }) => {
             <p className="text-center mb-2" style={{ color: "#ccc" }}>
               Tags
             </p>
+
             <p
               className="text-center"
               style={{ color: "#0AB745", fontSize: "12px" }}
@@ -93,6 +94,20 @@ const WallpaperSidebar = ({ bgColorCode }) => {
               <span>#illustration</span>
               <span>#shooter</span>
               <span>#mw2</span>
+            </div>
+          </div>
+
+          <div className="w_tags_input">
+            <input
+              className="px-2 text-white w-100"
+              type="text"
+              placeholder="Add tags here..."
+            />
+            <div
+              className="position-absolute cursor-pointer text-white"
+              style={{ width: "fit-content", right: "10px", top: "2px" }}
+            >
+              {iAdd}
             </div>
           </div>
 

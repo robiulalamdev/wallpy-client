@@ -44,6 +44,24 @@
   margin-bottom: 30px;
 }
 
+.profile_name {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.profile_bio {
+  color: #939393;
+  font-family: Bakbak One;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .profileDetail {
   padding-left: 114px;
   margin-bottom: 85px;
@@ -345,6 +363,10 @@
   .profile-container span {
     font-size: 12px !important;
   }
+  .profile_name {
+    font-size: 20px;
+  }
+
   .msgBtn {
     width: 25px;
     height: 25px;
@@ -402,6 +424,9 @@
   .profileImages-padding {
     margin-bottom: 20px;
     padding: 0 8px;
+  }
+  .profile_name {
+    font-size: 22px;
   }
 }
 

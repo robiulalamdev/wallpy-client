@@ -16,7 +16,7 @@ const SearchTrending = ({ sfwTab, setSfwTab }) => {
   return (
     <div
       className="d-flex justify-content-center align-items-center gap-1 d-none d-lg-inline-flex w-100"
-      style={{ overflow: "hidden" }}
+      // style={{ overflow: "hidden" }}
     >
       <div className="allBtn d-flex" style={{ maxWidth: "207px" }}>
         <button
@@ -64,7 +64,7 @@ const SearchTrending = ({ sfwTab, setSfwTab }) => {
       <div className="filter-btns">
         <div className="resParent">
           <button className="filter-dropdown">
-            <span>Resolution</span>
+            <span className="ps-2">Resolution</span>
             {arrow_drop_down}
           </button>
           <div className="resChild">
@@ -128,7 +128,7 @@ const SearchTrending = ({ sfwTab, setSfwTab }) => {
       <div className="filter-btns">
         <div className="resParent">
           <button className="filter-dropdown">
-            <span>Screen Type</span>
+            <span className="ps-2">Screen Type</span>
             {arrow_drop_down}
           </button>
           <div
@@ -163,7 +163,7 @@ const SearchTrending = ({ sfwTab, setSfwTab }) => {
       <div className="filter-btns">
         <div className="resParent">
           <button className="filter-dropdown">
-            <span>Sort By</span>
+            <span className="ps-2">Sort By</span>
             {arrow_drop_down}
           </button>
           <div className="resChild">
@@ -178,7 +178,7 @@ const SearchTrending = ({ sfwTab, setSfwTab }) => {
       <div className="filter-btns">
         <div className="resParent">
           <button className="filter-dropdown">
-            <span>Upload Date</span>
+            <span className="ps-2">Upload Date</span>
             {arrow_drop_down}
           </button>
 

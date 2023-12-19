@@ -10,6 +10,7 @@ import Header from "../../Shared/Header/Header";
 import { AuthContext } from "../../context/AuthContext";
 import { Link } from "react-router-dom";
 import HeaderDrawer from "../../components/common-ui/header/HeaderDrawer";
+import { iSearch } from "../../utils/icons/global_icons";
 
 const SearchPage = () => {
   const { open, setOpen } = useContext(AuthContext);
@@ -52,11 +53,14 @@ const SearchPage = () => {
           className="mx-auto mt-3"
           style={{ marginBottom: "39px" }}
         >
-          <div className="searchNav mx-auto">
+          <div className="searchNav mx-auto position-relative">
+            <div style={{ position: "absolute", top: "8px", left: "14px" }}>
+              {iSearch}
+            </div>
             <input
-              className="w-100 px-4"
+              className="w-100 ps-5 pe-4"
               type="search"
-              placeholder="Find more wallpapers..."
+              placeholder="Find your next wallpaper..."
             />
           </div>
         </form>
@@ -89,7 +93,7 @@ const SearchPage = () => {
           />
         </div>
         <section className="search_Container">
-          {sfwTab === 1 ? (
+          {sfwTab === 0 ? (
             <>
               <div className="search_images_container">
                 <SearchImages />

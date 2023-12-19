@@ -28,7 +28,7 @@ const TermsConditions = () => {
           </div>
         </div>
 
-        <div className="terms-condition-content-container mt-4">
+        <div className="terms-condition-content-container">
           <p>1. Acceptance of Terms</p>
           <p>
             By using The Wallpaper Society website, you agree to be bound by the

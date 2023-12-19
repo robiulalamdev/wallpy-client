@@ -118,10 +118,13 @@ const Profile = () => {
               <div className="profile_photo mb-4">
                 <img src={profile} alt="Profile" />
               </div>
-              <h3 className="text-start text-white">
-                KRS
-                <img className="ms-1" src={Verified} alt="Verified" />
-              </h3>
+              <div className="mt-2">
+                <h6 className="text-start text-white profile_name">
+                  KRS
+                  <img className="ms-1" src={Verified} alt="Verified" />
+                </h6>
+                <span className="profile_bio sm_none">WPS Admin / AI Art</span>
+              </div>
             </div>
           </div>
 
@@ -158,7 +161,7 @@ const Profile = () => {
           </div> */}
             <div className="d-flex flex-column gap-3">
               <div className="d-flex justify-content-end align-items-center gap-2">
-                <div className="followBtn d-none d-md-block">
+                {/* <div className="followBtn d-none d-md-block">
                   <button className="fontBak">Follow</button>
 
                   <div className="shareProfile d-flex flex-column gap-3 align-items-center">
@@ -189,7 +192,7 @@ const Profile = () => {
                       </button>
                     </div>
                   </div>
-                </div>
+                </div> */}
                 <div className="d-none d-md-block">
                   <button
                     className="msgBtn"
@@ -198,24 +201,23 @@ const Profile = () => {
                   >
                     <span>
                       <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 15 15"
                         fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <rect
-                          x="4"
-                          y="6"
-                          width="16"
-                          height="12"
-                          rx="2"
-                          stroke="#4E4E4E"
-                        />
-                        <path
-                          d="M4 9L11.1056 12.5528C11.6686 12.8343 12.3314 12.8343 12.8944 12.5528L20 9"
-                          stroke="#4E4E4E"
-                        />
+                        <g clip-path="url(#clip0_377_1303)">
+                          <path
+                            d="M12.5 2.5H2.5C1.8125 2.5 1.25625 3.0625 1.25625 3.75L1.25 11.25C1.25 11.9375 1.8125 12.5 2.5 12.5H12.5C13.1875 12.5 13.75 11.9375 13.75 11.25V3.75C13.75 3.0625 13.1875 2.5 12.5 2.5ZM12.5 5L7.5 8.125L2.5 5V3.75L7.5 6.875L12.5 3.75V5Z"
+                            fill="#323232"
+                          />
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_377_1303">
+                            <rect width="15" height="15" fill="white" />
+                          </clipPath>
+                        </defs>
                       </svg>
                     </span>
                   </button>
@@ -313,18 +315,18 @@ const Profile = () => {
                 <button className="msgBtn">
                   <span>
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
                       fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
-                        d="M12 5L11.6464 4.64645L12 4.29289L12.3536 4.64645L12 5ZM12.5 14C12.5 14.2761 12.2761 14.5 12 14.5C11.7239 14.5 11.5 14.2761 11.5 14L12.5 14ZM6.64645 9.64645L11.6464 4.64645L12.3536 5.35355L7.35355 10.3536L6.64645 9.64645ZM12.3536 4.64645L17.3536 9.64645L16.6464 10.3536L11.6464 5.35355L12.3536 4.64645ZM12.5 5L12.5 14L11.5 14L11.5 5L12.5 5Z"
+                        d="M7.5 3.125L7.14645 2.77145L7.5 2.41789L7.85355 2.77145L7.5 3.125ZM8 8.75C8 9.02614 7.77614 9.25 7.5 9.25C7.22386 9.25 7 9.02614 7 8.75L8 8.75ZM4.02145 5.89645L7.14645 2.77145L7.85355 3.47855L4.72855 6.60355L4.02145 5.89645ZM7.85355 2.77145L10.9786 5.89645L10.2714 6.60355L7.14645 3.47855L7.85355 2.77145ZM8 3.125L8 8.75L7 8.75L7 3.125L8 3.125Z"
                         fill="#4E4E4E"
                       />
                       <path
-                        d="M5 16L5 17C5 18.1046 5.89543 19 7 19L17 19C18.1046 19 19 18.1046 19 17V16"
+                        d="M3.125 10L3.125 10.625C3.125 11.3154 3.68464 11.875 4.375 11.875L10.625 11.875C11.3154 11.875 11.875 11.3154 11.875 10.625V10"
                         stroke="#4E4E4E"
                       />
                     </svg>
@@ -333,16 +335,16 @@ const Profile = () => {
                 <button className="msgBtn">
                   <span>
                     <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 15 15"
                       fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
                     >
                       <path
                         fill-rule="evenodd"
                         clip-rule="evenodd"
-                        d="M10 17.5C5.85786 17.5 2.5 14.1421 2.5 10C2.5 5.85786 5.85786 2.5 10 2.5C14.1421 2.5 17.5 5.85786 17.5 10C17.5 14.1421 14.1421 17.5 10 17.5ZM10 5.66667C9.44772 5.66667 9.00001 6.11438 9.00001 6.66667C9.00001 7.21895 9.44772 7.66667 10 7.66667H10.0083C10.5606 7.66667 11.0083 7.21895 11.0083 6.66667C11.0083 6.11438 10.5606 5.66667 10.0083 5.66667H10ZM8.75 9C8.19772 9 7.75 9.44772 7.75 10C7.75 10.5523 8.19772 11 8.75 11H9V13.3333C9 13.8856 9.44772 14.3333 10 14.3333H11.6667C12.219 14.3333 12.6667 13.8856 12.6667 13.3333C12.6667 12.781 12.219 12.3333 11.6667 12.3333H11V10C11 9.44772 10.5523 9 10 9H8.75Z"
+                        d="M7.5 13.125C4.3934 13.125 1.875 10.6066 1.875 7.5C1.875 4.3934 4.3934 1.875 7.5 1.875C10.6066 1.875 13.125 4.3934 13.125 7.5C13.125 10.6066 10.6066 13.125 7.5 13.125ZM7.50001 4C6.94772 4 6.50001 4.44772 6.50001 5C6.50001 5.55228 6.94772 6 7.50001 6H7.50626C8.05854 6 8.50626 5.55228 8.50626 5C8.50626 4.44772 8.05854 4 7.50626 4H7.50001ZM6.5625 6.5C6.01022 6.5 5.5625 6.94772 5.5625 7.5C5.5625 8.03129 5.97683 8.46582 6.5 8.49808V10C6.5 10.5523 6.94772 11 7.5 11H8.75C9.30228 11 9.75 10.5523 9.75 10C9.75 9.44772 9.30228 9 8.75 9H8.5V7.5C8.5 6.94772 8.05228 6.5 7.5 6.5H6.5625Z"
                         fill="#FF4330"
                       />
                     </svg>
