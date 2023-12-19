@@ -149,7 +149,10 @@ header,
 }
 
 .navBg {
-  padding: 12px 22px;
+  width: 183px;
+  height: 45px;
+  padding: 0 18px;
+  align-items: center;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.2);
 }
@@ -278,6 +281,25 @@ header,
   color: green;
 }
 
+.header_middle_text {
+  color: #fff;
+  font-family: Bakbak One;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: block !important;
+}
+
+.rules_input {
+  color: #5a5a5a;
+  font-family: Lato;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 @media only screen and (max-width: 425px) {
   .brand {
     color: #fff;
@@ -293,6 +315,9 @@ header,
   .navbar-search-btn {
     display: block;
   }
+  .header_middle_text {
+    display: none !important;
+  }
 }
 @media only screen and (min-width: 426px) {
   .navbar-search-input {
@@ -300,6 +325,28 @@ header,
   }
   .navbar-search-btn {
     display: none;
+  }
+}
+@media only screen and (min-width: 426px) and (max-width: 767px) {
+  .navbar-search-input {
+    display: inline-block;
+  }
+  .navbar-search-btn {
+    display: none;
+  }
+  .header_middle_text {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .w_also_like_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+  }
+  .header_middle_text {
+    display: none !important;
   }
 }
 
@@ -348,5 +395,8 @@ header,
   }
   .navbar-search-input button {
     padding: 0 10px !important;
+  }
+  .header_middle_text {
+    display: block !important;
   }
 }

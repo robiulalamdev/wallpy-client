@@ -7,6 +7,7 @@ import img from "../../assets/icons/mixer.png";
 import Drawer from "../../components/common-ui/drawers/Drawer";
 import Header from "../../Shared/Header/Header";
 import Footer from "../../Shared/Footer/Footer";
+import RulesHeader from "../../components/common-ui/header/RulesHeader";
 
 const Upload = () => {
   const [open, setOpen] = useState(false);
@@ -14,7 +15,8 @@ const Upload = () => {
   const [images, setImages] = useState([]);
   return (
     <div className="wallpaper_bg">
-      <Header />
+      <br />
+      <RulesHeader />
       <div className="container upload-container">
         <h1 className="title">The Vault</h1>
         <hr style={{ border: "1px solid #5A5A5A" }} />
@@ -24,13 +26,27 @@ const Upload = () => {
           style={{ maxWidth: "295px" }}
         >
           <div className="mb-4 gap-0 mx-md-auto" style={{ maxWidth: "295px" }}>
-            <TDTab
-              label=""
-              tabs={["Drafts", "Published"]}
-              setTab={setSelectedTab}
-              tab={selectedTab}
-              className="mx-auto"
-            />
+            <div className={`mx-auto`}>
+              <div className="td-tab-container d-flex justify-content-around align-items-center mx-auto mt-3">
+                {["Drafts", "Published"]?.map((t, i) => (
+                  <button
+                    onClick={() => setSelectedTab(i)}
+                    className={`${
+                      selectedTab === i
+                        ? `td-tab-active-btn ${
+                            selectedTab === 0
+                              ? "td-tab-btn-bg-hide"
+                              : "acs-btn-bg-visible"
+                          }`
+                        : "td-tab-dactive-btn"
+                    }`}
+                    key={i}
+                  >
+                    {t}
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
           <img
             onClick={() => setOpen(!open)}

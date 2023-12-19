@@ -7,7 +7,10 @@ const UploadContentArea = ({ images, setImages }) => {
   return (
     <>
       {images?.length === 0 ? (
-        <div className="w-100 d-flex flex-column justify-content-center align-items-center gap-4">
+        <div
+          className="w-100 d-flex flex-column justify-content-center align-items-center"
+          style={{ gap: "61px" }}
+        >
           <h1 className="upload-img-title">Your vault is currently empty</h1>
           <div className="upload-img-btn position-relative">
             <button

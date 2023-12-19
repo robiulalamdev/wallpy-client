@@ -47,7 +47,7 @@ const Login = () => {
                 <p className="d-none d-md-block">
                   Welcome back; we missed you.
                 </p>
-                <div className="text-center d-none d-md-block">
+                {/* <div className="text-center d-none d-md-block">
                   <span className="mb-2 d-block">
                     Random facts since you were gone
                   </span>
@@ -56,13 +56,15 @@ const Login = () => {
                       1348 wallpapers were added
                     </span>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
             <div className="col-md-6">
               <div className="d-flex flex-column justify-content-center align-items-center w-100">
-                <h1 className="d-none d-md-block">THE WALLPAPER SOCIETY</h1>
+                <h1 className="d-none d-md-block pt-4">
+                  THE WALLPAPER SOCIETY
+                </h1>
                 <div className="authtab text-center mx-auto mt-4">
                   <button className="tabInner tabActive">Sign In</button>
                   <Link className="text-dark" to="/register">
@@ -134,10 +136,10 @@ const Login = () => {
                     Sign In with Apple
                   </button>
                 </div>
-                <div className="community d-flex justify-content-center gap-4 align-items-center mt-5">
-                  <Link to="#">Community Rules</Link>
-                  <Link to="#">Privacy Policy</Link>
-                  <Link to="#">Terms and Conditions</Link>
+                <div className="community d-flex justify-content-center gap-4 align-items-center pb-4">
+                  <Link to="/">Community Rules</Link>
+                  <Link to="/">Privacy Policy</Link>
+                  <Link to="/">Terms and Conditions</Link>
                 </div>
               </div>
             </div>

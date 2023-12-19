@@ -48,7 +48,7 @@ const Register = () => {
               <div className="auth_iInfoBtn">{iInfo}</div>
               <div className="imgLogin d-flex flex-column justify-content-between align-items-center">
                 <p className="d-none d-md-block">Welcome to the Society</p>
-                <div className="text-center d-none d-md-block">
+                {/* <div className="text-center d-none d-md-block">
                   <span className="mb-2 d-block">Random facts about WPS</span>
                   <div className="addedWall">
                     <span style={{ color: "#FFF" }}>
@@ -57,12 +57,14 @@ const Register = () => {
                       wallpapers
                     </span>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-md-6">
               <div className="d-flex flex-column justify-content-center align-items-center w-100">
-                <h1 className="d-none d-md-block">THE WALLPAPER SOCIETY</h1>
+                <h1 className="d-none d-md-block pt-4">
+                  THE WALLPAPER SOCIETY
+                </h1>
                 <div className="authtab text-center mx-auto mt-4">
                   <Link className="text-dark" to="/login">
                     <button className="tabInner">Sign In</button>
@@ -110,11 +112,10 @@ const Register = () => {
                     </button>
                   </div>
                 </form>
-
-                <div className="community d-flex justify-content-center gap-4 align-items-center mt-5">
-                  <Link to="#">Community Rules</Link>
-                  <Link to="#">Privacy Policy</Link>
-                  <Link to="#">Terms and Conditions</Link>
+                <div className="community d-flex justify-content-center gap-4 align-items-center pb-4">
+                  <Link to="/">Community Rules</Link>
+                  <Link to="/">Privacy Policy</Link>
+                  <Link to="/">Terms and Conditions</Link>
                 </div>
               </div>
             </div>

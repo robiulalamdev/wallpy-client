@@ -48,6 +48,10 @@ footer hr {
   border-radius: 8px;
 }
 
+.footer_hr {
+  margin-top: 96px;
+}
+
 /* Footer End */
 
 /* Media query for devices with a maximum width of 767px (e.g., smartphones) */
@@ -68,6 +72,9 @@ footer hr {
   .footer-links a {
     font-size: 12px;
   }
+  .footer_hr {
+    margin-top: 18px;
+  }
 }
 @media only screen and (max-width: 426px) and (max-width: 767px) {
   .footerBottom span,
@@ -86,11 +93,17 @@ footer hr {
   .footer-links a {
     font-size: 12px;
   }
+
+  .footer_hr {
+    margin-top: 18px;
+  }
 }
 
 /* Media query for devices with a minimum width of 768px and a maximum width of 1023px (e.g., tablets) */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-  /* Styles for tablets */
+  .footer_hr {
+    margin-top: 36px;
+  }
 }
 
 /* Media query for devices with a minimum width of 1024px (e.g., desktops) */

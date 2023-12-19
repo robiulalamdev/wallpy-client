@@ -42,15 +42,15 @@ const UploadSidebar = ({ open }) => {
         <hr className="my-3" style={{ border: "1px solid #5A5A5A" }} />
         <div className="mt-4 w-100">
           <h1 className="upload-sidebar-btn-title text-center">TAGS</h1>
-          <div className="upload-sidebar-tags-container mt-3">
+          <div className="upload-sidebar-tags-container mt-3 position-relative ">
             <input
-              className="px-2"
+              className="px-2 text-white"
               type="text"
               placeholder="Add tags here..."
             />
             <div
-              className="position-absolute bottom-0 end-0 cursor-pointer text-white"
-              style={{ width: "fit-content" }}
+              className="position-absolute cursor-pointer text-white"
+              style={{ width: "fit-content", right: "10px", top: "2px" }}
             >
               {iAdd}
             </div>

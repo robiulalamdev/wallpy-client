@@ -30,7 +30,7 @@ const BrandTab = ({ step, setStep }) => {
           verify your identity. Please refrain from uploading government-issued
           IDs.
         </p>
-        <div className="account-verify-img-input position-relative">
+        <div className="account-verify-img-input position-relative mx-auto">
           {upload}
           <h1>Drag and drop files here</h1>
           <h1>or</h1>

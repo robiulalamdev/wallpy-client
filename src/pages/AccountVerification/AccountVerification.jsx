@@ -3,6 +3,7 @@ import "../../styles/accountVerify.css";
 import BrandTab from "../../components/account-verify-ui/BrandTab";
 import Header from "../../Shared/Header/Header";
 import Footer from "../../Shared/Footer/Footer";
+import RulesHeader from "../../components/common-ui/header/RulesHeader";
 
 const tabs = ["Brand", "Artist"];
 const AccountVerification = () => {
@@ -10,7 +11,8 @@ const AccountVerification = () => {
   const [selectedTab, setSelectedTab] = useState(0);
   return (
     <div className="wallpaper_bg">
-      <Header />
+      <br />
+      <RulesHeader />
       <div className="container account-verify-container">
         <h1 className="title">Request Verification</h1>
         <hr className="title_hr" />

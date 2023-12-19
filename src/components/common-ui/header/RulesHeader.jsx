@@ -34,7 +34,7 @@ const RulesHeader = () => {
           <div className="social_search d-flex align-items-center flex-grow w-100">
             <button className="px-3">{iSearch}</button>
             <input
-              className="w-100 flex-grow"
+              className="w-100 flex-grow rules_input"
               type="search"
               placeholder="Find your next wallpaper..."
             />

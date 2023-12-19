@@ -25,6 +25,7 @@
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+  padding-right: 5px;
 }
 
 .ci-content-container {
@@ -32,7 +33,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 40px;
-  color: #fff;
   font-family: Lato;
   font-size: 16px;
   font-style: normal;
@@ -41,6 +41,14 @@
   text-align: center;
 }
 
+.ci-content-container p {
+  color: #e3e3e3;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 .ci-content-container ul {
   list-style-type: none;
   padding: 0;
@@ -50,6 +58,12 @@
 .ci-content-container li {
   display: block;
   margin-right: 10px;
+  color: #e3e3e3;
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .ci-content-container li::before {
@@ -61,11 +75,15 @@
 /* Responsive Design for Small Screens (Mobile Devices) */
 @media only screen and (max-width: 425px) {
   .ci-content-container span {
-    font-size: 14px;
-  }
-  .ci-content-container {
-    text-align: left;
     font-size: 12px;
+  }
+  .ci-content-container p {
+    text-align: left;
+    font-size: 12px !important;
+  }
+  .ci-content-container ul li {
+    text-align: left;
+    font-size: 12px !important;
   }
   .ci-content-container ul {
     text-align: left;

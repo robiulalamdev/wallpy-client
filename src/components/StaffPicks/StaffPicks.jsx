@@ -15,18 +15,29 @@ const StaffPicks = () => {
         </h2>
         <div className="staff_picks_container">
           <Link to="#">
-            <img className="sp_first-img" src={sp1} alt="Img" />
+            <img
+              className="sp_first-img"
+              style={{ objectFit: "cover" }}
+              src={sp1}
+              alt="Img"
+            />
           </Link>
           <div className="w-100">
             <Link to="#">
               <img
                 className="img-fluid w-100 sp_second-img"
+                style={{ objectFit: "cover" }}
                 src={sp2}
                 alt="Img"
               />
             </Link>
             <Link to="#">
-              <img className="w-100 sp_third_img" src={sp3} alt="Img" />
+              <img
+                className="w-100 sp_third_img"
+                style={{ objectFit: "cover" }}
+                src={sp3}
+                alt="Img"
+              />
             </Link>
           </div>
         </div>

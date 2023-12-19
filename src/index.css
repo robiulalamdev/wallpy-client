@@ -197,7 +197,7 @@ hr {
   font-family: Bakbak One;
   font-size: 25px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400 !important;
   line-height: normal;
   text-align: center;
   margin: 35px 0 38px 0;
@@ -256,6 +256,7 @@ hr {
 
 .title_hr {
   border: 1px solid #5a5a5a !important;
+  height: 1px;
   margin: 0 0 16px 0 !important;
 }
 

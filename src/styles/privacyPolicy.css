@@ -10,6 +10,7 @@
   font-weight: 400;
   line-height: normal;
   text-align: left;
+  margin-top: 83px;
 }
 
 .pp-container .pp-title {
@@ -63,10 +64,11 @@
   color: #fff;
   text-align: center;
   font-family: Lato;
-  font-size: 20px;
+  font-size: 17px;
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+  padding-right: 5px;
 }
 
 /* Media query for devices with a maximum width of 767px (e.g., smartphones) */

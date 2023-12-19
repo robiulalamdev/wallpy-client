@@ -1,6 +1,7 @@
 .contact-container .contact-main {
   max-width: 1482px;
   min-height: 644px;
+  max-height: fit-content !important;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.212);
   display: grid;
@@ -131,12 +132,12 @@
   display: none;
 }
 .hello_there {
-  color: #373737;
-  font-family: Lato;
+  color: #373737 !important;
+  font-family: Lato !important;
   font-size: 40px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
+  font-style: normal !important;
+  font-weight: 600 !important;
+  line-height: normal !important;
 }
 
 .note_72_h {

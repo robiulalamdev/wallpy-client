@@ -18,6 +18,9 @@ import img15 from "../../assets/images/official-brands/img15.png";
 import { iSearch } from "../../utils/icons/global_icons";
 import Header from "../../Shared/Header/Header";
 import Footer from "../../Shared/Footer/Footer";
+import HeaderDrawer from "../../components/common-ui/header/HeaderDrawer";
+import profile from "../../assets/profile.png";
+import { Link } from "react-router-dom";
 
 const brands = [
   { title: "Image 1", img: img1 },
@@ -46,7 +49,33 @@ const OfficialBrands = () => {
   // console.log(characters);
   return (
     <div className="wallpaper_bg">
-      <Header />
+      <HeaderDrawer />
+      <br />
+      <div
+        className="container d-flex align-items-center justify-content-between"
+        style={{ marginBottom: "18px" }}
+      >
+        <div className="d-flex align-items-center" style={{ gap: "29px" }}>
+          <Link className="brand" to="/">
+            WPS
+          </Link>
+        </div>
+        <h1 className="header_middle_text">THE WALLPAPER SOCIETY</h1>
+        <img
+          className="logo-img d-none d-md-inline-flex"
+          src={profile}
+          alt=""
+        />
+        <button
+          onClick={() => setOpen(!open)}
+          className="navbar-toggler d-md-none"
+          type="button"
+        >
+          <span>
+            <i className="fa fa-bars"></i>
+          </span>
+        </button>
+      </div>
       <div className="container official-brands-container">
         <div className="d-flex justify-content-center w-100 ob_search">
           <div
@@ -65,9 +94,9 @@ const OfficialBrands = () => {
           <button>Featured</button>
           <div className="d-flex justify-content-between align-items-center gap-2 filter-brands px-4 sm_none">
             {characters?.map((c, i) => (
-              <div key={i} className="character cursor-pointer">
+              <small key={i} className="character cursor-pointer">
                 {c}
-              </div>
+              </small>
             ))}
           </div>
         </div>

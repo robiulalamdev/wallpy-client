@@ -75,19 +75,25 @@
 }
 
 .authtab {
+  padding: 3px 4px !important;
+  margin-bottom: 13px;
+  width: 217px;
+  height: 37px;
   border-radius: 12px;
   background: #c9c9c9;
-  padding: 4px;
-  color: #373737;
-  font-size: 12px;
-  width: max-content;
-  margin-bottom: 13px;
+  display: flex;
 }
 
 .tabInner {
-  padding: 7px 33px;
+  width: 105px;
+  height: 31px;
   border-radius: 10px;
-  background: transparent;
+  color: #373737;
+  font-family: Bakbak One;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .tabActive {
@@ -158,6 +164,9 @@
   display: block;
   color: #fff;
   font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .backBtn {

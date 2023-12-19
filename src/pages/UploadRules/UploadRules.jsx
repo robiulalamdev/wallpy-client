@@ -1,12 +1,17 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "../../styles/uploadRules.css";
 import banner from "../../assets/images/upload-rules/banner.png";
 import UploadRulesUploadInput from "../../components/upload-rules-ui/UploadRulesUploadInput";
 import { Iimg, iClose, uploadUp } from "../../utils/icons/global_icons";
 import Footer from "../../Shared/Footer/Footer";
 import Header from "../../Shared/Header/Header";
+import { AuthContext } from "../../context/AuthContext";
+import HeaderDrawer from "../../components/common-ui/header/HeaderDrawer";
+import { Link } from "react-router-dom";
+import profile from "../../assets/profile.png";
 
 const UploadRules = () => {
+  const { open, setOpen } = useContext(AuthContext);
   const [accept, setAccept] = useState(false);
   const [step, setStep] = useState(1);
   const [images, setImages] = useState([]);
@@ -19,7 +24,61 @@ const UploadRules = () => {
 
   return (
     <div className="wallpaper_bg ">
-      <Header />
+      <HeaderDrawer />
+      <br />
+      <div
+        className="container d-flex align-items-center justify-content-between"
+        style={{ marginBottom: "18px" }}
+      >
+        <div className="d-flex align-items-center" style={{ gap: "29px" }}>
+          <Link className="brand" to="/">
+            WPS
+          </Link>
+
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 20 20"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="sm_plus_none"
+          >
+            <circle
+              cx="9.16667"
+              cy="9.16659"
+              r="5.83333"
+              stroke="white"
+              stroke-width="2"
+            />
+            <path
+              d="M16.6667 16.6667L14.1667 14.1667"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+          <input
+            className="w-100 wallPaper_search"
+            type="search"
+            placeholder="Find more wallpapers..."
+          />
+        </div>
+        <h1 className="header_middle_text">The Wallpaper Society</h1>
+        <img
+          className="logo-img d-none d-md-inline-flex"
+          src={profile}
+          alt=""
+        />
+        <button
+          onClick={() => setOpen(!open)}
+          className="navbar-toggler d-md-none"
+          type="button"
+        >
+          <span>
+            <i className="fa fa-bars"></i>
+          </span>
+        </button>
+      </div>
       <div className="container upload-rules-container">
         <h1 className="title">Upload Files</h1>
         <hr className="title_hr" />
@@ -31,7 +90,7 @@ const UploadRules = () => {
         </p>
 
         <section className="row upload-section mx-auto ">
-          <div className="col-md-6 p-3">
+          <div className="col-md-6 p-3 pe-md-0">
             {step === 1 && (
               <img
                 className="img-fluid w-100 h-100 upload_rules_img1"
@@ -62,7 +121,7 @@ const UploadRules = () => {
                 <h1 className="cm-rules-title">
                   Click to Read the Community Rules
                 </h1>
-                <div className="d-flex align-items-center gap-2 upload-checkbox cursor-pointer">
+                <div className="d-flex align-items-center justify-content-center gap-2 upload-checkbox cursor-pointer">
                   <input
                     onClick={() => setAccept(!accept)}
                     className="cursor-pointer"
@@ -76,6 +135,17 @@ const UploadRules = () => {
                     continue.
                   </p>
                 </div>
+                <svg
+                  width="390"
+                  height="1"
+                  viewBox="0 0 390 1"
+                  fill="none"
+                  className="w-100"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <line y1="0.5" x2="390" y2="0.5" stroke="#5A5A5A" />
+                </svg>
+
                 <div className="d-flex justify-content-center upload-btn-ad">
                   {accept ? (
                     <button

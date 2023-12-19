@@ -20,11 +20,13 @@ const ConfirmationEmail = () => {
 
             <div className="col-md-6">
               <div style={{ padding: "20px" }}>
-                <h1 className="d-none d-md-block">THE WALLPAPER SOCIETY</h1>
+                <h1 className="d-none d-md-block pt-4">
+                  THE WALLPAPER SOCIETY
+                </h1>
                 <div>
                   <div style={{ marginBottom: "240px" }}>
                     <p
-                      className="fontBak"
+                      className="fontBak text-center"
                       style={{
                         marginTop: "190px",
                         fontSize: "12px",
@@ -36,13 +38,17 @@ const ConfirmationEmail = () => {
                       us, please check your spam folder.
                     </p>
                     <div className="text-center mt-5">
-                      <Link className="text-white darkBtn" to="/">
+                      <Link
+                        className="text-white darkBtn"
+                        style={{ maxWidth: "152px" }}
+                        to="/"
+                      >
                         Return Home
                       </Link>
                     </div>
                   </div>
 
-                  <div className="community d-flex justify-content-center gap-4 align-items-center">
+                  <div className="community d-flex justify-content-center gap-4 align-items-center pb-4">
                     <Link to="/">Community Rules</Link>
                     <Link to="/">Privacy Policy</Link>
                     <Link to="/">Terms and Conditions</Link>

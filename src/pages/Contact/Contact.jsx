@@ -13,12 +13,14 @@ import icon3 from "../../assets/icons/contact/icon3.png";
 import icon4 from "../../assets/icons/contact/icon4.png";
 import icon5 from "../../assets/icons/contact/icon5.png";
 import icon6 from "../../assets/icons/contact/icon6.png";
+import RulesHeader from "../../components/common-ui/header/RulesHeader";
 
 const Contact = () => {
   const [step, setStep] = useState(1);
   return (
     <div className="wallpaper_bg">
-      <Header />
+      <br />
+      <RulesHeader />
       <div className="container contact-container">
         <h1 className="title">Contact Us</h1>
         <hr className="title_hr" />
@@ -52,7 +54,7 @@ const Contact = () => {
           <div className="m-md-0 contact-content-section h-100 text-center py-4">
             {step === 1 && (
               <>
-                <h1 className="hello_there">Hello, somebody there?</h1>
+                <h6 className="hello_there">Hello, somebody there?</h6>
                 <p className="note_72_h sm_none">
                   Note that we strive to respond to all inquiries within a
                   timeframe of 24 to 72 hours.
@@ -79,7 +81,7 @@ const Contact = () => {
                   />
                   <textarea
                     className="contact-input mt-4 py-2 border-0"
-                    style={{ minHeight: "100px" }}
+                    style={{ height: "159px" }}
                     name="message"
                     placeholder="Your message"
                   ></textarea>

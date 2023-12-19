@@ -15,7 +15,7 @@
 .about-container .about-content h1 {
   color: #fff;
   font-family: Bakbak One;
-  font-size: 65px;
+  font-size: 80px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -43,9 +43,9 @@
 .about-container .about-content p {
   color: #fff;
   font-family: Lato;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400 !important;
   line-height: normal;
   margin-top: 25px;
 }
@@ -72,11 +72,17 @@
   }
 
   .about-container .about-content p {
-    font-size: 14px;
-    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    font-family: Lato;
+    font-size: 12px !important;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
   .about-container .about-img {
     height: 299px;
+    border-radius: 10px !important;
   }
 }
 @media only screen and (min-width: 426px) and (max-width: 767px) {
@@ -90,7 +96,13 @@
   }
 
   .about-container .about-content p {
-    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
     font-weight: 400;
   }
 }
