@@ -292,7 +292,7 @@ header,
 }
 
 .rules_input {
-  color: #5a5a5a;
+  color: #5a5a5a !important;
   font-family: Lato;
   font-size: 15px;
   font-style: normal;

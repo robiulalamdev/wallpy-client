@@ -14,6 +14,11 @@ import likedgray from "../../assets/likedgray.png";
 import wallpaper from "../../assets/wallpaper.png";
 import wallpaper1 from "../../assets/wallpaper1.png";
 import wallpaper2 from "../../assets/wallpaper2.png";
+
+import limg1 from "../../assets/images/wallpaper/limg1.png";
+import limg2 from "../../assets/images/wallpaper/limg2.png";
+import limg3 from "../../assets/images/wallpaper/limg3.png";
+
 import Moon from "../../assets/Moon.png";
 import downArrow from "../../assets/downArrow.png";
 import arrow_down_light from "../../assets/arrow_down_light.png";
@@ -25,6 +30,7 @@ import Drawer from "../../components/common-ui/drawers/Drawer";
 import {
   add_box,
   iDownload,
+  iMagnifierG,
   iSearch,
   iShare,
 } from "../../utils/icons/global_icons";
@@ -61,9 +67,9 @@ const WallPaper = () => {
             width="20"
             height="20"
             viewBox="0 0 20 20"
-            fill="none"
+            fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
-            className="sm_plus_none"
+            className="sm_plus_none text-white"
           >
             <circle
               cx="9.16667"
@@ -79,11 +85,20 @@ const WallPaper = () => {
               stroke-linecap="round"
             />
           </svg>
-          <input
-            className="w-100 wallPaper_search"
-            type="search"
-            placeholder="Find your next wallpaper..."
-          />
+          <div className="position-relative wallPaper_search_container">
+            <div
+              style={{ top: "5px", left: "10px" }}
+              className="position-absolute"
+            >
+              {iMagnifierG}
+            </div>
+            <input
+              className="w-100 wallPaper_search"
+              style={{ paddingLeft: "35px" }}
+              type="search"
+              placeholder="Find more wallpapers..."
+            />
+          </div>
         </div>
         <img
           className="logo-img d-none d-md-inline-flex"
@@ -177,25 +192,13 @@ const WallPaper = () => {
         <h3 className="all_mb">You may also like</h3>
         <div className="w_also_like_container mb-4">
           <Link to="/">
-            <img
-              className="w-image img-fluid w-100"
-              src={wallpaper}
-              alt="img"
-            />
+            <img className="w-image w-100" src={limg1} alt="img" />
           </Link>
           <Link to="/">
-            <img
-              className="w-image img-fluid w-100"
-              src={wallpaper1}
-              alt="img"
-            />
+            <img className="w-image w-100" src={limg2} alt="img" />
           </Link>
           <Link to="/">
-            <img
-              className="w-image img-fluid w-100"
-              src={wallpaper2}
-              alt="img"
-            />
+            <img className="w-image w-100" src={limg3} alt="img" />
           </Link>
         </div>
         <span className="d-block text-center">

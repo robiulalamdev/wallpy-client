@@ -2,7 +2,12 @@ import React, { useContext, useState } from "react";
 import "../../styles/uploadRules.css";
 import banner from "../../assets/images/upload-rules/banner.png";
 import UploadRulesUploadInput from "../../components/upload-rules-ui/UploadRulesUploadInput";
-import { Iimg, iClose, uploadUp } from "../../utils/icons/global_icons";
+import {
+  Iimg,
+  iClose,
+  iMagnifierG,
+  uploadUp,
+} from "../../utils/icons/global_icons";
 import Footer from "../../Shared/Footer/Footer";
 import Header from "../../Shared/Header/Header";
 import { AuthContext } from "../../context/AuthContext";
@@ -57,13 +62,24 @@ const UploadRules = () => {
               stroke-linecap="round"
             />
           </svg>
-          <input
-            className="w-100 wallPaper_search"
-            type="search"
-            placeholder="Find more wallpapers..."
-          />
+          <div className="position-relative wallPaper_search_container">
+            <div
+              style={{ top: "5px", left: "10px" }}
+              className="position-absolute"
+            >
+              {iMagnifierG}
+            </div>
+            <input
+              className="w-100 wallPaper_search"
+              style={{ paddingLeft: "35px" }}
+              type="search"
+              placeholder="Find more wallpapers..."
+            />
+          </div>
+          <h1 className="header_middle_text ps-5 ps-md-6">
+            The Wallpaper Society
+          </h1>
         </div>
-        <h1 className="header_middle_text">The Wallpaper Society</h1>
         <img
           className="logo-img d-none d-md-inline-flex"
           src={profile}

@@ -261,6 +261,7 @@ hr {
 }
 
 .sm_plus_none {
+  color: white !important;
   display: none !important;
 }
 
@@ -289,6 +290,7 @@ hr {
     display: none !important;
   }
   .sm_plus_none {
+    color: white !important;
     display: grid !important;
   }
 }

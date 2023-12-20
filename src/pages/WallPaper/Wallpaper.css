@@ -292,7 +292,9 @@ input[type="number"] {
 
 .w-image {
   max-width: 545px;
-  height: 277px;
+  width: 100% !important;
+  height: 250px !important;
+  object-fit: cover;
   border-radius: 10px !important;
 }
 
@@ -400,7 +402,7 @@ input[type="number"] {
 .w_also_like_container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 83px;
+  column-gap: 83px !important;
 }
 
 .auto_screen_container {
@@ -436,9 +438,13 @@ input[type="number"] {
   line-height: normal;
 }
 
-.wallPaper_search {
+.wallPaper_search_container {
   width: 348px;
   height: 37px;
+}
+.wallPaper_search {
+  width: 100%;
+  height: 100%;
   flex-shrink: 0;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.2);
@@ -468,7 +474,7 @@ input[type="number"] {
     border-radius: 5px;
   }
   .w-image {
-    height: 160px;
+    height: 160px !important;
     object-fit: cover;
     border-radius: 5px !important;
   }
@@ -493,7 +499,7 @@ input[type="number"] {
   .w_also_like_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 24px;
+    column-gap: 24px !important;
   }
   .wallPaper_search {
     display: none;
@@ -505,7 +511,7 @@ input[type="number"] {
   .w_also_like_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 24px;
+    column-gap: 24px !important;
   }
 }
 
@@ -514,7 +520,7 @@ input[type="number"] {
   .w_also_like_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 86px;
+    column-gap: 86px !important;
   }
 }
 /* WallPaper Page End */

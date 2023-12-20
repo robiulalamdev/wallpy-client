@@ -18,7 +18,7 @@ import instagram from "../../assets/instagram.png";
 import { Link } from "react-router-dom";
 import Header from "../../Shared/Header/Header";
 import Footer from "../../Shared/Footer/Footer";
-import { iSearch } from "../../utils/icons/global_icons";
+import { iMagnifierG, iSearch } from "../../utils/icons/global_icons";
 
 import img1 from "../../assets/images/profile/img1.png";
 import img2 from "../../assets/images/profile/img2.png";
@@ -82,11 +82,20 @@ const Profile = () => {
               stroke-linecap="round"
             />
           </svg>
-          <input
-            className="w-100 wallPaper_search"
-            type="search"
-            placeholder="Find more wallpapers..."
-          />
+          <div className="position-relative wallPaper_search_container">
+            <div
+              style={{ top: "5px", left: "10px" }}
+              className="position-absolute"
+            >
+              {iMagnifierG}
+            </div>
+            <input
+              className="w-100 wallPaper_search"
+              style={{ paddingLeft: "35px" }}
+              type="search"
+              placeholder="Find more wallpapers..."
+            />
+          </div>
         </div>
         <img
           className="logo-img d-none d-md-inline-flex"

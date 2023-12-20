@@ -5,10 +5,10 @@ const AboutUi = () => {
   return (
     <div className="container about-container">
       <h1 className="title">About WPS</h1>
-      <hr style={{ border: "1px solid #5A5A5A" }} />
+      <hr className="about_mb_55_20" style={{ border: "1px solid #5A5A5A" }} />
       <h1 className="about-title d-md-none">THE WALLPER SOCIETY </h1>
-      <div className="row mt-4">
-        <div className="col-6 col-md-4">
+      <div className="about_two_part_container">
+        <div className="w-100 about_image_container">
           <img
             className="w-100 about-img"
             src={banner}
@@ -17,7 +17,7 @@ const AboutUi = () => {
           />
           <h1 className="wps-title d-md-none">WPS</h1>
         </div>
-        <div className="col-6 col-md-8 about-content text-center text-md-start">
+        <div className=" about-content text-center text-md-start flex-grow">
           <h1 className="d-none d-md-block">THE WALLPER SOCIETY </h1>
           <h6>Hello from the WPS</h6>
           <p>
