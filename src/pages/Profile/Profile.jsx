@@ -60,34 +60,33 @@ const Profile = () => {
             WPS
           </Link>
 
-          <svg
-            width="20"
-            height="20"
-            viewBox="0 0 20 20"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            className="sm_plus_none"
-          >
-            <circle
-              cx="9.16667"
-              cy="9.16659"
-              r="5.83333"
-              stroke="white"
-              stroke-width="2"
-            />
-            <path
-              d="M16.6667 16.6667L14.1667 14.1667"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="round"
-            />
-          </svg>
-          <div className="position-relative wallPaper_search_container">
+          <div className="position-relative wallPaper_search_container sm_none">
             <div
               style={{ top: "5px", left: "10px" }}
               className="position-absolute"
             >
-              {iMagnifierG}
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                className="sm_plus_none mt-1"
+              >
+                <circle
+                  cx="9.16667"
+                  cy="9.16659"
+                  r="5.83333"
+                  stroke="white"
+                  stroke-width="2"
+                />
+                <path
+                  d="M16.6667 16.6667L14.1667 14.1667"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                />
+              </svg>
             </div>
             <input
               className="w-100 wallPaper_search"
@@ -97,11 +96,9 @@ const Profile = () => {
             />
           </div>
         </div>
-        <img
-          className="logo-img d-none d-md-inline-flex"
-          src={profile}
-          alt=""
-        />
+        <div className="header_profile_container d-none d-md-inline-flex">
+          <img className="logo-img" src={profile} alt="" />
+        </div>
         <button
           onClick={() => setOpen(!open)}
           className="navbar-toggler d-md-none"

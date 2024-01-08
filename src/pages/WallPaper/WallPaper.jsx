@@ -100,11 +100,9 @@ const WallPaper = () => {
             />
           </div>
         </div>
-        <img
-          className="logo-img d-none d-md-inline-flex"
-          src={profile}
-          alt=""
-        />
+        <div className="header_profile_container d-none d-md-inline-flex">
+          <img className="logo-img" src={profile} alt="" />
+        </div>
         <button
           onClick={() => setOpen(!open)}
           className="navbar-toggler d-md-none"
@@ -178,7 +176,7 @@ const WallPaper = () => {
                 className="w-100 position-absolute d-flex justify-content-between align-items-center"
                 style={{ bottom: "10px" }}
               >
-                <div className="home-bb" style={{ paddingLeft: "40px" }}>
+                <div className="home-bb" style={{ marginLeft: "20px" }}>
                   <img width={24} src={download} alt="" />
                 </div>
                 <div className="home-bb">{iShare}</div>

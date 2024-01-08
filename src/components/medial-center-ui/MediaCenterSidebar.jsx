@@ -18,12 +18,12 @@ const MediaCenterSidebar = ({ open }) => {
                 {["Visible", "Hidden"]?.map((t, i) => (
                   <button
                     onClick={() => setProfileTab(t)}
-                    className={` text-white ${
+                    className={`text-white ${
                       profileTab === t
                         ? `mc-active-btn ${
                             profileTab === "Visible"
-                              ? "mc-btn-bg-visible"
-                              : "mc-btn-bg-hide"
+                              ? "mc-btn-bg-visible text-white"
+                              : "mc-btn-bg-hide text-white"
                           }`
                         : "mc-dactive-btn"
                     }`}

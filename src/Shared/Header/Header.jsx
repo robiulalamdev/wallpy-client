@@ -141,11 +141,10 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        <img
-          className="logo-img d-none d-md-inline-flex"
-          src={profile}
-          alt=""
-        />
+        <div className="header_profile_container d-none d-md-inline-flex">
+          <img className="logo-img" src={profile} alt="" />
+        </div>
+
         <button
           onClick={() => setOpen(!open)}
           className="navbar-toggler d-md-none"

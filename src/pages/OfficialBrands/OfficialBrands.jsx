@@ -61,11 +61,9 @@ const OfficialBrands = () => {
           </Link>
         </div>
         <h1 className="header_middle_text">THE WALLPAPER SOCIETY</h1>
-        <img
-          className="logo-img d-none d-md-inline-flex"
-          src={profile}
-          alt=""
-        />
+        <div className="header_profile_container d-none d-md-inline-flex">
+          <img className="logo-img " src={profile} alt="" />
+        </div>
         <button
           onClick={() => setOpen(!open)}
           className="navbar-toggler d-md-none"
@@ -77,7 +75,7 @@ const OfficialBrands = () => {
         </button>
       </div>
       <div className="container official-brands-container">
-        <div className="d-flex justify-content-center w-100 ob_search">
+        <div className="d-flex justify-content-center align-items-center w-100 ob_search">
           <div
             className="position-relative w-100"
             style={{ maxWidth: "771px" }}

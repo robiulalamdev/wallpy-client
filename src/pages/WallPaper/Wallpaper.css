@@ -481,7 +481,7 @@ input[type="number"] {
   .w_also_like_container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 16px;
+    column-gap: 16px !important;
   }
   .wallPaper_search {
     display: none;
